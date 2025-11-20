@@ -11,22 +11,25 @@ This repo keeps two main `.pbix` files:
 
 ## 1. Model vs Report
 
-### `SBPD_HR_EPR_Model.pbix`  (Semantic Model)
+### `SBPD_HR_EPR_Model.pbix` (Semantic Model)
 
-- Connects to Smartsheet and other sources.  
+- Connects to current V3.0 Smartsheet data.
+- Some visuals are still not loading since data is being currently updating.
 - Contains all **Power Query** steps, calculated columns, and core **DAX tables/measures**.  
 - Tables of interest:
   - `Employees`  (wired to James's current **Employees V3.0** Smartsheet)
   - `Old Employees`  (backup/test employee + EPR data)
   - Dimension tables such as `Dim_Employee`, `Dim_EPRStage`, `Dim_JobClass`, `Dim_Date`.
 
-In short: This file is where I edit current data connections, queries, DAX, and test visuals.
+In short: This file is where I edit current data connections, queries, DAX, and test visuals 
 
 ---
 
 ### `SBPD_HR_EPR_Report.pbix`  (Thin Report)
 
-- Uses a **live connection** to the published semantic model.  
+- Connects to James's old Employee Smartsheet data.
+- Visuals are more populated and fuller ready to be viewed for presenting.
+- Uses a **live connection** to the published semantic model.
 - Holds all the **visuals, pages, and formatting**, but no separate data refresh.  
 - Safe place to:
   - Add or adjust visuals.
