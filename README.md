@@ -14,7 +14,6 @@ This repo keeps two main `.pbix` files:
 ### `SBPD_HR_EPR_Model.pbix` (Semantic Model)
 
 - Connects to current V3.0 Smartsheet data.
-- Some visuals are still not loading since data is being currently updating.
 - Contains all **Power Query** steps, calculated columns, and core **DAX tables/measures**.  
 - Tables of interest:
   - `Employees`  (wired to James's current **Employees V3.0** Smartsheet)
