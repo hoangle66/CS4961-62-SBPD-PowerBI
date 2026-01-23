@@ -27,7 +27,6 @@ In short: This file is where I edit current data connections, queries, DAX, and 
 ### `SBPD_HR_EPR_Report.pbix`  (Thin Report)
 
 - Connects to James's old Employee Smartsheet data.
-- Visuals are more populated and fuller ready to be viewed for presenting.
 
 In short: This file is where I adjusted the dashboard to be ready for ealier demos (no longer needed).
 
