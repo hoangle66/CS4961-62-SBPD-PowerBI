@@ -1,4 +1,4 @@
-# CS4961 – SBPD Power BI (PBIP)
+# CS4961-62 – SBPD Power BI (PBIP)
 
 This repo contains the **Power BI Project (PBIP)** version of the SBPD dashboard so multiple teammates can work on it with Git.
 
