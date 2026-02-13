@@ -1,0 +1,865 @@
+table 'Measures '
+	lineageTag: 68753857-22ed-4cd3-840e-bfc4d0b0e6e8
+
+	measure 'Total EPRs' =
+			
+			DISTINCTCOUNT ( Employees[Primary Column] )
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 5e105ac4-cb94-48c8-a497-43f5c76cf673
+
+	measure 'Completed EPRs' = ```
+			
+			VAR CompletedInHistory =
+			    CALCULATE (
+			        DISTINCTCOUNT ( 'Employees History Records'[Primary Column] ),
+			        'Employees History Records'[Status] = "Saving to Box",
+			        'Employees History Records'[Reset Ready] = "FALSE"
+			    )
+			VAR CompletedInCurrent =
+			    CALCULATE (
+			        DISTINCTCOUNT ( Employees[Primary Column] ),
+			        Employees[Status] = "Completed"
+			    )
+			RETURN
+			CompletedInHistory + CompletedInCurrent
+			
+			
+			```
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: c079763f-93fd-4c1e-bdea-450a8b85f8db
+
+	measure 'Incomplete EPRs' = ```
+			
+			VAR SentOutEmployees =
+			    CALCULATE (
+			        DISTINCTCOUNT ( Employees[Primary Column] ),
+			        Employees[Status] <> "Not Created"        -- only EPRs that were sent out
+			    )
+			RETURN
+			    SentOutEmployees - [Completed EPRs]
+			
+			```
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: b0919f16-6c1e-464f-b6ed-ff4e96c42053
+
+	measure 'Completion Rate %' = DIVIDE( [Completed EPRs], [Total EPRs] )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Overview KPIs
+		lineageTag: 28e8ebd4-1e17-4612-a675-632918d1d807
+
+	measure 'DocuSign Not Sent' =
+			
+			CALCULATE( [Total EPRs], Employees[DocuSign_Normalized] = "Not Sent" )
+		formatString: 0
+		isHidden
+		displayFolder: Quality
+		lineageTag: 0c0c5987-5bdd-436b-858b-50fe15a232d4
+
+		changedProperty = IsHidden
+
+	measure 'Not Created' =
+			
+			COUNTROWS( FILTER(Employees, Employees[Status_Normalized] = "Not Created") )
+		formatString: 0
+		isHidden
+		displayFolder: Quality
+		lineageTag: 6ee50a91-5191-4b86-b795-013815247d76
+
+		changedProperty = IsHidden
+
+	measure 'Avg Days Overdue (Open)' =
+			
+			AVERAGEX(
+			    FILTER(
+			        Employees,
+			        Employees[Overdue_Open] = 1
+			            && NOT ISBLANK( Employees[Signed EPR Due Date] )
+			    ),
+			    DATEDIFF( Employees[Signed EPR Due Date], TODAY(), DAY )
+			)
+		formatString: 0
+		isHidden
+		displayFolder: Risk & Aging
+		lineageTag: 8febfd06-3410-430d-b9e7-1defa3aa5fd6
+
+		changedProperty = IsHidden
+
+	measure 'Due Next 30 Days (Incomplete)' =
+			
+			CALCULATE ( [Total EPRs], REMOVEFILTERS(Dim_EPRStage),
+			            Dim_EPRStage[StageGroup] = "Incomplete",
+			            Employees[Signed EPR Due Date] >= TODAY(),
+			            Employees[Signed EPR Due Date] <  TODAY() + 30 )
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: 8bb5b80e-c93e-4733-868d-1b3fca89baf6
+
+	measure 'Probationary EPRs' =
+			
+			COUNTROWS (
+			    FILTER (
+			        Employees,
+			        Employees[Probationary EPR] = TRUE()      -- the checkbox
+			            -- && Employees[Status] <> "Completed"   -- still in-process
+			    )
+			)
+		formatString: 0
+		displayFolder: Probation
+		lineageTag: 84208de5-31ad-49cc-8d6d-3b936ebeec9a
+
+	measure 'Probation Overdue' =
+			
+			CALCULATE( [Total EPRs], Employees[ProbationOverdue] = 1 )
+		formatString: 0
+		displayFolder: Probation
+		lineageTag: 305a40b1-f2d2-4939-a0f4-96bdd26f3360
+
+	measure 'Doc Mismatch' =
+			
+			CALCULATE( [Total EPRs], Employees[LateCheckboxMismatch] = 1 )
+		formatString: 0
+		displayFolder: Quality
+		lineageTag: b0648260-eddb-4ba1-a9b2-0189aeb6da4b
+
+	measure 'DocuSign Not Sent (Open)' =
+			
+			CALCULATE(
+			    [Total EPRs],
+			    Employees[DocuSign_Normalized] = "Not Sent",
+			    Employees[Status_Normalized] IN { "Not Created", "Open", "In Progress" }
+			)
+		formatString: 0
+		isHidden
+		displayFolder: Quality
+		lineageTag: 70363dea-6989-4593-9b3c-6cd63453fb7d
+
+		changedProperty = IsHidden
+
+	measure 'Total Employees' = ```
+			
+			COALESCE( DISTINCTCOUNT(Employees[Primary Column]), COUNTROWS(Employees) )
+			
+			
+			```
+		formatString: 0
+		displayFolder: People
+		lineageTag: fed59b25-0006-42c8-b397-2237826165e3
+
+	measure 'Employees Count' = [Total People]
+		formatString: 0
+		displayFolder: People
+		lineageTag: 4c68b4eb-5b24-40c0-b43c-1eccbb1bb00e
+
+	measure 'Supervisors Count' = CALCULATE(DISTINCTCOUNT(Employees[Supervisor]), NOT ISBLANK(Employees[Supervisor]))
+		formatString: 0
+		displayFolder: People
+		lineageTag: 25c88780-9b10-4c7f-876e-82f40983f3bd
+
+	measure Interns = CALCULATE([Total Employees], Employees[Job Class Level] = "Intern")
+		formatString: 0
+		displayFolder: People
+		lineageTag: efab2de0-ebc7-40d1-8332-d597336cc5e2
+
+	measure 'Interns %' = DIVIDE([Interns],[Total Employees],0)
+		displayFolder: People
+		lineageTag: b49f4f3d-d26b-43aa-88ca-cd078a622fd2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Past Due (Incomplete)' =
+			
+			CALCULATE (
+			    [Total EPRs],
+			    REMOVEFILTERS ( Dim_EPRStage ),                  -- ignore any Stage/StageGroup filters
+			    Dim_EPRStage[StageGroup] = "Incomplete",
+			    NOT ISBLANK ( Employees[Signed EPR Due Date] ),  -- safety
+			    Employees[Signed EPR Due Date] < TODAY ()
+			)
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: a11c8745-128a-4b18-8564-fc380e11b644
+
+	measure 'Incomplete (not due soon)' =
+			
+			VAR v = [Incomplete EPRs] - [Past Due (Incomplete)] - [Due Next 30 Days (Incomplete)]
+			RETURN MAX ( 0, v )
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: 1ee985ab-8dee-488e-b032-da2b996731e2
+
+	measure 'EPRs Not Created' = CALCULATE([Total EPRs], Dim_EPRStage[Stage] = "Not Created")
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: 7d4ee881-fe73-4a5c-a5b7-199a964e6e0e
+
+	measure 'EPRs With Supervisor (any)' = ```
+			
+			  CALCULATE(
+			    [Total EPRs],
+			    Dim_EPRStage[Stage] IN {"With Supervisor 1","With Supervisor 2","With Supervisor 3"}
+			  )
+			```
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: a2b13a2a-ae79-49cc-8995-074c49c44ebb
+
+	measure 'EPRs With HR' = CALCULATE([Total EPRs], Dim_EPRStage[Stage] = "With HR")
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: c8732cce-a980-4a49-b43b-820425e61116
+
+	measure 'EPRs With Head of HR' = CALCULATE([Total EPRs], Dim_EPRStage[Stage] = "With Head of HR")
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: d0a9beed-59d6-4f35-be96-1f860f046626
+
+	measure 'EPRs With Head of Off' = CALCULATE([Total EPRs], Dim_EPRStage[Stage] = "With Head of Office")
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: a592ca00-de51-4ced-9f99-71b2648bb31c
+
+	measure 'Avg Days Past Due (Incomplete)' =
+			
+			VAR t =
+			    FILTER (
+			        ALL ( Employees ),
+			        RELATED ( Dim_EPRStage[StageGroup] ) = "Incomplete" &&
+			        NOT ISBLANK ( Employees[Signed EPR Due Date] ) &&
+			        Employees[Signed EPR Due Date] < TODAY ()
+			    )
+			RETURN
+			COALESCE ( AVERAGEX ( t, TODAY() - Employees[Signed EPR Due Date] ), 0 )
+		displayFolder: Risk & Aging
+		lineageTag: 763f937c-a2c0-44c6-9c6d-b6c609165b84
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Oldest Overdue (Days)' = ```
+			
+			VAR d =
+			    CALCULATE (
+			        MAXX (
+			            FILTER ( ALL ( Employees ), Employees[Signed EPR Due Date] < TODAY() ),
+			            TODAY() - Employees[Signed EPR Due Date]
+			        ),
+			        Dim_EPRStage[StageGroup] = "Incomplete"
+			    )
+			RETURN COALESCE ( d, 0 )
+			
+			
+			```
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: 6fdf260c-6305-486b-ad36-de3775ddd222
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Employees with Probationary EPR' =
+			
+			CALCULATE ( DISTINCTCOUNT ( Employees[Primary Column] ), Employees[Probationary EPR] = TRUE() )
+		formatString: 0
+		displayFolder: Probation
+		lineageTag: 7e1fc106-1272-4002-a81a-9e4d9517ba4e
+
+	measure 'Days Late (Completed – Previous Cycle)' =
+			
+			VAR due = MIN ( Employees[Previous EPR Actual Due Date] )
+			VAR signed = MIN ( Employees[Previous EPR Signed] )
+			RETURN
+			IF ( NOT ISBLANK ( due ) && NOT ISBLANK ( signed ),
+			     DATEDIFF ( due, signed, DAY ) -- + = late, - = early
+			)
+		formatString: 0
+		displayFolder: Completed Only
+		lineageTag: aef9e43d-9cfd-4679-aa46-472eb92099a9
+
+	measure 'Avg Days Late (Late Completed)' = ```
+			
+			VAR LateCompletedRows =
+			    FILTER (
+			        Employees,
+			        RELATED ( Dim_EPRStage[StageGroup] ) = "Completed"
+			            && Employees[Late EPR] = TRUE ()
+			            && NOT ISBLANK ( Employees[Previous EPR Actual Due Date] )
+			            && NOT ISBLANK ( Employees[Previous EPR Signed] )
+			    )
+			RETURN
+			AVERAGEX (
+			    LateCompletedRows,
+			    DATEDIFF (
+			        Employees[Previous EPR Actual Due Date],
+			        Employees[Previous EPR Signed],
+			        DAY
+			    )
+			)
+			
+			```
+		displayFolder: Completed Only
+		lineageTag: f5ae5f58-552f-4c81-94db-0b7be67c8bfe
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Days Past Due (All Overdue)' =
+			
+			-- Overall average for ANY overdue item (open OR completed)
+			VAR t =
+			    FILTER (
+			        ALLSELECTED ( Employees ),
+			        NOT ISBLANK ( Employees[Signed EPR Due Date] ) &&
+			        Employees[Signed EPR Due Date] < TODAY ()
+			    )
+			RETURN
+			IF ( ISEMPTY ( t ), BLANK(), AVERAGEX ( t, TODAY() - Employees[Signed EPR Due Date] ) )
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: e15b32d1-f805-4fb7-b31f-4f60460366ae
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Avg Days to Completion (Completed)' =
+			
+			AVERAGEX(
+			    FILTER(
+			        Employees,
+			        RELATED(Dim_EPRStage[StageGroup]) = "Completed" &&
+			        NOT ISBLANK(Employees[Days to Completion (row)])
+			    ),
+			    Employees[Days to Completion (row)])
+		isHidden
+		displayFolder: Completed Only
+		lineageTag: 896eede2-c7d7-4e2f-ac86-b2f369eb5013
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Days Past Due (Completed, late only)' =
+			
+			AVERAGEX(
+			    FILTER(
+			        Employees,
+			        RELATED(Dim_EPRStage[StageGroup]) = "Completed" &&
+			        Employees[Days to Completion (row)] > 0
+			    ),
+			    Employees[Days to Completion (row)]
+			)
+		isHidden
+		displayFolder: Completed Only
+		lineageTag: b643e3ec-1344-450b-8b38-8e39616f586c
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Min Days to Completion (Completed)' =
+			
+			MINX(
+			    FILTER(Employees, RELATED(Dim_EPRStage[StageGroup])="Completed" && NOT ISBLANK(Employees[Days to Completion (row)])),
+			    Employees[Days to Completion (row)]
+			)
+		formatString: 0
+		displayFolder: Tooltip
+		lineageTag: ffb58f8e-3121-404f-af39-cfa5c1845512
+
+	measure 'Max Days to Completion (Completed)' =
+			
+			MAXX(
+			    FILTER(Employees, RELATED(Dim_EPRStage[StageGroup])="Completed" && NOT ISBLANK(Employees[Days to Completion (row)])),
+			    Employees[Days to Completion (row)]
+			)
+		formatString: 0
+		displayFolder: Tooltip
+		lineageTag: 2ed4aee8-9a21-480d-9a1a-b581e6a7c7d4
+
+	measure 'Median Days to Completion (Completed)' =
+			
+			MEDIANX(
+			    FILTER(Employees, RELATED(Dim_EPRStage[StageGroup])="Completed" && NOT ISBLANK(Employees[Days to Completion (row)])),
+			    Employees[Days to Completion (row)]
+			)
+		displayFolder: Tooltip
+		lineageTag: c8097495-e625-40a4-aa6b-5e8347491d4a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Selected Stage' =
+			
+			SELECTEDVALUE( Dim_EPRStage[Stage] )
+		displayFolder: Tooltip
+		lineageTag: 9372e570-23d7-47ec-ab83-db9803bdb444
+
+	measure 'Selected Stage (Label)' =
+			
+			VAR stg = SELECTEDVALUE( Dim_EPRStage[Stage] )
+			RETURN IF( NOT ISBLANK(stg), stg, "—" )
+		displayFolder: Tooltip
+		lineageTag: 2a4b8585-e51a-43a4-84ad-a8a1a2f3d7c9
+
+	measure 'Total EPRs in Stage' =
+			
+			VAR hasStage = NOT ISEMPTY( VALUES( Dim_EPRStage[Stage] ) )
+			RETURN
+			IF(
+			    hasStage,
+			    CALCULATE( COUNTROWS( Employees ) ),
+			    BLANK()
+			)
+		formatString: 0
+		displayFolder: Tooltip
+		lineageTag: 3d664d54-5e87-48a6-99a7-aad716cb166e
+
+	measure 'Is Employee Context' =
+			
+			NOT ISBLANK( SELECTEDVALUE( Dim_Employee[EmployeeFullName]) )
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Tooltip
+		lineageTag: 49103ec7-7fa4-4f59-830a-de419760b6bc
+
+	measure 'Selected Employee' =
+			
+			SELECTEDVALUE( Dim_Employee[EmployeeFullName] )
+		displayFolder: Tooltip
+		lineageTag: 8f04d669-86da-46be-8d38-1cc300190b39
+
+	measure 'Days to Due (Prev Cycle)' =
+			
+			VAR due    = SELECTEDVALUE(Employees[Previous EPR Actual Due Date])
+			VAR signed = SELECTEDVALUE(Employees[Signed EPR Due Date])
+			RETURN
+			IF( NOT ISBLANK(due) && NOT ISBLANK(signed),
+			    DATEDIFF( signed, due, DAY )
+			)
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: fab4bae2-2928-43c7-b02d-7e5a2553142d
+
+	measure 'Late EPRs (All)' =
+			
+			CALCULATE (
+			    COUNTROWS ( Employees ),
+			    KEEPFILTERS ( Employees[Late EPR] = TRUE() )
+			)
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 3dc3f3b5-2c5b-466a-88fb-d578f5966943
+
+	measure 'Interns Count' =
+			
+			VAR v =
+			    CALCULATE ( [Team Size], KEEPFILTERS ( Employees[Job Class Level] = "Intern" ) )
+			RETURN COALESCE( v, 0 )
+		formatString: 0
+		displayFolder: People
+		lineageTag: 341a96c9-b6d3-4ceb-ae9b-43c9ee983505
+
+	measure 'Probation Count' =
+			
+			VAR v =
+			    CALCULATE ( [Team Size], KEEPFILTERS ( Employees[Probationary EPR] = TRUE() ) )
+			RETURN COALESCE( v, 0 )
+		formatString: 0
+		displayFolder: Probation
+		lineageTag: 428a690e-22e5-4254-a3b7-b3e68701e325
+
+	measure 'Team Size' =
+			
+			COALESCE( DISTINCTCOUNT( Employees[Primary Column] ), 0 )
+		formatString: 0
+		displayFolder: People
+		lineageTag: e2c82e7c-1df1-4cd8-9a18-246ca9e6c40b
+
+	measure 'JobClass Count' =
+			
+			DISTINCTCOUNT ( Employees[Job Class] )
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 2286bd50-a8ce-4a8e-8bd1-5442b9392a40
+
+	measure 'Days to Due (Current Cycle)' = ```
+			
+			VAR due    = SELECTEDVALUE(Employees[Signed EPR Due Date])
+			VAR actual = SELECTEDVALUE(Employees[Previous EPR Actual Due Date])
+			RETURN
+			IF(
+			    NOT ISBLANK(due) && NOT ISBLANK(actual),
+			    DATEDIFF( due, actual, DAY )   -- positive = days late
+			)
+			
+			```
+		formatString: 0
+		displayFolder: EPR Process
+		lineageTag: 6c5d4b3c-c3d8-4a8c-9e81-14560bba3cc6
+
+	measure 'EPRs In Process' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[Status] <> "Not Created"
+			)
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: f038d2df-f7e4-4d36-98fd-0c5b150eda2e
+
+	measure 'EPRs Not Yet Due' = ```
+			
+			CALCULATE ( [Total EPRs], Employees[Status] = "Not Created" )
+			
+			```
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 5e8c8c3b-f8a3-4cf9-93c4-deb7b2448eba
+
+	measure 'EPRs Pending Initiation' = ```
+			
+			VAR NotCreatedNow =
+			    CALCULATE (
+			        DISTINCTCOUNT ( Employees[Primary Column] ),
+			        Employees[Status] = "Not Created"
+			    )
+			RETURN
+			    NotCreatedNow - [Completed EPRs]
+			-- 1) Pending Initiation: Not Created, and NOT one of the completed people
+			
+			```
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 3bd05e52-21ed-4e56-b9cb-ec483af45989
+
+	measure 'EPRs In Process - Late' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[Status] <> "Not Created",
+			    Employees[Late EPR] = TRUE ()
+			)
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: bf7a1afb-5d20-4493-ba3c-7244bae4771d
+
+	measure 'EPRs In Process - On Time' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[Status] <> "Not Created",
+			    ( Employees[Late EPR] = FALSE () || ISBLANK ( Employees[Late EPR] ) )
+			)
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: 7265a1a2-27ca-4d67-b24b-8242a03f1051
+
+	measure 'EPRs Due Next 30 Days Count' = ```
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[EPR Due Next 30 Days] = TRUE ()
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Overview KPIs
+		lineageTag: e9e8369a-a820-4566-ab4d-bb9191d5e9ac
+
+	measure 'Employees on Probation (Status)' = ```
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[Employment Status] IN { "probationary", "flex probationary" }
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Probation
+		lineageTag: e8da387c-23f1-4d32-bedf-1bb337568ec1
+
+	measure 'Total Employee Records' = ```
+			
+			COUNTROWS ( Employees )
+			
+			```
+		formatString: 0
+		displayFolder: People
+		lineageTag: d16e0f8e-94a9-496a-9bdf-ef1e2e670b6d
+
+	measure 'Total People' = ```
+			
+			DISTINCTCOUNT ( Employees[Full Name] )
+			
+			```
+		formatString: 0
+		displayFolder: People
+		lineageTag: 9d4f4c41-dcda-4452-84be-b5911d9b015d
+
+	measure 'At Risk EPRs' = ```
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( Employees[Primary Column] ),
+			    Employees[Status] = "Not Created",
+			    Employees[Signed EPR Due Date] >= TODAY(),
+			    Employees[Signed EPR Due Date] <= TODAY() + 15
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Risk & Aging
+		lineageTag: 8aff7061-9b2c-45cf-a64f-c2fda88857bf
+
+	measure 'EPR Status Tooltip' = ```
+			
+			VAR eprStatus =
+			    SELECTEDVALUE ( Employees[EPR Status (Donut)] )
+			VAR thisCount =
+			    CALCULATE (
+			        DISTINCTCOUNT ( Employees[Primary Column] ),
+			        Employees[EPR Status (Donut)] = eprStatus
+			    )
+			RETURN
+			SWITCH (
+			    eprStatus,
+			    "Completed",
+			        "Completed (" & thisCount
+			            & ") = EPRs with status ""Saving to Box"" or ""Completed"".",
+			    "With HR",
+			        "With HR (" & thisCount
+			            & ") = EPRs currently in the ""With HR"" stage and under 60 days window.",
+			    "Not Yet Due",
+			        "Not Yet Due (" & thisCount
+			            & ") = EPRs whose EPR status is ""Not Created"".",
+			    BLANK ()
+			)
+			
+			```
+		displayFolder: Tooltip
+		lineageTag: eb54489c-5a22-4542-8320-eaf1827138bf
+
+	measure 'Closed Matters (By Month)' =
+			
+			CALCULATE (
+			    [Closed Matters],
+			    USERELATIONSHIP ( 'Dim_Date'[Date], '[Personnel Matters] Tracker'[Closed Date] )
+			)
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: ac23c3a1-6b57-4019-a852-38d711c1c58b
+
+	measure 'Total Matters' =
+			
+			DISTINCTCOUNT ( '[Personnel Matters] Tracker'[Matter IDs] )
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: f04284de-dae9-4c03-a820-20c769bde6bd
+
+	measure 'Open Matters' = ```
+			
+			CALCULATE (
+			   [Total Matters],
+			   FILTER (
+			       '[Personnel Matters] Tracker',
+			       '[Personnel Matters] Tracker'[Status] <> "Closed"
+			           || ISBLANK ( '[Personnel Matters] Tracker'[Closed Date] )
+			   )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: 8eca835f-bebf-4b67-995d-b13ea2481479
+
+	measure 'Closed Matters' =
+			
+			-- overall count
+			CALCULATE (
+			    DISTINCTCOUNT ( '[Personnel Matters] Tracker'[Matter IDs] ),
+			    '[Personnel Matters] Tracker'[Status] = "Closed",
+			    NOT ISBLANK ( '[Personnel Matters] Tracker'[Closed Date] )
+			)
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: fa9f3fb1-3c1a-4710-a8de-b0faef0d161f
+
+	measure 'Avg Days To Resolution' = ```
+			
+			-- Avg Time to Resolution (Days Open to Close)
+			AVERAGEX (
+			   FILTER (
+			       '[Personnel Matters] Tracker',
+			       '[Personnel Matters] Tracker'[Status] = "Closed"
+			           && NOT ISBLANK ( '[Personnel Matters] Tracker'[Closed Date] )
+			           && NOT ISBLANK ( '[Personnel Matters] Tracker'[Opened Date] )
+			   ),
+			   DATEDIFF (
+			       '[Personnel Matters] Tracker'[Opened Date],
+			       '[Personnel Matters] Tracker'[Closed Date],
+			       DAY
+			   )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: 71e721a8-c0c6-4463-81b2-ad00ee50270c
+
+	measure 'Open Matters (By Opened Month)' =
+			
+			CALCULATE (
+			    [Total Matters],
+			    '[Personnel Matters] Tracker'[Status] IN { "Opened", "In Progress" }
+			)
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: e08d77e5-fd6f-4679-ba3d-27e76545c738
+
+	measure 'Update Required Count' = ```
+			
+			-- Special consideration: Update Required (open > 14 days)
+			CALCULATE (
+			   [Total Matters],
+			   FILTER (
+			       '[Personnel Matters] Tracker',
+			       '[Personnel Matters] Tracker'[Status] <> "Closed"
+			           && DATEDIFF ( '[Personnel Matters] Tracker'[Opened Date], TODAY (), DAY ) > 14
+			   )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: 387c6a94-e02d-4927-ac1d-9bb39107c841
+
+	measure 'Open Backlog (As Of Date)' = ```
+			
+			-- If we want to see “how many matters are open at that time” (not just opened that month):
+			VAR d = MAX ( 'Dim_Date'[Date] )
+			RETURN
+			CALCULATE (
+			   DISTINCTCOUNT ( '[Personnel Matters] Tracker'[Matter IDs] ),
+			   FILTER (
+			       ALL ( '[Personnel Matters] Tracker' ),
+			       '[Personnel Matters] Tracker'[Opened Date] <= d
+			           && (
+			               ISBLANK ( '[Personnel Matters] Tracker'[Closed Date] )
+			               || '[Personnel Matters] Tracker'[Closed Date] > d
+			           )
+			   )
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: 33a1fcd8-3a68-44c6-a5b1-242472465f97
+
+	measure 'Selected Status' =
+			
+			SELECTEDVALUE ( '[Personnel Matters] Tracker'[Status], "All Statuses" )
+		displayFolder: Tooltip_Matters
+		lineageTag: 3738ccfc-9732-4586-8019-57f02d3f9664
+
+	measure 'Status % of Total' =
+			
+			DIVIDE (
+			    [Total Matters],
+			    CALCULATE ( [Total Matters], ALL ( '[Personnel Matters] Tracker'[Status] ) )
+			)
+		displayFolder: Tooltip_Matters
+		lineageTag: cc03a6f2-e921-4fe4-9764-d15700e88c5d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Days Open (Open/In Progress)' =
+			
+			AVERAGEX (
+			    FILTER (
+			        '[Personnel Matters] Tracker',
+			        '[Personnel Matters] Tracker'[Status] <> "Closed"
+			            && NOT ISBLANK ( '[Personnel Matters] Tracker'[Days Open] )
+			    ),
+			    '[Personnel Matters] Tracker'[Days Open]
+			)
+		formatString: 0
+		displayFolder: Tooltip_Matters
+		lineageTag: 6b427e83-485d-420b-9440-f6b90b2df964
+
+	measure 'Overdue Next Step Count' =
+			
+			CALCULATE (
+			    [Total Matters],
+			    FILTER (
+			        '[Personnel Matters] Tracker',
+			        '[Personnel Matters] Tracker'[Status] <> "Closed"
+			            && NOT ISBLANK ( '[Personnel Matters] Tracker'[Next Step Due Date] )
+			            && '[Personnel Matters] Tracker'[Next Step Due Date] < TODAY ()
+			    )
+			)
+		formatString: 0
+		displayFolder: Tooltip_Matters
+		lineageTag: 813beb14-d716-45bc-9cff-02660efb2be9
+
+	measure 'Tooltip Summary' =
+			
+			VAR s = [Selected Status]
+			VAR total = [Total Matters]
+			VAR pct = FORMAT([Status % of Total], "0%")
+			VAR upd = [Update Required Count]
+			VAR od = [Overdue Next Step Count]
+			VAR avgOpen = FORMAT([Avg Days Open (Open/In Progress)], "0")
+			VAR avgRes = FORMAT([Avg Days To Resolution], "0")
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    s = "Closed",
+			        "Status: Closed" & UNICHAR(10) &
+			        "Matters: " & total & " (" & pct & ")" & UNICHAR(10) &
+			        "Avg days to resolve: " & avgRes,
+			    "Status: " & s & UNICHAR(10) &
+			    "Matters: " & total & " (" & pct & ")" & UNICHAR(10) &
+			    "Avg days open: " & avgOpen & UNICHAR(10) &
+			    "Needs update: " & upd & " | Overdue steps: " & od
+			)
+		displayFolder: Tooltip_Matters
+		lineageTag: 22bdf8f0-5cfc-4f03-8fe4-de6ca56da927
+
+	measure 'Opened This Week' =
+			
+			VAR WeekStart = TODAY() - WEEKDAY(TODAY(), 2) + 1   -- Monday start
+			VAR WeekEnd   = WeekStart + 6
+			RETURN
+			CALCULATE(
+			    [Total Matters],
+			    DATESBETWEEN('Dim_Date'[Date], WeekStart, WeekEnd)
+			)
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: caf94c55-3ebf-4c17-be33-f8586e99b01a
+
+	measure 'Closed This Week' =
+			
+			VAR WeekStart = TODAY() - WEEKDAY(TODAY(), 2) + 1
+			VAR WeekEnd   = WeekStart + 6
+			RETURN
+			CALCULATE(
+			    [Total Matters],
+			    USERELATIONSHIP('Dim_Date'[Date], '[Personnel Matters] Tracker'[Closed Date]),
+			    '[Personnel Matters] Tracker'[Status] = "Closed",
+			    NOT ISBLANK('[Personnel Matters] Tracker'[Closed Date]),
+			    DATESBETWEEN('Dim_Date'[Date], WeekStart, WeekEnd)
+			)
+		formatString: 0
+		displayFolder: Personnel Matters
+		lineageTag: 7f13203c-7477-497f-b229-a667edf1df44
+
+	partition 'Measures ' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,112 @@
+relationship AutoDetected_0e93a669-756a-464f-b176-ecda0a7e95d3
+	fromColumn: Employees.'Job Class'
+	toColumn: Dim_JobClass.'Job Class'
+
+relationship 53b490f0-a3bd-43eb-a1b1-66024b4cf8ae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Probation Due Date'
+	toColumn: LocalDateTable_77f695fb-2df4-4095-b384-b5763608ba3a.Date
+
+relationship 698b0f63-018a-4baa-949c-60675d3c7d14
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Previous EPR Actual Due Date'
+	toColumn: LocalDateTable_d41bd51c-4ac3-4230-9f4f-4440ea5080cd.Date
+
+relationship 61d4bac4-74dd-d5b4-44ed-18003db6e308
+	fromColumn: Employees.'Primary Column'
+	toColumn: Dim_Employee.EmployeeID
+
+relationship c6f196f4-342c-3408-486a-a60ffa132b02
+	fromColumn: Dim_JobClass.'Job Class Level'
+	toColumn: JobClassLevelMap.'Job Class Level'
+
+relationship AutoDetected_9d17e742-21f5-4aa2-b6ec-a234ae217cc2
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Dim_JobClass.'Primary Column'
+	toColumn: Dim_Employee.EmployeeID
+
+relationship 391808db-22e8-47ba-851a-f7e9c4ea72d6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Dempsey Signed Due Date'
+	toColumn: LocalDateTable_7a7f7734-5734-4fb6-aea1-5176cb0bb84b.Date
+
+relationship 71a2afc1-9b14-4039-b1fd-b3a2c1826940
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Dempsey Prev Actual Due Date'
+	toColumn: LocalDateTable_a3ce6086-913f-4d97-9909-b6e1d9889677.Date
+
+relationship 5b4d3de9-0f00-4df4-863c-72ab0c1903ef
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Dempsey Prev Signed Date'
+	toColumn: LocalDateTable_322ecb99-96bf-4ef2-b594-af5cbbaa5d10.Date
+
+relationship e0e4ac66-af58-d02d-2ef0-63f61432b5ed
+	fromColumn: Employees.Status
+	toColumn: Dim_EPRStage.Stage
+
+relationship AutoDetected_c505e8a3-0b5e-47aa-89ba-53aa56a92c69
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Employees History Records'.RowNumber
+	toColumn: Employees.RowNumber
+
+relationship AutoDetected_4aac5e24-176c-4f6d-a886-9e4923050941
+	isActive: false
+	fromColumn: 'Employees History Records'.'Job Class'
+	toColumn: Dim_JobClass.'Job Class'
+
+relationship daabc402-1b32-4525-8a04-1bc4b20b430e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees History Records'.'Date Saved'
+	toColumn: LocalDateTable_18905f9a-f065-4bdf-89eb-9763e252724f.Date
+
+relationship 6e8c6b4d-e4bf-4aee-9e50-0e29b96d1cd4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees History Records'.'Probation Due Date'
+	toColumn: LocalDateTable_5fc7fd75-3b63-4a7d-a386-ba76dc6b6191.Date
+
+relationship 331beb2a-f44f-4953-bcbb-3c9b81bc32f4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees History Records'.'Signed EPR Due Date'
+	toColumn: LocalDateTable_e8643eee-4da6-4a28-93f6-58c44d9aa984.Date
+
+relationship ba6b3fc4-1410-4529-a9bb-8be64aee2c5d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees History Records'.'Pervious EPR Signed'
+	toColumn: LocalDateTable_49796914-7676-4c09-bedc-d1d2960e48f6.Date
+
+relationship 19ea72e9-fa80-4aae-b4ac-b8c40e81510b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees History Records'.'Previous EPR Actual Due Date'
+	toColumn: LocalDateTable_fdc12c8c-f1b3-43a2-bee4-b1b765af7fbb.Date
+
+relationship cfc9840f-f6ef-4c71-bc64-ac30042c954a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Employees.'Previous EPR Signed'
+	toColumn: LocalDateTable_f51d8a49-b304-40ca-b1fa-cc90f1455ac5.Date
+
+relationship d48c9444-9ca4-acc2-f168-d2ca8ad4a11a
+	fromColumn: Employees.'Signed EPR Due Date'
+	toColumn: Dim_Date.Date
+
+relationship b77c8ec4-9ee5-c513-bf05-89d532caed12
+	isActive: false
+	fromColumn: '[Personnel Matters] Tracker'.RowNumber
+	toColumn: 'Employees History Records'.RowNumber
+
+relationship be23e468-cc0b-b7c3-bcb3-d71b6754b870
+	fromColumn: '[Personnel Matters] Tracker'.'Opened Date'
+	toColumn: Dim_Date.Date
+
+relationship cf2aedcd-fb71-43a2-fc12-429afe7c8901
+	isActive: false
+	fromColumn: '[Personnel Matters] Tracker'.'Closed Date'
+	toColumn: Dim_Date.Date
+
+relationship 890d203b-43a2-4ce6-9bec-b60eb57497e8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '[Personnel Matters] Tracker'.'Next Step Due Date'
+	toColumn: LocalDateTable_6f221687-dd6b-4660-92a5-f3a3c607d713.Date
+

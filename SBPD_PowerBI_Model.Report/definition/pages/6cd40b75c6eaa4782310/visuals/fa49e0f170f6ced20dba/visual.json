@@ -1,0 +1,334 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "fa49e0f170f6ced20dba",
+  "position": {
+    "x": 353.55498721227622,
+    "y": 151.24296675191815,
+    "z": 17000,
+    "height": 318.19948849104861,
+    "width": 894.36317135549871,
+    "tabOrder": 17000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Matter IDs"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Matter IDs",
+              "nativeQueryRef": "Matter IDs"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Opened Date"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Opened Date",
+              "nativeQueryRef": "Opened Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Supervisor"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Supervisor",
+              "nativeQueryRef": "Supervisor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Issue"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Issue",
+              "nativeQueryRef": "Issue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Policy"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Policy",
+              "nativeQueryRef": "Policy"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Days Open"
+                }
+              },
+              "queryRef": "Sum([Personnel Matters] Tracker.Days Open)",
+              "nativeQueryRef": "Days Open"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Update Required"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Update Required",
+              "nativeQueryRef": "Update Required?",
+              "displayName": "Update Required?"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Next Step Due Date"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Next Step Due Date",
+              "nativeQueryRef": "Next Step Due Date"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "[Personnel Matters] Tracker"
+                  }
+                },
+                "Property": "Days Open"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B09060'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "124.85714408233889D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "[Personnel Matters] Tracker.Issue"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Personnel Matters Tracker'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

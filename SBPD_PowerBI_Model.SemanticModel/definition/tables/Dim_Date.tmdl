@@ -1,0 +1,127 @@
+table Dim_Date
+	lineageTag: 9bb25818-e71a-42c4-95a4-6baf8773bc49
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: mm/dd/yyyy
+		lineageTag: 0203836b-6193-4daa-b90c-a12a0a4f3733
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Year
+		formatString: 0
+		lineageTag: c12ba828-e169-4e66-bb71-509647fd5d5b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNum
+		formatString: 0
+		lineageTag: 67c4659e-b9e6-4921-9ab8-c3f2ba65acfd
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MonthNum]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 820ad54f-5e69-4e2c-90e6-90c6625dbf44
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+		sortByColumn: MonthNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 8925fa0d-c7e9-428d-ab16-384031ed60c7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		lineageTag: af6a346c-e7b2-4e03-a266-a69d50d3e24a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [YearMonth]
+		sortByColumn: YearMonthKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Year'
+		lineageTag: dbda20cb-d9e3-46f6-a560-757242f62f98
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Year]
+		sortByColumn: YearMonthKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthKey
+		formatString: 0
+		lineageTag: 34111072-925f-4e68-aefe-fb55f8a092b0
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: [YearMonthKey]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FY Start Year'
+		formatString: 0
+		lineageTag: cac26840-8eed-43e2-a2d6-a3c2664bad11
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [FY Start Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		lineageTag: 46f58862-5b38-47f1-a358-c7ddfa751fa2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fiscal Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Date = calculated
+		mode: import
+		source =
+				
+				VAR Cal =
+				    CALENDARAUTO(6)   -- FY ends in June (July 1 -> June 30)
+				RETURN
+				ADDCOLUMNS(
+				    Cal,
+				    "Year", YEAR([Date]),
+				    "MonthNum", MONTH([Date]),
+				    "Month", FORMAT([Date], "MMM"),
+				    "Quarter", "Q" & INT( (MONTH([Date]) + 2) / 3 ),
+				    "YearMonth", FORMAT([Date], "YYYY-MM"),
+				    "Month Year", FORMAT([Date], "MMM yyyy"),
+				
+				    -- Sorting keys (important!)
+				    "YearMonthKey", YEAR([Date]) * 100 + MONTH([Date]),
+				
+				    -- Fiscal Year (July -> June)
+				    "FY Start Year", YEAR([Date]) - IF(MONTH([Date]) < 7, 1, 0),
+				    "Fiscal Year",
+				        "FY "
+				        & FORMAT( YEAR([Date]) - IF(MONTH([Date]) < 7, 1, 0), "00")
+				        & "-"
+				        & FORMAT( YEAR([Date]) - IF(MONTH([Date]) < 7, 1, 0) + 1, "00")
+				)
+
+	annotation PBI_Id = ef395664aadf489fbb25f087e41def3c
+

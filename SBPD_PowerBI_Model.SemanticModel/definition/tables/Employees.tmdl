@@ -1,0 +1,1156 @@
+table Employees
+	lineageTag: ecf49c3f-86cb-4ed4-8b40-c989745b514b
+
+	column RowNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f25518a-e07f-484c-8715-e65462381037
+		summarizeBy: none
+		sourceColumn: RowNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: ffd72aeb-1126-4455-8b55-708a571eabc8
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Docusign Status'
+		dataType: string
+		lineageTag: fe0ea197-4c0f-4b07-a70e-af122e802a5a
+		summarizeBy: none
+		sourceColumn: Docusign Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Column'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d3556ac-809e-4630-a1e1-d8b96b980cae
+		summarizeBy: none
+		sourceColumn: Primary Column
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee First Name'
+		dataType: string
+		lineageTag: c48ea031-5883-47b2-b58c-cf11b92144e7
+		summarizeBy: none
+		sourceColumn: Employee First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Last Name'
+		dataType: string
+		lineageTag: 76413c0f-3e42-42d4-bd24-f4c1043131c8
+		summarizeBy: none
+		sourceColumn: Employee Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: d6318d95-a601-4230-9d70-a6d922912ce6
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Level'
+		dataType: string
+		lineageTag: b149b867-0552-481c-a53c-7e1ffdab1cad
+		summarizeBy: none
+		sourceColumn: Job Class Level
+		sortByColumn: SeniorityRank
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Step'
+		dataType: string
+		lineageTag: 1da70188-fb1e-43a0-b969-e7892a0e9f8a
+		summarizeBy: none
+		sourceColumn: Job Class Step
+		sortByColumn: StepRank
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Anniversary Month'
+		dataType: string
+		lineageTag: 2154f735-4a14-4e94-9f46-b7e4244ef511
+		summarizeBy: none
+		sourceColumn: Anniversary Month
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probationary EPR'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 876698e0-738e-45d1-a371-2b6041d66f25
+		summarizeBy: none
+		sourceColumn: Probationary EPR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Quarter'
+		dataType: string
+		lineageTag: 35fa843d-6427-43af-b274-590508ba2778
+		summarizeBy: none
+		sourceColumn: Probation Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Due Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5126b882-6428-416e-9add-e9974f2aca6d
+		summarizeBy: none
+		sourceColumn: Probation Due Date
+
+		variation Variation
+			isDefault
+			relationship: 53b490f0-a3bd-43eb-a1b1-66024b4cf8ae
+			defaultHierarchy: LocalDateTable_77f695fb-2df4-4095-b384-b5763608ba3a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Late EPR'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f0f05ca2-e2d7-4321-b437-882ba944bc3c
+		summarizeBy: none
+		sourceColumn: Late EPR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Signed EPR Due Date'
+		dataType: dateTime
+		formatString: mm/dd/yy
+		lineageTag: e9b1027e-f639-4d3b-afcd-eea0b0a87826
+		summarizeBy: none
+		sourceColumn: Signed EPR Due Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Previous EPR Actual Due Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 93161b9b-1211-4c88-8e2a-e67004bbf1b6
+		summarizeBy: none
+		sourceColumn: Previous EPR Actual Due Date
+
+		variation Variation
+			isDefault
+			relationship: 698b0f63-018a-4baa-949c-60675d3c7d14
+			defaultHierarchy: LocalDateTable_d41bd51c-4ac3-4230-9f4f-4440ea5080cd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Supervisor
+		dataType: string
+		lineageTag: 5342a3f9-0d35-451f-8ace-b5fc414520a4
+		summarizeBy: none
+		sourceColumn: Supervisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column HR
+		dataType: string
+		lineageTag: c5173196-ff53-4cd8-adca-5d99d6e19f93
+		summarizeBy: none
+		sourceColumn: HR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 1'
+		dataType: string
+		lineageTag: 464bffa1-4b22-4269-aed3-df5905633c78
+		summarizeBy: none
+		sourceColumn: Supervisor 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2'
+		dataType: string
+		lineageTag: 735b458e-4017-42e9-b4a3-02391ef8f195
+		summarizeBy: none
+		sourceColumn: Supervisor 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3'
+		dataType: string
+		lineageTag: a9677a98-ec11-4a63-ba29-bef73dff37bc
+		summarizeBy: none
+		sourceColumn: Supervisor 3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR'
+		dataType: string
+		lineageTag: 7637e824-7d77-4f34-88d9-1330bc233ecb
+		summarizeBy: none
+		sourceColumn: Head of HR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office'
+		dataType: string
+		lineageTag: 1bd2ed25-c659-41c0-ac7e-cb6ba28de786
+		summarizeBy: none
+		sourceColumn: Head of Office
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2 approval'
+		dataType: string
+		lineageTag: 2c68a6c5-db88-45e8-85a4-b85c7ab152a2
+		summarizeBy: none
+		sourceColumn: Supervisor 2 approval
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3 approval'
+		dataType: string
+		lineageTag: 031077c8-884a-40ef-a217-4abbb7826b80
+		summarizeBy: none
+		sourceColumn: Supervisor 3 approval
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR approval'
+		dataType: string
+		lineageTag: 7f98a667-150b-4b15-a325-0fe70e9013ad
+		summarizeBy: none
+		sourceColumn: Head of HR approval
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office approval'
+		dataType: string
+		lineageTag: 021cec41-42ff-4cbe-adc1-e669c6c0dfcb
+		summarizeBy: none
+		sourceColumn: Head of Office approval
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status_Sort
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 6ceb2ea1-2498-4f17-badc-1ad71bdf025d
+		summarizeBy: sum
+		sourceColumn: Status_Sort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DocuSign_Normalized
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: c4fec7ec-f9ed-4375-8ae5-511bf0befb09
+		summarizeBy: none
+		sourceColumn: DocuSign_Normalized
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DocuSign_Sort
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 4bc49a39-3c71-4f64-a5d4-cb46e90dd8c9
+		summarizeBy: sum
+		sourceColumn: DocuSign_Sort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Flag_StatusBlank
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Dempsey
+		lineageTag: dca1b7b1-bd31-403f-9e5d-ab650113b912
+		summarizeBy: none
+		sourceColumn: Flag_StatusBlank
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName_Clean
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: c878307a-d4ec-405d-9e87-5a521ab0ad3b
+		summarizeBy: none
+		sourceColumn: FirstName_Clean
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName_Clean
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 9fd75300-54ec-4b12-a1a7-9252a6fa75e4
+		summarizeBy: none
+		sourceColumn: LastName_Clean
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Name'
+		dataType: string
+		isHidden
+		lineageTag: d920229c-84e6-4ef3-8352-32fb5e151806
+		summarizeBy: none
+		sourceColumn: Full Name
+		sortByColumn: 'Full Name (Sort)'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Name (Sort)'
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 7e17ee6e-6008-475c-b9af-fcc947c9e79a
+		summarizeBy: none
+		sourceColumn: Full Name (Sort)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Initials (tables/badges)'
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: fe589a49-bf61-4d2a-b4fa-0b1700022a3a
+		summarizeBy: none
+		sourceColumn: Initials (tables/badges)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameKey
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 58de2dbb-432d-450b-81c8-b4a59e9bedcf
+		summarizeBy: none
+		sourceColumn: NameKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobClass_Clean
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 2375db81-7353-491a-9010-66cbe1ff85dc
+		summarizeBy: none
+		sourceColumn: JobClass_Clean
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobClass_NAtoUnassigned
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 7532258c-73dc-4979-bf92-f445d7c617ea
+		summarizeBy: none
+		sourceColumn: JobClass_NAtoUnassigned
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SeniorityRank
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 5d10b264-55f9-481c-825c-f000a4226798
+		summarizeBy: sum
+		sourceColumn: SeniorityRank
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column StepRank
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 1c889d2c-4599-40bd-af10-2535b96e7518
+		summarizeBy: none
+		sourceColumn: StepRank
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProbationQNum
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: e8d4764a-c350-45f8-b4e7-5a9fc84aead1
+		summarizeBy: sum
+		sourceColumn: ProbationQNum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueYear
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 2f1db227-9f6c-4afa-bd71-0573bd1ed4b8
+		summarizeBy: sum
+		sourceColumn: DueYear
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueYearMonth
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: e6d7338b-5c79-4f65-8803-2d4b2b295e1b
+		summarizeBy: none
+		sourceColumn: DueYearMonth
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Overdue_Open
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Dempsey
+		lineageTag: 8b286b49-fa82-4538-880c-c2eafaa35ea8
+		summarizeBy: none
+		sourceColumn: Overdue_Open
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueNext30_Open
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 92b5fa7e-ad5f-4189-8589-2b6f60c6a5e0
+		summarizeBy: none
+		sourceColumn: DueNext30_Open
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProbationOverdue
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: a9398178-6aa1-4e54-80eb-0b57e806288e
+		summarizeBy: none
+		sourceColumn: ProbationOverdue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApproverCount
+		dataType: int64
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 6c302e72-9287-4eb0-b47c-c5ce6dd6d03f
+		summarizeBy: sum
+		sourceColumn: ApproverCount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MissingSup1_Open
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Dempsey
+		lineageTag: b6b554e4-0b91-40e9-922e-7c88f08bf2a6
+		summarizeBy: none
+		sourceColumn: MissingSup1_Open
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LateCheckboxMismatch
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Dempsey
+		lineageTag: 94195ce3-3e67-4c5f-af36-57bbdfc83f98
+		summarizeBy: none
+		sourceColumn: LateCheckboxMismatch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supervisor2_Approval_Normalized
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: c23e1ac5-0207-4710-b4d2-8cfcf5901465
+		summarizeBy: none
+		sourceColumn: Supervisor2_Approval_Normalized
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supervisor3_Approval_Normalized
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: b7f9e5c9-f9cd-4539-9928-5f2ad5c32390
+		summarizeBy: none
+		sourceColumn: Supervisor3_Approval_Normalized
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column HeadHR_Approval_Normalized
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: cc08a570-7224-42cb-b9c0-1f3548117821
+		summarizeBy: none
+		sourceColumn: HeadHR_Approval_Normalized
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column HeadOffice_Approval_Normalized
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: c8977ac1-30e7-457c-ba43-ee89d1c3321f
+		summarizeBy: none
+		sourceColumn: HeadOffice_Approval_Normalized
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Common sort helper'
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 846a61b2-0d4c-40eb-a99e-799eaa001c68
+		summarizeBy: none
+		sourceColumn: Common sort helper
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stage_Sort
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 485eae65-f1e3-4ff4-808c-e35f93214c01
+		summarizeBy: none
+		sourceColumn: Stage_Sort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NextApproverEmail
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: e021357b-67ff-40fe-adc1-a45bdec134ac
+		summarizeBy: none
+		sourceColumn: NextApproverEmail
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NextApproverRole
+		dataType: string
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: 3e4c072f-b92d-482b-bf20-e3b7fb919db5
+		summarizeBy: none
+		sourceColumn: NextApproverRole
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EPR Key' = ```
+			
+			VAR emp = Employees[Primary Column]
+			VAR due = Employees[Signed EPR Due Date]
+			RETURN IF( NOT ISBLANK(emp) && NOT ISBLANK(due),
+			           emp & "|" & FORMAT(due, "yyyymmdd") )
+			
+			```
+		isHidden
+		displayFolder: Dempsey
+		lineageTag: ee74d53e-6731-45d0-ae59-48fc1e59f212
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EPR Status Order' =
+			
+			VAR due = Employees[Signed EPR Due Date]
+			VAR norm = Employees[Status_Normalized]
+			RETURN
+			IF( norm = "Completed", 3,
+			    IF( NOT ISBLANK(due) && due < TODAY(), 2, 1 )
+			)
+		isHidden
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 9b9da938-d1be-46fa-84fc-241a9cd0e5e8
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EPR Status' =
+			
+			VAR due = Employees[Signed EPR Due Date]
+			VAR norm = Employees[Status_Normalized]
+			RETURN
+			IF( norm = "Completed", "Completed",
+			    IF( NOT ISBLANK(due) && due < TODAY(), "Past Due", "Open" )
+			)
+		displayFolder: Dempsey
+		lineageTag: b38d3098-cbf0-47d4-a15c-06ffc8f9837f
+		summarizeBy: none
+		sortByColumn: 'EPR Status Order'
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status_Normalized =
+			
+			VAR s =
+			    COALESCE( TRIM( Employees[Status] ), "" )
+			VAR isCompleted =
+			    CONTAINSSTRING( LOWER(s), "complete" )   // handles "Completed", "Complete", case/space variations
+			RETURN
+			IF( isCompleted, "Completed", "Open" )
+		displayFolder: Dempsey
+		lineageTag: 73ced289-a295-4e75-a1e8-78c5e6e3671e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days to Completion (row)' =
+			
+			VAR due    = Employees[Previous EPR Actual Due Date]
+			VAR signed = Employees[Previous EPR Signed]
+			RETURN
+			IF(
+			    NOT ISBLANK(due) && NOT ISBLANK(signed),
+			    DATEDIFF(due, signed, DAY)   -- + = late, 0 = on time, - = early
+			)
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: c3b00462-5c97-4b74-81bc-9173427f9744
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Due Year' = YEAR ( Employees[Previous EPR Actual Due Date] )
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 2d6bcf8b-9b1c-496c-a5f5-3f64f14fc279
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Due Month' = FORMAT ( Employees[Previous EPR Actual Due Date], "MMM" )
+		displayFolder: Dempsey
+		lineageTag: c72ab1c6-4a5d-4bda-89ae-26c64165b81e
+		summarizeBy: none
+		sortByColumn: 'Due MonthNo'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Due MonthNo' = MONTH ( Employees[Previous EPR Actual Due Date] )
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 8c3f4b5c-1d8a-4679-a31d-a4d1e15255c2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days Late (Completed)' = ```
+			
+			VAR due = Employees[Previous EPR Actual Due Date]
+			VAR signed = Employees[Previous EPR Signed]
+			RETURN
+			IF( NOT ISBLANK(due) && NOT ISBLANK(signed) && signed > due,
+			    DATEDIFF(due, signed, DAY),
+			    0
+			)
+			
+			```
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 384ec232-cfa3-4b23-a3b9-134dc36c146f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dempsey Signed Due Date' = Employees[Signed EPR Due Date]
+		formatString: General Date
+		displayFolder: Dempsey
+		lineageTag: 61b5f9a3-6a18-47be-819a-186c4ee09eba
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 391808db-22e8-47ba-851a-f7e9c4ea72d6
+			defaultHierarchy: LocalDateTable_7a7f7734-5734-4fb6-aea1-5176cb0bb84b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dempsey Prev Actual Due Date' = Employees[Previous EPR Actual Due Date]
+		formatString: General Date
+		displayFolder: Dempsey
+		lineageTag: 0c8bb3e3-2f49-4520-84f4-e54c2aadc804
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 71a2afc1-9b14-4039-b1fd-b3a2c1826940
+			defaultHierarchy: LocalDateTable_a3ce6086-913f-4d97-9909-b6e1d9889677.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dempsey Prev Signed Date' = Employees[Previous EPR Signed]
+		formatString: General Date
+		displayFolder: Dempsey
+		lineageTag: 01907659-e9ad-47de-94af-711d122fd07b
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 5b4d3de9-0f00-4df4-863c-72ab0c1903ef
+			defaultHierarchy: LocalDateTable_322ecb99-96bf-4ef2-b594-af5cbbaa5d10.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days Late (row)' =
+			
+			VAR due    = Employees[Dempsey Prev Actual Due Date]
+			VAR signed = Employees[Dempsey Prev Signed Date]
+			RETURN
+			IF( OR(ISBLANK(due), ISBLANK(signed)), BLANK(),
+			    DATEDIFF(due, signed, DAY)
+			)
+		formatString: 0
+		displayFolder: Dempsey
+		lineageTag: 5c971bde-f3ea-4508-85e6-b47ec3eedce2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Late EPR - Value Fix'
+		dataType: string
+		displayFolder: Dempsey
+		lineageTag: 84b75328-3b36-44c2-847f-88fb9cb785c8
+		summarizeBy: none
+		sourceColumn: Late EPR - Value Fix
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reset Ready'
+		dataType: string
+		lineageTag: 7c46f21f-bbf5-42de-837c-f257069f9676
+		summarizeBy: none
+		sourceColumn: Reset Ready
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employment Status'
+		dataType: string
+		lineageTag: 127c23c3-4a61-48c0-a0df-18272f8394a3
+		summarizeBy: none
+		sourceColumn: Employment Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Previous EPR Signed'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 71b539eb-a4f4-4c80-9fc0-f556545682d2
+		summarizeBy: none
+		sourceColumn: Previous EPR Signed
+
+		variation Variation
+			isDefault
+			relationship: cfc9840f-f6ef-4c71-bc64-ac30042c954a
+			defaultHierarchy: LocalDateTable_f51d8a49-b304-40ca-b1fa-cc90f1455ac5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'EPR Due Next 30 Days' = ```
+			
+			VAR DueDate = Employees[Signed EPR Due Date]   -- current EPR due date
+			RETURN
+			IF (
+			    NOT ISBLANK ( DueDate )
+			        && DueDate >= TODAY ()
+			        && DueDate <= TODAY () + 30,
+			    TRUE (),
+			    FALSE ()
+			)
+			
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Dempsey
+		lineageTag: 30f6b262-ce01-4215-b908-249ba2481870
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Type' = ```
+			
+			SWITCH (
+			    TRUE(),
+			    Employees[Employment Status] = "probationary",       "Original Probation",
+			    Employees[Employment Status] = "flex probationary",  "Flex Probation",
+			    BLANK()
+			)
+			
+			```
+		displayFolder: Dempsey
+		lineageTag: 50cd0f80-798e-4fa4-bc41-e37e773480a5
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'At Risk Flag' = ```
+			
+			VAR DaysToDue =
+			    DATEDIFF ( TODAY(), Employees[Signed EPR Due Date], DAY )
+			RETURN
+			IF (
+			    Employees[Status] = "Not Created"
+			        && DaysToDue >= 0          -- due today or in the future
+			        && DaysToDue <= 15,        -- within the next 15 days
+			    "At Risk",
+			    BLANK ()
+			)
+			
+			```
+		displayFolder: Dempsey
+		lineageTag: f4ae50eb-2618-41c1-a253-ca182c290ca6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EPR Status (Donut)' = ```
+			
+			SWITCH (
+			    TRUE(),
+			    Employees[Status] = "Not Created",                     "Not Yet Due",
+			    Employees[Status] = "With HR",                         "With HR",
+			    Employees[Status] IN { "Saving to Box", "Completed" }, "Completed",
+			    BLANK ()
+			)
+			
+			```
+		displayFolder: Dempsey
+		lineageTag: 961ad027-b989-4115-9d1b-83f84a6e958c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Employees = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"6311914306332548" = Source{[Key="6311914306332548"]}[Data],
+				    #"2580213150994308" = #"6311914306332548"{[Key="2580213150994308"]}[Data],
+				    #"Renamed Columns5" = Table.RenameColumns(#"2580213150994308",{{"Previous EPR Signed", "Pervious EPR Signed"}}),
+				    #"Changed Type18" = Table.TransformColumnTypes(#"Renamed Columns5",{{"RowNumber", Int64.Type}, {"Status", type text}, {"Docusign Status", type text}, {"Primary Column", Int64.Type}, {"Employee First Name", type text}, {"Employee Last Name", type text}, {"Job Class", type text}, {"Job Class Level", type text}, {"Job Class Step", type text}, {"Anniversary Month", type text}, {"Probationary EPR", type logical}, {"Probation Quarter", type text}, {"Probation Due Date", type date}, {"Late EPR", type logical}, {"Signed EPR Due Date", type date}, {"Pervious EPR Signed", type date}, {"Previous EPR Actual Due Date", type date}, {"Supervisor", type text}, {"HR", type text}, {"Supervisor 1", type text}, {"Supervisor 2", type text}, {"Supervisor 3", type text}, {"Head of HR", type text}, {"Head of Office", type text}, {"Supervisor 2 approval", type text}, {"Supervisor 3 approval", type text}, {"Head of HR approval", type text}, {"Head of Office approval", type text}, {"Reset Ready", type text}}),
+				    #"Changed Type17" = Table.TransformColumnTypes(#"Changed Type18",{{"RowNumber", Int64.Type}, {"Status", type text}, {"Docusign Status", type text}, {"Primary Column", Int64.Type}, {"Employee First Name", type text}, {"Employee Last Name", type text}, {"Job Class", type text}, {"Job Class Level", type text}, {"Job Class Step", type text}, {"Anniversary Month", type text}, {"Probationary EPR", type logical}, {"Probation Quarter", type text}, {"Probation Due Date", type date}, {"Late EPR", type logical}, {"Signed EPR Due Date", type date}, {"Pervious EPR Signed", type date}, {"Previous EPR Actual Due Date", type date}, {"Supervisor", type text}, {"HR", type text}, {"Supervisor 1", type text}, {"Supervisor 2", type text}, {"Supervisor 3", type text}, {"Head of HR", type text}, {"Head of Office", type text}, {"Supervisor 2 approval", type text}, {"Supervisor 3 approval", type text}, {"Head of HR approval", type text}, {"Head of Office approval", type text}, {"Reset Ready", type text}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type17", "Status_Normalized", each if [Status] = null or Text.Trim([Status]) = "" then "Not Created"
+				else if Text.Trim([Status]) = "Complete" then "Completed"
+				else [Status]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Status_Normalized", type text}}),
+				    #"Added Custom1" = Table.AddColumn(#"Changed Type", "Status_Sort", each if [Status_Normalized] = "Not Created" then 1
+				else if [Status_Normalized] = "In Progress" then 2
+				else if [Status_Normalized] = "Submitted" then 3
+				else if [Status_Normalized] = "Completed" then 4
+				else 5),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom1",{{"Status_Sort", Int64.Type}}),
+				    #"Added Custom2" = Table.AddColumn(#"Changed Type1", "DocuSign_Normalized", each if [Status_Normalized] = "Completed" then "Completed"
+				else if [Status_Normalized] = "Not Created" then "N/A — Not Created"
+				else if [Docusign Status] = null or Text.Trim([Docusign Status]) = "" then "Not Sent"
+				else [Docusign Status]),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom2",{{"DocuSign_Normalized", type text}}),
+				    #"Added Custom3" = Table.AddColumn(#"Changed Type2", "DocuSign_Sort", each let order = {"Not Sent","Sent","Delivered","Viewed","Completed","Declined","Voided","N/A — Not Created"}
+				in List.PositionOf(order, [DocuSign_Normalized]) + 1),
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Added Custom3",{{"DocuSign_Sort", Int64.Type}}),
+				    #"Added Custom4" = Table.AddColumn(#"Changed Type3", "Flag_StatusBlank", each [Status] = null or Text.Trim([Status]) = ""),
+				    #"Changed Type4" = Table.TransformColumnTypes(#"Added Custom4",{{"Flag_StatusBlank", type logical}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type4",{{"Primary Column", "EmployeeID"}}),
+				    #"Changed Type5" = Table.TransformColumnTypes(#"Renamed Columns",{{"EmployeeID", Int64.Type}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type5",{{"Employee First Name", Text.Trim, type text}, {"Employee Last Name", Text.Trim, type text}}),
+				    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"Employee First Name", Text.Clean, type text}, {"Employee Last Name", Text.Clean, type text}}),
+				    #"Added Custom5" = Table.AddColumn(#"Cleaned Text", "FirstName_Clean", each Text.Proper(Text.Trim([Employee First Name]))),
+				    #"Added Custom6" = Table.AddColumn(#"Added Custom5", "LastName_Clean", each Text.Proper(Text.Trim([Employee Last Name]))),
+				    #"Added Custom7" = Table.AddColumn(#"Added Custom6", "Full Name", each [FirstName_Clean] & " " & [LastName_Clean]),
+				    #"Added Custom8" = Table.AddColumn(#"Added Custom7", "Full Name (Sort)", each [LastName_Clean] & ", " & [FirstName_Clean]),
+				    #"Added Custom9" = Table.AddColumn(#"Added Custom8", "Initials", each Text.Upper(Text.Start([FirstName_Clean],1) & Text.Start([LastName_Clean],1))),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Added Custom9",{{"Initials", "Initials (tables/badges)"}}),
+				    #"Added Custom10" = Table.AddColumn(#"Renamed Columns1", "NameKey", each Text.Upper([LastName_Clean] & "|" & [FirstName_Clean])),
+				    #"Added Custom11" = Table.AddColumn(#"Added Custom10", "MissingName?", each ([FirstName_Clean] = null or [FirstName_Clean] = "" or
+				 [LastName_Clean]  = null or [LastName_Clean]  = "")),
+				    #"Removed Columns" = Table.RemoveColumns(#"Added Custom11",{"MissingName?"}),
+				    #"Added Custom12" = Table.AddColumn(#"Removed Columns", "MissingName?", each ([FirstName_Clean] = null or [FirstName_Clean] = "" or
+				 [LastName_Clean]  = null or [LastName_Clean]  = "")),
+				    #"Changed Type6" = Table.TransformColumnTypes(#"Added Custom12",{{"MissingName?", type logical}}),
+				    #"Trimmed Text1" = Table.TransformColumns(#"Changed Type6",{{"Job Class", Text.Trim, type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Trimmed Text1",{{"Job Class", Text.Proper, type text}}),
+				    #"Added Custom13" = Table.AddColumn(#"Capitalized Each Word", "JobClass_Clean", each if [Job Class] = null or Text.Trim([Job Class]) = "" then null
+				else Text.Proper(Text.Trim([Job Class]))),
+				    #"Added Custom14" = Table.AddColumn(#"Added Custom13", "JobClass_NAtoUnassigned", each if [JobClass_Clean] = null then "Unassigned" else [JobClass_Clean]),
+				    #"Added Custom15" = Table.AddColumn(#"Added Custom14", "SeniorityRank", each let lvl = Text.Upper(Text.Trim(if [Job Class Level] = null then "" else [Job Class Level])) in
+				    if lvl = "" or lvl = "N/A" then null
+				else if lvl = "INTERN" then 0
+				else if lvl = "I"      then 1
+				else if lvl = "II"     then 2
+				else if lvl = "III"    then 3
+				else if lvl = "IV"     then 4
+				else if Text.StartsWith(lvl,"SENIOR") then 5
+				else null),
+				    #"Changed Type7" = Table.TransformColumnTypes(#"Added Custom15",{{"SeniorityRank", Int64.Type}}),
+				    #"Added Custom16" = Table.AddColumn(#"Changed Type7", "StepRank", each let s = Text.Upper(Text.Trim(if [Job Class Step] = null then "" else [Job Class Step])) in
+				    if s="A" then 1 else if s="B" then 2 else if s="C" then 3 else if s="D" then 4 else if s="E" then 5 else null),
+				    #"Changed Type8" = Table.TransformColumnTypes(#"Added Custom16",{{"Probation Due Date", type date}, {"Signed EPR Due Date", type date}, {"Pervious EPR Signed", type date}, {"Previous EPR Actual Due Date", type date}, {"Probationary EPR", type logical}, {"Late EPR", type logical}, {"Supervisor", type text}, {"HR", type text}, {"Supervisor 1", type text}, {"Supervisor 2", type text}, {"Supervisor 3", type text}, {"Head of HR", type text}, {"Head of Office", type text}}),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Changed Type8",{{"Pervious EPR Signed", "Previous EPR Signed"}}),
+				    #"Trimmed Text2" = Table.TransformColumns(#"Renamed Columns2",{{"Supervisor", Text.Trim, type text}, {"HR", Text.Trim, type text}, {"Supervisor 1", Text.Trim, type text}, {"Supervisor 2", Text.Trim, type text}, {"Supervisor 3", Text.Trim, type text}, {"Head of HR", Text.Trim, type text}, {"Head of Office", Text.Trim, type text}}),
+				    #"Cleaned Text1" = Table.TransformColumns(#"Trimmed Text2",{{"Supervisor", Text.Clean, type text}, {"HR", Text.Clean, type text}, {"Supervisor 1", Text.Clean, type text}, {"Supervisor 2", Text.Clean, type text}, {"Supervisor 3", Text.Clean, type text}, {"Head of HR", Text.Clean, type text}, {"Head of Office", Text.Clean, type text}}),
+				    #"Lowercased Text" = Table.TransformColumns(#"Cleaned Text1",{{"Supervisor", Text.Lower, type text}, {"HR", Text.Lower, type text}, {"Supervisor 1", Text.Lower, type text}, {"Supervisor 2", Text.Lower, type text}, {"Supervisor 3", Text.Lower, type text}, {"Head of HR", Text.Lower, type text}, {"Head of Office", Text.Lower, type text}}),
+				    #"Added Custom17" = Table.AddColumn(#"Lowercased Text", "AnnivMonthNum", each let m = Text.Upper(Text.Start(Text.Trim(if [Anniversary Month]=null then "" else [Anniversary Month]),3)) in
+				    if m="JAN" then 1 else if m="FEB" then 2 else if m="MAR" then 3 else
+				    if m="APR" then 4 else if m="MAY" then 5 else if m="JUN" then 6 else
+				    if m="JUL" then 7 else if m="AUG" then 8 else if m="SEP" or m="SEPT" then 9 else
+				    if m="OCT" then 10 else if m="NOV" then 11 else if m="DEC" then 12 else null),
+				    #"Changed Type9" = Table.TransformColumnTypes(#"Added Custom17",{{"AnnivMonthNum", Int64.Type}}),
+				    #"Added Custom18" = Table.AddColumn(#"Changed Type9", "ProbationQNum", each let q = Text.Upper(Text.Trim(if [Probation Quarter]=null then "" else [Probation Quarter])) in
+				    if q="" or q="N/A" then null
+				    else if Text.Contains(q,"Q") then
+				        try Number.FromText(Text.BeforeDelimiter(q,"Q")) otherwise
+				        try Number.FromText(Text.AfterDelimiter(q,"Q")) otherwise null
+				    else null),
+				    #"Changed Type10" = Table.TransformColumnTypes(#"Added Custom18",{{"ProbationQNum", Int64.Type}}),
+				    #"Added Custom19" = Table.AddColumn(#"Changed Type10", "DueYear", each if [Signed EPR Due Date]=null then null else Date.Year([Signed EPR Due Date])),
+				    #"Added Custom20" = Table.AddColumn(#"Added Custom19", "DueYearMonth", each if [Signed EPR Due Date]=null then null else Date.ToText([Signed EPR Due Date], "yyyy-MM")),
+				    #"Changed Type11" = Table.TransformColumnTypes(#"Added Custom20",{{"DueYear", Int64.Type}, {"DueYearMonth", type text}}),
+				    #"Added Custom21" = Table.AddColumn(#"Changed Type11", "Overdue_Open", each let due = [Signed EPR Due Date],
+				    st  = [Status_Normalized]
+				in  due <> null and st <> "Completed" and due < Date.From(DateTime.LocalNow())),
+				    #"Changed Type12" = Table.TransformColumnTypes(#"Added Custom21",{{"Overdue_Open", type logical}}),
+				    #"Added Custom22" = Table.AddColumn(#"Changed Type12", "DueNext30_Open", each let due = [Signed EPR Due Date],
+				    st  = [Status_Normalized],
+				    today = Date.From(DateTime.LocalNow())
+				in  due <> null and st <> "Completed" and due >= today and due <= Date.AddDays(today,30)),
+				    #"Added Custom23" = Table.AddColumn(#"Added Custom22", "ProbationOverdue", each [Probationary EPR]=true and [Probation Due Date] <> null
+				and [Status_Normalized] <> "Completed"
+				and [Probation Due Date] < Date.From(DateTime.LocalNow())),
+				    #"Added Custom24" = Table.AddColumn(#"Added Custom23", "ApproverCount", each let
+				    s1  = if [Supervisor 1] = null or Text.Trim([Supervisor 1]) = "" then null else [Supervisor 1],
+				    s2  = if [Supervisor 2] = null or Text.Trim([Supervisor 2]) = "" then null else [Supervisor 2],
+				    s3  = if [Supervisor 3] = null or Text.Trim([Supervisor 3]) = "" then null else [Supervisor 3],
+				    hhr = if [Head of HR]   = null or Text.Trim([Head of HR])   = "" then null else [Head of HR],
+				    hof = if [Head of Office] = null or Text.Trim([Head of Office]) = "" then null else [Head of Office]
+				in
+				    List.NonNullCount({s1, s2, s3, hhr, hof})),
+				    #"Changed Type13" = Table.TransformColumnTypes(#"Added Custom24",{{"ApproverCount", Int64.Type}}),
+				    #"Added Custom25" = Table.AddColumn(#"Changed Type13", "MissingSup1_Open", each [Status_Normalized] <> "Completed"
+				and ( [Supervisor 1] = null or Text.Trim([Supervisor 1]) = "" )),
+				    #"Changed Type14" = Table.TransformColumnTypes(#"Added Custom25",{{"MissingSup1_Open", type logical}}),
+				    #"Added Custom26" = Table.AddColumn(#"Changed Type14", "MissingAnyApprover_Open", each [Status_Normalized] <> "Completed" and [ApproverCount] = 0),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Added Custom26",{"MissingAnyApprover_Open"}),
+				    #"Added Custom27" = Table.AddColumn(#"Removed Columns1", "LateCheckboxMismatch", each let late = [Late EPR],
+				    due  = [Signed EPR Due Date],
+				    sign = try [Signed EPR Date] otherwise null
+				in  if sign=null or due=null then false
+				    else ( (sign>due) <> (late=true) )),
+				    #"Changed Type15" = Table.TransformColumnTypes(#"Added Custom27",{{"LateCheckboxMismatch", type logical}}),
+				    #"Added Custom28" = Table.AddColumn(#"Changed Type15", "Supervisor2_Approval_Normalized", each if [Status_Normalized] = "Completed" then "Approved"
+				  else if [Supervisor 2 approval] = null or Text.Trim([Supervisor 2 approval]) = "" then "Pending"
+				  else Text.Proper(Text.Trim([Supervisor 2 approval]))),
+				    #"Added Custom29" = Table.AddColumn(#"Added Custom28", "Supervisor3_Approval_Normalized", each if [Status_Normalized] = "Completed" then "Approved"
+				  else if [Supervisor 3 approval] = null or Text.Trim([Supervisor 3 approval]) = "" then "Pending"
+				  else Text.Proper(Text.Trim([Supervisor 3 approval]))),
+				    #"Added Custom30" = Table.AddColumn(#"Added Custom29", "HeadHR_Approval_Normalized", each if [Status_Normalized] = "Completed" then "Approved"
+				  else if [Head of HR approval] = null or Text.Trim([Head of HR approval]) = "" then "Pending"
+				  else Text.Proper(Text.Trim([Head of HR approval]))),
+				    #"Added Custom31" = Table.AddColumn(#"Added Custom30", "HeadOffice_Approval_Normalized", each if [Status_Normalized] = "Completed" then "Approved"
+				  else if [Head of Office approval] = null or Text.Trim([Head of Office approval]) = "" then "Pending"
+				  else Text.Proper(Text.Trim([Head of Office approval]))),
+				    #"Added Custom32" = Table.AddColumn(#"Added Custom31", "Common sort helper", each let order = {"Pending","Submitted","Approved","Rejected","Declined"}
+				  in List.PositionOf(order, [Supervisor2_Approval_Normalized]) + 1),
+				    #"Added Custom33" = Table.AddColumn(#"Added Custom32", "Stage", each let st = [Status_Normalized],
+				    s1 = if [Supervisor 1]=null or Text.Trim([Supervisor 1])="" then null else [Supervisor 1],
+				    s2 = if [Supervisor 2]=null or Text.Trim([Supervisor 2])="" then null else [Supervisor 2],
+				    s3 = if [Supervisor 3]=null or Text.Trim([Supervisor 3])="" then null else [Supervisor 3],
+				    hhr= if [Head of HR]=null or Text.Trim([Head of HR])="" then null else [Head of HR],
+				    hof= if [Head of Office]=null or Text.Trim([Head of Office])="" then null else [Head of Office]
+				in
+				    if st = "Completed" then "Completed"
+				    else if s1 = null then "Awaiting HR (assign Sup1)"
+				    else if s2 = null then "With Supervisor 1"
+				    else if s3 = null then "With Supervisor 2"
+				    else if hhr= null then "With Supervisor 3"
+				    else if hof= null then "With Head of HR"
+				    else "With Head of Office"),
+				    #"Added Custom34" = Table.AddColumn(#"Added Custom33", "Stage_Sort", each let order = {
+				    "Awaiting HR (assign Sup1)",
+				    "With Supervisor 1","With Supervisor 2","With Supervisor 3",
+				    "With Head of HR","With Head of Office","Completed"}
+				in List.PositionOf(order,[Stage]) + 1),
+				    #"Added Custom35" = Table.AddColumn(#"Added Custom34", "NextApproverEmail", each let st = [Status_Normalized],
+				    s1 = if [Supervisor 1]=null or Text.Trim([Supervisor 1])="" then null else [Supervisor 1],
+				    s2 = if [Supervisor 2]=null or Text.Trim([Supervisor 2])="" then null else [Supervisor 2],
+				    s3 = if [Supervisor 3]=null or Text.Trim([Supervisor 3])="" then null else [Supervisor 3],
+				    hhr= if [Head of HR]=null or Text.Trim([Head of HR])="" then null else [Head of HR],
+				    hof= if [Head of Office]=null or Text.Trim([Head of Office])="" then null else [Head of Office]
+				in
+				    if st = "Completed" then null
+				    else if s1 = null then [HR]           // HR needs to assign Sup1
+				    else if s2 = null then s1
+				    else if s3 = null then s2
+				    else if hhr= null then s3
+				    else if hof= null then hhr
+				    else hof),
+				    #"Removed Columns2" = Table.RemoveColumns(#"Added Custom35",{"NextApproverEmail"}),
+				    #"Added Custom36" = Table.AddColumn(#"Removed Columns2", "NextApproverEmail", each let st = [Status_Normalized],
+				    s1 = if [Supervisor 1]=null or Text.Trim([Supervisor 1])="" then null else [Supervisor 1],
+				    s2 = if [Supervisor 2]=null or Text.Trim([Supervisor 2])="" then null else [Supervisor 2],
+				    s3 = if [Supervisor 3]=null or Text.Trim([Supervisor 3])="" then null else [Supervisor 3],
+				    hhr= if [Head of HR]=null or Text.Trim([Head of HR])="" then null else [Head of HR],
+				    hof= if [Head of Office]=null or Text.Trim([Head of Office])="" then null else [Head of Office]
+				in
+				    if st = "Completed" then null
+				    else if s1 = null then [HR]           // HR needs to assign Sup1
+				    else if s2 = null then s1
+				    else if s3 = null then s2
+				    else if hhr= null then s3
+				    else if hof= null then hhr
+				    else hof),
+				    #"Added Custom37" = Table.AddColumn(#"Added Custom36", "NextApproverRole", each if [Status_Normalized] = "Completed" then null
+				  else if [Supervisor 1] = null or Text.Trim([Supervisor 1]) = "" then "HR"
+				  else if [Supervisor 2] = null or Text.Trim([Supervisor 2]) = "" then "Supervisor 1"
+				  else if [Supervisor 3] = null or Text.Trim([Supervisor 3]) = "" then "Supervisor 2"
+				  else if [Head of HR]   = null or Text.Trim([Head of HR])   = "" then "Supervisor 3"
+				  else if [Head of Office]=null or Text.Trim([Head of Office])= "" then "Head of HR"
+				  else "Head of Office"),
+				    #"Capitalized Each Word1" = Table.TransformColumns(#"Added Custom37",{{"Supervisor", Text.Proper, type text}}),
+				    #"Removed Columns3" = Table.RemoveColumns(#"Capitalized Each Word1",{"AnnivMonthNum", "Status_Normalized", "MissingName?", "Stage"}),
+				    #"Renamed Columns3" = Table.RenameColumns(#"Removed Columns3",{{"EmployeeID", "Primary Column"}}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Renamed Columns3", "Late EPR", "Late EPR - Copy"),
+				    #"Replaced Value" = Table.ReplaceValue(#"Duplicated Column",null,false,Replacer.ReplaceValue,{"Late EPR - Copy"}),
+				    #"Changed Type16" = Table.TransformColumnTypes(#"Replaced Value",{{"Late EPR - Copy", type text}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Changed Type16","false","Not Late",Replacer.ReplaceText,{"Late EPR - Copy"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","true","Late",Replacer.ReplaceText,{"Late EPR - Copy"}),
+				    #"Renamed Columns4" = Table.RenameColumns(#"Replaced Value2",{{"Late EPR - Copy", "Late EPR - Value Fix"}}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Renamed Columns4",null,false,Replacer.ReplaceValue,{"Late EPR"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Not Late","On Time",Replacer.ReplaceText,{"Late EPR - Value Fix"}),
+				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Replaced Value4",1)
+				in
+				    #"Removed Bottom Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

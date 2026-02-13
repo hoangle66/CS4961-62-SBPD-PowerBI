@@ -1,0 +1,316 @@
+table 'Employees History Records'
+	lineageTag: 8f6eb9cc-0b6c-4905-9f65-4ecf3533bfd3
+
+	column RowNumber
+		dataType: string
+		lineageTag: 932a6344-b75c-4b78-87b0-43ada3878ed3
+		summarizeBy: none
+		sourceColumn: RowNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Saved'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8a899ec3-f751-48e3-9085-8c828f85ce88
+		summarizeBy: none
+		sourceColumn: Date Saved
+
+		variation Variation
+			isDefault
+			relationship: daabc402-1b32-4525-8a04-1bc4b20b430e
+			defaultHierarchy: LocalDateTable_18905f9a-f065-4bdf-89eb-9763e252724f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Status
+		dataType: string
+		lineageTag: f4d4f57c-d2dd-46d0-9ff1-bc82370341cf
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Docusign Status'
+		dataType: string
+		lineageTag: 41a17e2c-fa46-4552-af46-df7cf06ddf63
+		summarizeBy: none
+		sourceColumn: Docusign Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Column'
+		dataType: string
+		lineageTag: a503da90-04dc-41e0-99e3-cb6d39d68c52
+		summarizeBy: none
+		sourceColumn: Primary Column
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee First Name'
+		dataType: string
+		lineageTag: 33522ffc-6afe-4c9d-813d-ec2ea75b9476
+		summarizeBy: none
+		sourceColumn: Employee First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Last Name'
+		dataType: string
+		lineageTag: 58d304b6-ea80-49dd-94ea-7fa2c2500adf
+		summarizeBy: none
+		sourceColumn: Employee Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: 56e5206d-a72c-4a26-b170-a7c721366a4c
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Level'
+		dataType: string
+		lineageTag: b3529478-3aca-4ea4-9821-7ba874f59ab4
+		summarizeBy: none
+		sourceColumn: Job Class Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Step'
+		dataType: string
+		lineageTag: 0e9212bb-9dac-4f83-b86c-e971cc07e1a6
+		summarizeBy: none
+		sourceColumn: Job Class Step
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Anniversary Month'
+		dataType: string
+		lineageTag: 6b921a54-2b1f-4303-ab9c-d6ee47eaf1a1
+		summarizeBy: none
+		sourceColumn: Anniversary Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probationary EPR'
+		dataType: string
+		lineageTag: f122c026-af86-4c22-9f5f-f938fd055401
+		summarizeBy: none
+		sourceColumn: Probationary EPR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Quarter'
+		dataType: string
+		lineageTag: 2e5980d3-c25a-48b7-84cc-5601d392353b
+		summarizeBy: none
+		sourceColumn: Probation Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Due Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0dbdeccc-c6b8-45d7-b838-17f86cf54eaa
+		summarizeBy: none
+		sourceColumn: Probation Due Date
+
+		variation Variation
+			isDefault
+			relationship: 6e8c6b4d-e4bf-4aee-9e50-0e29b96d1cd4
+			defaultHierarchy: LocalDateTable_5fc7fd75-3b63-4a7d-a386-ba76dc6b6191.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Late EPR'
+		dataType: string
+		lineageTag: 2b5b595a-57bf-4354-b2eb-8d41040005b0
+		summarizeBy: none
+		sourceColumn: Late EPR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Signed EPR Due Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5d879a10-0ad9-458c-bedf-409b2937de0d
+		summarizeBy: none
+		sourceColumn: Signed EPR Due Date
+
+		variation Variation
+			isDefault
+			relationship: 331beb2a-f44f-4953-bcbb-3c9b81bc32f4
+			defaultHierarchy: LocalDateTable_e8643eee-4da6-4a28-93f6-58c44d9aa984.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Pervious EPR Signed'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 828a3ce2-523c-4e04-b247-5aeb66715f49
+		summarizeBy: none
+		sourceColumn: Pervious EPR Signed
+
+		variation Variation
+			isDefault
+			relationship: ba6b3fc4-1410-4529-a9bb-8be64aee2c5d
+			defaultHierarchy: LocalDateTable_49796914-7676-4c09-bedc-d1d2960e48f6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Previous EPR Actual Due Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9e40ff00-2542-42d1-829b-343b77e4bfca
+		summarizeBy: none
+		sourceColumn: Previous EPR Actual Due Date
+
+		variation Variation
+			isDefault
+			relationship: 19ea72e9-fa80-4aae-b4ac-b8c40e81510b
+			defaultHierarchy: LocalDateTable_fdc12c8c-f1b3-43a2-bee4-b1b765af7fbb.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Supervisor
+		dataType: string
+		lineageTag: 3bce73d4-7e25-492d-8a7f-d1eb93acb97b
+		summarizeBy: none
+		sourceColumn: Supervisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column HR
+		dataType: string
+		lineageTag: 0e672f77-2e1c-487b-b0cc-36a2200e59ae
+		summarizeBy: none
+		sourceColumn: HR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 1'
+		dataType: string
+		lineageTag: 493a4614-40bf-4ef9-b871-16a5b6f77b55
+		summarizeBy: none
+		sourceColumn: Supervisor 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2'
+		dataType: string
+		lineageTag: d30ba65b-5a76-4dde-9fe9-550e7c081238
+		summarizeBy: none
+		sourceColumn: Supervisor 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3'
+		dataType: string
+		lineageTag: 9dc2440b-004a-420c-99b3-5816ec73cf41
+		summarizeBy: none
+		sourceColumn: Supervisor 3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR'
+		dataType: string
+		lineageTag: cb7a20c7-940a-4c29-9136-8ef890d4ca01
+		summarizeBy: none
+		sourceColumn: Head of HR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office'
+		dataType: string
+		lineageTag: 00863b2b-7049-423a-92da-6f32910f83eb
+		summarizeBy: none
+		sourceColumn: Head of Office
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2 approval'
+		dataType: string
+		lineageTag: a3c78cb2-d3f3-46d9-96c9-21f41d69e368
+		summarizeBy: none
+		sourceColumn: Supervisor 2 approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3 approval'
+		dataType: string
+		lineageTag: 97e961d7-4541-4dcb-86f9-3cb6b57d6d08
+		summarizeBy: none
+		sourceColumn: Supervisor 3 approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR approval'
+		dataType: string
+		lineageTag: a7d4fd8d-0273-47f5-98af-e631d57ac0d1
+		summarizeBy: none
+		sourceColumn: Head of HR approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office approval'
+		dataType: string
+		lineageTag: 0e27b848-935e-4a5f-8446-6dbe3807be97
+		summarizeBy: none
+		sourceColumn: Head of Office approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reset Ready'
+		dataType: string
+		lineageTag: 4b9dba0a-0d74-47f9-a011-8f9799ed1f36
+		summarizeBy: none
+		sourceColumn: Reset Ready
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employment Status'
+		dataType: string
+		lineageTag: d5a2b0c2-9781-465c-87f2-5f538c018ecc
+		summarizeBy: none
+		sourceColumn: Employment Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Previous EPR Signed'
+		dataType: string
+		lineageTag: ea2cef4d-4be0-40a9-8550-12440b0b2696
+		summarizeBy: none
+		sourceColumn: Previous EPR Signed
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Employees History Records' = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"6311914306332548" = Source{[Key="6311914306332548"]}[Data],
+				    #"1945788230881156" = #"6311914306332548"{[Key="1945788230881156"]}[Data],
+				    #"Removed Top Rows" = Table.Skip(#"1945788230881156",2),
+				    #"Replaced Value" = Table.ReplaceValue(#"Removed Top Rows",null,"2025-11-14",Replacer.ReplaceValue,{"Date Saved"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Replaced Value",{{"Date Saved", type date}, {"Probation Due Date", type date}, {"Signed EPR Due Date", type date}, {"Previous EPR Actual Due Date", type date}, {"Pervious EPR Signed", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

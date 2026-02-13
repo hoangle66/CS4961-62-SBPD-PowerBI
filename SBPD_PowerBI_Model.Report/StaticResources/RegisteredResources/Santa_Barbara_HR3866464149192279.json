@@ -1,0 +1,185 @@
+{
+  "name": "Santa Barbara HR",
+  "dataColors": [
+    "#3C3C3B",
+    "#6C8A4B",
+    "#7A5C46",
+    "#A5942A",
+    "#C8C2B8",
+    "#B6A383",
+    "#A0C789",
+    "#3E3A23"
+  ],
+  "background": "#F8F3E6",
+  "foreground": "#2B2B2B",
+  "tableAccent": "#8B6A3E",
+  "visualStyles": {
+    "*": {
+      "title": [
+        {
+          "color": {
+            "solid": {
+              "color": "#3E3A23"
+            }
+          },
+          "fontFamily": "Segoe UI Semibold"
+        }
+      ],
+      "legend": [
+        {
+          "titleColor": {
+            "solid": {
+              "color": "#3E3A23"
+            }
+          },
+          "labelColor": {
+            "solid": {
+              "color": "#2B2B2B"
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "color": {
+            "solid": {
+              "color": "#2B2B2B"
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "color": {
+            "solid": {
+              "color": "#F8F3E6"
+            }
+          }
+        }
+      ]
+    },
+    "barChart": {
+      "*": {
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "dataColors": [
+          {
+            "colors": [
+              "#6C8A4B",
+              "#2B2B2B",
+              "#7A5C46",
+              "#A5942A"
+            ]
+          }
+        ]
+      }
+    },
+    "clusteredColumnChart": {
+      "*": {
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "dataColors": [
+          {
+            "colors": [
+              "#6C8A4B",
+              "#2B2B2B"
+            ]
+          }
+        ]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#2B2B2B"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#EBE1CE"
+              }
+            }
+          }
+        ],
+        "dataColors": [
+          {
+            "colors": [
+              "#6C8A4B",
+              "#2B2B2B",
+              "#7A5C46"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

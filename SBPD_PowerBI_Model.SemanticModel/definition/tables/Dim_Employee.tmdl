@@ -1,0 +1,60 @@
+table Dim_Employee
+	lineageTag: 5f55829f-eec0-48fd-925e-2eed6ea03b15
+
+	column EmployeeID
+		formatString: 0
+		lineageTag: 1ef659ae-f959-4973-a4c6-f6faeaeed1d8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [EmployeeID]
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullName
+		lineageTag: f6bfaa79-41bf-4588-abc2-0e5a9fffbc09
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [FullName]
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeFullName = TRIM( SUBSTITUTE( [FullName_Base], UNICHAR(160), " " ) )
+		lineageTag: e9d5e4a7-05cd-43f6-aa92-0b7644a1577b
+		summarizeBy: none
+		sortByColumn: FullName_Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullName_Sort = UPPER( TRIM( SUBSTITUTE( [FullName_Base], UNICHAR(160), " " ) ) )
+		isHidden
+		lineageTag: 02f663dc-fdcd-42f9-81a3-fb1e9deaeec4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullName_Base = [FullName]
+		isHidden
+		lineageTag: 9f6ad155-0d76-42e5-93b2-a363c33d738a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Employee = calculated
+		mode: import
+		source = ```
+				
+				FILTER(
+				    DISTINCT(
+				        SELECTCOLUMNS(
+				            Employees,
+				            "EmployeeID", Employees[Primary Column],
+				            "FullName",  Employees[Full Name]
+				        )
+				    ),
+				    NOT ISBLANK([EmployeeID])
+				)
+				
+				```
+
+	annotation PBI_Id = 270136be313a4561a6e31d4674687f12
+

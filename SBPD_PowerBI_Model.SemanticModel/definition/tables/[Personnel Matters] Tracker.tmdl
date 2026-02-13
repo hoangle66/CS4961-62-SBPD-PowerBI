@@ -1,0 +1,243 @@
+table '[Personnel Matters] Tracker'
+	lineageTag: 8279f9e8-ec93-4514-9312-161830bc5619
+
+	column RowNumber
+		dataType: string
+		lineageTag: 8a2586c5-28a9-40d3-bd5b-4d7c31d946a1
+		summarizeBy: none
+		sourceColumn: RowNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Matter IDs'
+		dataType: string
+		lineageTag: aeebdaab-a162-4407-882c-2862e061f306
+		summarizeBy: none
+		sourceColumn: Matter IDs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Opened Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 6bcbc871-7dc2-4198-8a16-d2127ce0ca54
+		summarizeBy: none
+		sourceColumn: Opened Date
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Status
+		dataType: string
+		lineageTag: 4cb4d314-16e7-4340-8d1b-5a0b8b6ecd9a
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Complaint(s)
+		dataType: string
+		lineageTag: 47e4d5f6-dc1c-4e9c-a10a-479be161b2a1
+		summarizeBy: none
+		sourceColumn: Complaint(s)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Respondent(s)
+		dataType: string
+		lineageTag: 5cc9baaa-dae1-43b9-ab7e-fab8cd76b559
+		summarizeBy: none
+		sourceColumn: Respondent(s)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'What Happened'
+		dataType: string
+		lineageTag: be25edef-7f8f-4fa8-b929-381e08b4cfd3
+		summarizeBy: none
+		sourceColumn: What Happened
+
+		annotation SummarizationSetBy = Automatic
+
+	column Issue
+		dataType: string
+		lineageTag: f3d30ca7-fc7d-43fe-acd3-4ce6b07c4cb0
+		summarizeBy: none
+		sourceColumn: Issue
+
+		annotation SummarizationSetBy = Automatic
+
+	column Policy
+		dataType: string
+		lineageTag: 4c0bf805-553d-42d3-9307-080b17f54616
+		summarizeBy: none
+		sourceColumn: Policy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intake Submitted Via'
+		dataType: string
+		lineageTag: 9e919280-4ce6-42e7-ab97-47ba9602a491
+		summarizeBy: none
+		sourceColumn: Intake Submitted Via
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Documents Link'
+		dataType: string
+		lineageTag: 3bb802f6-a473-4d1b-a3c6-425d1aae3b26
+		summarizeBy: none
+		sourceColumn: Documents Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supervisor
+		dataType: string
+		lineageTag: faf0bafa-5f11-4b3b-8605-5caa5d32ea61
+		summarizeBy: none
+		sourceColumn: Supervisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Next Steps'
+		dataType: string
+		lineageTag: 4a7688da-f36d-4193-b892-f27465aee796
+		summarizeBy: none
+		sourceColumn: Next Steps
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Next Step Due Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 3d7463d0-dd2f-4519-84ac-92d50071a799
+		summarizeBy: none
+		sourceColumn: Next Step Due Date
+
+		variation Variation
+			isDefault
+			relationship: 890d203b-43a2-4ce6-9bec-b60eb57497e8
+			defaultHierarchy: LocalDateTable_6f221687-dd6b-4660-92a5-f3a3c607d713.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Memo Notes'
+		dataType: string
+		lineageTag: 7ec37386-d195-4393-b202-62b76de2e061
+		summarizeBy: none
+		sourceColumn: Memo Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Closed Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 3b1c0f1d-c6f4-4a87-b69b-168bea1a4d77
+		summarizeBy: none
+		sourceColumn: Closed Date
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Outcome
+		dataType: string
+		lineageTag: 136b5aa6-41d5-4502-a8fb-c2adf0ad9887
+		summarizeBy: none
+		sourceColumn: Outcome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified By'
+		dataType: string
+		lineageTag: e110f7e6-8064-4808-9e7f-8bee2208ca7a
+		summarizeBy: none
+		sourceColumn: Modified By
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date'
+		dataType: string
+		lineageTag: 8d6f83bd-dd9e-43a3-a2d9-d9c34973c421
+		summarizeBy: none
+		sourceColumn: Last Modified Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		dataType: string
+		lineageTag: 573f2f74-42db-40e7-bfc4-d582e69e811c
+		summarizeBy: none
+		sourceColumn: Fiscal Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Update Required'
+		dataType: string
+		lineageTag: b0075dcc-905f-4fa6-879b-b539e5a10905
+		summarizeBy: none
+		sourceColumn: Update Required
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days Open'
+		dataType: int64
+		formatString: 0
+		lineageTag: cdd5375d-b53e-45b5-b436-4143643258dc
+		summarizeBy: sum
+		sourceColumn: Days Open
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Missing Close Info'
+		dataType: string
+		lineageTag: 6abb0b65-c158-4ab3-809c-e0ef5992937a
+		summarizeBy: none
+		sourceColumn: Missing Close Info
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Do you have documents to attach?'
+		dataType: string
+		lineageTag: c89ad163-d50d-4785-883d-e4bf8ec79e29
+		summarizeBy: none
+		sourceColumn: Do you have documents to attach?
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '[Personnel Matters] Tracker' = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
+				    #"5063011930007428" = #"1134964738680708"{[Key="5063011930007428"]}[Data],
+				    #"1234840859922308" = #"5063011930007428"{[Key="1234840859922308"]}[Data],
+				    #"Removed Columns" = Table.RemoveColumns(#"1234840859922308",{"MatterID"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Removed Columns",{{"Update Required", type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","true","Yes",Replacer.ReplaceText,{"Update Required"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","false","No",Replacer.ReplaceText,{"Update Required"})
+				in
+				    #"Replaced Value1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

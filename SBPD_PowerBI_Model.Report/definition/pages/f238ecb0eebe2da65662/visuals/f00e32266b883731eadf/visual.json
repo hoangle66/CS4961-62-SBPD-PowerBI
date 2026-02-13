@@ -1,0 +1,251 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "f00e32266b883731eadf",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 1000,
+    "height": 240.00000000000003,
+    "width": 320,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Matter IDs"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Matter IDs",
+              "nativeQueryRef": "IDs",
+              "displayName": "IDs"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Issue"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Issue",
+              "nativeQueryRef": "Issue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Outcome"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Outcome",
+              "nativeQueryRef": "Outcome"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "[Personnel Matters] Tracker"
+                    }
+                  },
+                  "Property": "Closed Date"
+                }
+              },
+              "queryRef": "[Personnel Matters] Tracker.Closed Date",
+              "nativeQueryRef": "Closed Date"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "[Personnel Matters] Tracker"
+                  }
+                },
+                "Property": "Matter IDs"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "83.48270295323415D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "[Personnel Matters] Tracker.Outcome"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "57.71428353041425D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "[Personnel Matters] Tracker.Matter IDs"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9e3a3214c5089265f9b4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "[Personnel Matters] Tracker"
+              }
+            },
+            "Property": "Closed Date"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "[",
+              "Entity": "[Personnel Matters] Tracker",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "["
+                            }
+                          },
+                          "Property": "Closed Date"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

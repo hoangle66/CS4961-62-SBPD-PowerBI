@@ -1,0 +1,133 @@
+table Dim_JobClass
+	lineageTag: 09a111c1-d5a0-4560-9d36-5321d99f170c
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: a6fce86c-2140-4fc0-91c4-944498f80b65
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Level'
+		dataType: string
+		lineageTag: 92aa423a-6326-49ae-90d3-ce180b25b72d
+		summarizeBy: none
+		sourceColumn: Job Class Level
+		sortByColumn: JobClassLevel_Order
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Step'
+		dataType: string
+		lineageTag: 31160bd8-bf29-40da-aeb9-4f4840b05585
+		summarizeBy: none
+		sourceColumn: Job Class Step
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobClass_Clean
+		dataType: string
+		isHidden
+		lineageTag: cf089ee9-0968-42f4-ad81-bf332aa13f3b
+		summarizeBy: none
+		sourceColumn: JobClass_Clean
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobClassKey
+		dataType: string
+		isHidden
+		lineageTag: ea7bfc1b-c5e1-4b45-9ec3-754d93a46fea
+		summarizeBy: none
+		sourceColumn: JobClassKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobClassLevel_Order = RELATED(JobClassLevelMap[LevelOrder])
+		isHidden
+		formatString: 0
+		lineageTag: 60160a4f-4e47-4385-9ba3-29c91fa19830
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Column'
+		dataType: int64
+		formatString: 0
+		lineageTag: bae67371-8992-4eaf-a4b3-ca90bfe5d5b4
+		summarizeBy: sum
+		sourceColumn: Primary Column
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Late EPR - Value Fix'
+		dataType: string
+		lineageTag: 3af4cd7c-bddd-4cc6-9ed4-6f9b65c15364
+		summarizeBy: none
+		sourceColumn: Late EPR - Value Fix
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reset Ready'
+		dataType: string
+		lineageTag: 2ed39c03-f4ee-4bb2-beb2-c762a3afc9de
+		summarizeBy: none
+		sourceColumn: Reset Ready
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employment Status'
+		dataType: string
+		lineageTag: ad678136-abaf-477e-8c4b-4d8b0f6ab03f
+		summarizeBy: none
+		sourceColumn: Employment Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_JobClass = m
+		mode: import
+		source =
+				let
+				    Source = Employees,
+				    #"Removed Columns" = Table.RemoveColumns(
+				    Source,
+				    {
+				        "RowNumber","Status","Docusign Status","EmployeeID",
+				        "Employee First Name","Employee Last Name","Anniversary Month",
+				        "Probationary EPR","Probation Quarter","Probation Due Date","Late EPR",
+				        "Signed EPR Due Date","Previous EPR Signed","Previous EPR Actual Due Date",
+				        "Supervisor","HR","Supervisor 1","Supervisor 2","Supervisor 3",
+				        "Head of HR","Head of Office","Supervisor 2 approval","Supervisor 3 approval",
+				        "Head of HR approval","Head of Office approval",
+				        "Status_Normalized","Status_Sort","DocuSign_Normalized","DocuSign_Sort",
+				        "Flag_StatusBlank","FirstName_Clean","LastName_Clean","Full Name",
+				        "Full Name (Sort)","Initials (tables/badges)","NameKey","MissingName?"
+				        // NOTE: don't remove "JobClass_Clean" here if you need it in this dimension
+				    },
+				    MissingField.Ignore
+				),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Removed Columns",{"Job Class", "Job Class Level", "Job Class Step", "JobClass_NAtoUnassigned", "SeniorityRank", "StepRank"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Reordered Columns",{{"Job Class Level", type text}, {"Job Class Step", type text}, {"JobClass_NAtoUnassigned", type text}, {"StepRank", Int64.Type}, {"SeniorityRank", Int64.Type}}),
+				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Changed Type",1),
+				    #"Reordered Columns1" = Table.ReorderColumns(#"Removed Bottom Rows",{"Job Class", "Job Class Level", "Job Class Step", "JobClass_Clean", "JobClass_NAtoUnassigned", "StepRank", "SeniorityRank"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Reordered Columns1", {"JobClass_NAtoUnassigned"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Duplicates",{{"JobClass_NAtoUnassigned", "JobClassKey"}}),
+				    #"Removed Columns2" = Table.RemoveColumns(#"Renamed Columns",{"ProbationQNum", "DueYear", "DueYearMonth", "Overdue_Open", "DueNext30_Open", "ProbationOverdue", "ApproverCount", "MissingSup1_Open", "LateCheckboxMismatch", "Supervisor2_Approval_Normalized", "Supervisor3_Approval_Normalized", "HeadHR_Approval_Normalized", "HeadOffice_Approval_Normalized", "Common sort helper", "Stage_Sort", "NextApproverEmail", "NextApproverRole", "StepRank", "SeniorityRank"})
+				in
+				    #"Removed Columns2"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

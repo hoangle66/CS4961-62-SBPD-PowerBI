@@ -1,0 +1,40 @@
+table JobClassLevelMap
+	lineageTag: 8ff78e40-b8c6-41b2-80a6-48846be87f71
+
+	column 'Job Class Level'
+		lineageTag: f6b495bb-54e2-416f-9fb1-be8e8e4ffcd1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Job Class Level]
+
+		annotation SummarizationSetBy = Automatic
+
+	column LevelOrder
+		formatString: 0
+		lineageTag: 7ae20ecd-6d7c-4eac-880d-4405439b6a5e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [LevelOrder]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition JobClassLevelMap = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Job Class Level", STRING, "LevelOrder", INTEGER,
+				    {
+				        {"N/A", 0},
+				        {"Intern", 1},
+				        {"I", 2},
+				        {"II", 3},
+				        {"III", 4},
+				        {"Senior", 5}
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 25298db1d3834b7e87b2fb19f2303fa1
+

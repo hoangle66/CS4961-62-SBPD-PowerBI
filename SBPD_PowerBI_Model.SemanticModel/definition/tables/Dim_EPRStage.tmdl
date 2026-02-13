@@ -1,0 +1,112 @@
+table Dim_EPRStage
+	lineageTag: 9498bd0b-4797-4f97-9495-9753097e2a2b
+
+	column Stage
+		lineageTag: 95a5b4c8-5f24-4a6f-a2ed-a1247bf84db7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Stage]
+		sortByColumn: StageOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column StageOrder
+		formatString: 0
+		lineageTag: 5b684b21-8c40-46bd-bead-e2acf0bd83f8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [StageOrder]
+
+		annotation SummarizationSetBy = Automatic
+
+	column StageGroup
+		lineageTag: 4f6db934-bb44-4420-8551-dc8ff119f52e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [StageGroup]
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupOrder
+		formatString: 0
+		lineageTag: 7a5fb410-3c49-4d67-b2d6-09a3f77a75ee
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [GroupOrder]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsIncomplete
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dcbd9b2d-9c01-4d7f-a58a-9fb5315eacc1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [IsIncomplete]
+
+		annotation SummarizationSetBy = Automatic
+
+	column StageOwner
+		lineageTag: 12ec491e-dd1a-43d7-905d-87f015064220
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [StageOwner]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_EPRStage = calculated
+		mode: import
+		source = ```
+				
+				VAR t =
+				    DISTINCT (
+				        SELECTCOLUMNS (
+				            Employees,
+				            "Stage", Employees[Status]
+				        )
+				    )
+				RETURN
+				ADDCOLUMNS (
+				    t,
+				    // Display order for slicers/axes
+				    "StageOrder",
+				        SWITCH (
+				            [Stage],
+				            "Not Created",           1,
+				            "With Supervisor 1",     2,
+				            "With Supervisor 2",     3,
+				            "With Supervisor 3",     4,
+				            "With HR",               5,
+				            "With Head of HR",       6,
+				            "With Head of Office",   7,
+				            "Saving to Box",         8,
+				            //"Saving row data",      9,      -- add this if we ever use it
+				            "Completed",             10,
+				            99
+				        ),
+				    // Grouping for visuals
+				    "StageGroup",
+				        IF ( [Stage] = "Completed", "Completed", "Incomplete" ),
+				    "GroupOrder",
+				        IF ( [Stage] = "Completed", 2, 1 ),
+				    "IsIncomplete", [Stage] <> "Completed",
+				    // Who “owns” the step
+				    "StageOwner",
+				        SWITCH (
+				            [Stage],
+				            "Not Created",           "Unassigned",
+				            "With Supervisor 1",     "Supervisor",
+				            "With Supervisor 2",     "Supervisor",
+				            "With Supervisor 3",     "Supervisor",
+				            "With HR",               "HR",
+				            "With Head of HR",       "Head of HR",
+				            "With Head of Office",   "Head of Office",
+				            "Saving to Box",         "HR / Box",
+				            "Completed",             "Completed",
+				            BLANK ()
+				        )
+				)
+				
+				```
+
+	annotation PBI_Id = 1a0b332cf2704c6bb0d0a700382238c7
+

@@ -1,0 +1,40 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Employees","Dim_JobClass","Measures ","Employees History Records","[Personnel Matters] Tracker"]
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
+
+ref table Employees
+ref table Dim_JobClass
+ref table DateTableTemplate_ae8106ff-9a75-4ff7-a707-1ab2cc68b60e
+ref table LocalDateTable_77f695fb-2df4-4095-b384-b5763608ba3a
+ref table LocalDateTable_d41bd51c-4ac3-4230-9f4f-4440ea5080cd
+ref table 'Measures '
+ref table Dim_Employee
+ref table Dim_Date
+ref table JobClassLevelMap
+ref table Dim_EPRStage
+ref table LocalDateTable_7a7f7734-5734-4fb6-aea1-5176cb0bb84b
+ref table LocalDateTable_a3ce6086-913f-4d97-9909-b6e1d9889677
+ref table LocalDateTable_322ecb99-96bf-4ef2-b594-af5cbbaa5d10
+ref table 'Employees History Records'
+ref table LocalDateTable_18905f9a-f065-4bdf-89eb-9763e252724f
+ref table LocalDateTable_5fc7fd75-3b63-4a7d-a386-ba76dc6b6191
+ref table LocalDateTable_e8643eee-4da6-4a28-93f6-58c44d9aa984
+ref table LocalDateTable_49796914-7676-4c09-bedc-d1d2960e48f6
+ref table LocalDateTable_fdc12c8c-f1b3-43a2-bee4-b1b765af7fbb
+ref table LocalDateTable_f51d8a49-b304-40ca-b1fa-cc90f1455ac5
+ref table 'EPR Donut Categories'
+ref table '[Personnel Matters] Tracker'
+ref table LocalDateTable_6f221687-dd6b-4660-92a5-f3a3c607d713
+
+ref cultureInfo en-US
+

@@ -1,0 +1,63 @@
+table 'EPR Donut Categories'
+	lineageTag: 823e90ba-e6f6-4884-b72b-4b0a4f5c1be5
+
+	measure 'EPR Donut Count' = ```
+			
+			SWITCH (
+			    SELECTEDVALUE ( 'EPR Donut Categories'[Category] ),
+			    "Completed",              [Completed EPRs],
+			    "In Process - On Time",   [EPRs In Process - On Time],
+			    "In Process - Late",      [EPRs In Process - Late],
+			    "Pending Initiation",     [EPRs Pending Initiation]
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 72de9439-6b99-40dc-8725-502d2caa0b55
+
+	column Category
+		lineageTag: 17853121-5b82-4f76-8adc-6426a0e9f625
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Category]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Explanation = ```
+			
+			SWITCH (
+			    'EPR Donut Categories'[Category],
+			    "Pending Initiation",
+			        "EPR not created yet and due date is more than 60 days away",
+			    "In Process - On Time",
+			        "EPRs created (With HR / Supervisors / Saving to Box) and are on time",
+			    "In Process - Late",
+			        "EPRs created and are late",
+			    "Completed",
+			        "EPRs are considered completed once they moved to Employees History Records (Saving to Box)"
+			)
+			
+			```
+		lineageTag: 23fb6657-1dbb-45dd-b37f-0a5257159f2a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'EPR Donut Categories' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Category", STRING,
+				    {
+				        { "Completed" },
+				        { "In Process - On Time" },
+				        { "In Process - Late" },
+				        { "Pending Initiation" }
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 384811c33f7242d88451585068234acd
+
