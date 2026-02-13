@@ -28,5 +28,5 @@ Open this file in Power BI Desktop:
 
 ## Notes
 - If two people edit the **same report page** (layout/visuals) at the same time, merges can be messy.
-  - Try to “claim” pages/components (ex: one person edits Seperation page, another edits Vacancies Recruitments page).
+  - Try to “claim” pages (such as: one person edits Seperation page, another edits Vacancies Recruitments page).
 - Data refresh depends on the data source each person has access to (Smartsheet/API credentials, etc.).
