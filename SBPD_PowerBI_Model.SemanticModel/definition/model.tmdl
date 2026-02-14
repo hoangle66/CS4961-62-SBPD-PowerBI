@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Employees","Dim_JobClass","Measures ","Employees History Records","[Personnel Matters] Tracker"]
+annotation PBI_QueryOrder = ["Employees","Dim_JobClass","Measures ","Employees History Records","[Personnel Matters] Tracker","Employees Separations Tracker"]
 
 annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
 
@@ -35,6 +35,8 @@ ref table LocalDateTable_f51d8a49-b304-40ca-b1fa-cc90f1455ac5
 ref table 'EPR Donut Categories'
 ref table '[Personnel Matters] Tracker'
 ref table LocalDateTable_6f221687-dd6b-4660-92a5-f3a3c607d713
+ref table 'Employees Separations Tracker'
+ref table LocalDateTable_e39426ec-4fbb-468c-bc7b-6d816ccca1e5
 
 ref cultureInfo en-US
 

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "8f18232f28764b45e724",
+  "position": {
+    "x": 83.2444037177641,
+    "y": 413.80913732163896,
+    "z": 8000,
+    "height": 289.54575206178816,
+    "width": 365.55151197800757,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employees Separations Tracker"
+                    }
+                  },
+                  "Property": "Reason for Exit"
+                }
+              },
+              "queryRef": "Employees Separations Tracker.Reason for Exit",
+              "nativeQueryRef": "Reason for Exit",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employees Separations Tracker"
+                    }
+                  },
+                  "Property": "Exits (Current Year by Last Day)"
+                }
+              },
+              "queryRef": "Employees Separations Tracker.Exits (Current Year Default)",
+              "nativeQueryRef": "Exits (Current Year by Last Day)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employees Separations Tracker"
+                    }
+                  },
+                  "Property": "Total Exits"
+                }
+              },
+              "queryRef": "Employees Separations Tracker.Total Exits",
+              "nativeQueryRef": "Total Exits"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Employees Separations Tracker"
+                  }
+                },
+                "Property": "Exits (Current Year by Last Day)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
