@@ -1,0 +1,150 @@
+table 'Employees Separations Tracker'
+	lineageTag: c94a3ec7-b263-40f9-8c64-7edfc7c0db5b
+
+	measure 'Total Exits' = COUNTROWS('Employees Separations Tracker')
+		formatString: 0
+		lineageTag: 5e038f72-141a-4537-8136-d37c083fcdda
+
+	measure 'Exits (Current Year by Last Day)' =
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS('Employees Separations Tracker'),
+			        'Dim_Date'[Year] = YEAR(TODAY())
+			    ),
+			    0
+			)
+		formatString: 0
+		lineageTag: 8f605714-c400-4f47-9eb7-63919158a4ca
+
+	measure 'Exits (CY by Last Day)' = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS('Employees Separations Tracker'),
+			        'Dim_Date'[Year] = YEAR(TODAY())
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 3288ea08-6a30-446b-8418-e2579e303f04
+
+	column RowNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: bf80b169-5d2a-43df-8934-b52933f52bdb
+		summarizeBy: none
+		sourceColumn: RowNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Separations ID'
+		dataType: string
+		lineageTag: e834349f-0351-41dd-92bd-f270448c6afb
+		summarizeBy: none
+		sourceColumn: Separations ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email Status'
+		dataType: string
+		lineageTag: f82cde55-472d-49f3-a609-d62f0cb6f610
+		summarizeBy: none
+		sourceColumn: Email Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee First Name'
+		dataType: string
+		lineageTag: d6928645-0cae-4faf-a716-175ee32bca9e
+		summarizeBy: none
+		sourceColumn: Employee First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Last Name'
+		dataType: string
+		lineageTag: 0935b83b-3d06-4762-9e5b-b065e15f1947
+		summarizeBy: none
+		sourceColumn: Employee Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Staff Email'
+		dataType: string
+		lineageTag: 1f77b8b8-9571-4f2f-90b7-1e5d7b2aeafa
+		summarizeBy: none
+		sourceColumn: Staff Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Position ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: bcc30d53-7e0a-4a46-9347-d2419497d34e
+		summarizeBy: count
+		sourceColumn: Position ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: 7191adfd-3144-45af-96cb-84fa14e67590
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason for Exit'
+		dataType: string
+		lineageTag: 7bcd52e3-9796-4b2b-8cac-aa04ae29bec6
+		summarizeBy: none
+		sourceColumn: Reason for Exit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Submitted for Exit'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 424cf283-9883-423f-9b5a-f0e172d8ebc7
+		summarizeBy: none
+		sourceColumn: Date Submitted for Exit
+
+		variation Variation
+			isDefault
+			relationship: a3bc319b-95e8-480d-be0f-099c6f088bb5
+			defaultHierarchy: LocalDateTable_e39426ec-4fbb-468c-bc7b-6d816ccca1e5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Last Day Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9c850059-65e5-4ebd-9d6c-a260e65f80ab
+		summarizeBy: none
+		sourceColumn: Last Day Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition 'Employees Separations Tracker' = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
+				    #"6934380720482180" = #"1134964738680708"{[Key="6934380720482180"]}[Data],
+				    #"6507921459335044" = #"6934380720482180"{[Key="6507921459335044"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(#"6507921459335044",{{"RowNumber", Int64.Type}, {"Separations ID", type any}, {"Email Status", type text}, {"Employee First Name", type text}, {"Employee Last Name", type text}, {"Staff Email", type text}, {"Position ID", Int64.Type}, {"Job Class", type text}, {"Reason for Exit", type text}, {"Date Submitted for Exit", type date}, {"Last Day Date", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
