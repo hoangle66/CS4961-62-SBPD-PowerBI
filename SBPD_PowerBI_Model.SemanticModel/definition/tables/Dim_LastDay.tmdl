@@ -1,0 +1,99 @@
+table Dim_LastDay
+	lineageTag: 5b466a60-7edc-43a1-8715-7e5919040387
+
+	column Date
+		formatString: General Date
+		lineageTag: 5423047e-bd91-405f-a923-5a5233604658
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[Date]
+
+		variation Variation
+			isDefault
+			relationship: be520f48-ea91-4cbd-9401-2bb53327ebc5
+			defaultHierarchy: LocalDateTable_42a0de90-fcf0-486c-9694-b7e26c67081b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: a718b181-6a63-4490-a5b6-3e99d51cbac1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: Dim_Date[Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNum
+		formatString: 0
+		lineageTag: 70b5af8d-d02b-40f7-b339-49bc5bf36577
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: Dim_Date[MonthNum]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 73d63deb-6cfc-42cd-9ab2-bb7040b1304e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 45200fa5-2117-48bf-b39d-5c5305f7ebf5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		lineageTag: 55c676fb-16d7-44d1-935a-70903785302b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[YearMonth]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Year'
+		lineageTag: 0f978ff0-8649-4a6b-9c92-2a3287bd4669
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[Month Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthKey
+		formatString: 0
+		lineageTag: 06c0cf68-b1da-4111-aecf-e9aac74bcf49
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: Dim_Date[YearMonthKey]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FY Start Year'
+		formatString: 0
+		lineageTag: e06f241c-64dc-4d07-bda4-bdd86223623f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: Dim_Date[FY Start Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		lineageTag: 00cd2771-9fac-43eb-8023-5464b8249f8a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Dim_Date[Fiscal Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_LastDay = calculated
+		mode: import
+		source = Dim_Date
+
+	annotation PBI_Id = b878e3532839453fbb1cbbe01a94563e
+

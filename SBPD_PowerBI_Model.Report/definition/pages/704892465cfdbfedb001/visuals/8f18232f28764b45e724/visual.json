@@ -42,20 +42,6 @@
                       "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Exits (Current Year by Last Day)"
-                }
-              },
-              "queryRef": "Employees Separations Tracker.Exits (Current Year Default)",
-              "nativeQueryRef": "Exits (Current Year by Last Day)"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Employees Separations Tracker"
-                    }
-                  },
                   "Property": "Total Exits"
                 }
               },
@@ -75,7 +61,7 @@
                     "Entity": "Employees Separations Tracker"
                   }
                 },
-                "Property": "Exits (Current Year by Last Day)"
+                "Property": "Total Exits"
               }
             },
             "direction": "Descending"

@@ -1,7 +1,7 @@
 table 'Employees Separations Tracker'
 	lineageTag: c94a3ec7-b263-40f9-8c64-7edfc7c0db5b
 
-	measure 'Total Exits' = COUNTROWS('Employees Separations Tracker')
+	measure 'Total Exits' = (COUNTROWS('Employees Separations Tracker'))
 		formatString: 0
 		lineageTag: 5e038f72-141a-4537-8136-d37c083fcdda
 
@@ -31,20 +31,20 @@ table 'Employees Separations Tracker'
 		formatString: 0
 		lineageTag: 3288ea08-6a30-446b-8418-e2579e303f04
 
-	column RowNumber
-		dataType: int64
+	measure 'Total Exits LY' = CALCULATE([Total Exits], SAMEPERIODLASTYEAR('Dim_Date'[Date]))
 		formatString: 0
+		lineageTag: e49159aa-558c-472b-99a1-5f8e20ae1762
+
+	measure 'Exits YoY' = DIVIDE([Total Exits] - [Total Exits LY], [Total Exits LY])
+		lineageTag: a41a9a83-6f9c-4c8c-b3b6-55b09b22d3a0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RowNumber
+		dataType: string
 		lineageTag: bf80b169-5d2a-43df-8934-b52933f52bdb
 		summarizeBy: none
 		sourceColumn: RowNumber
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Separations ID'
-		dataType: string
-		lineageTag: e834349f-0351-41dd-92bd-f270448c6afb
-		summarizeBy: none
-		sourceColumn: Separations ID
 
 		annotation SummarizationSetBy = Automatic
 
@@ -81,10 +81,9 @@ table 'Employees Separations Tracker'
 		annotation SummarizationSetBy = Automatic
 
 	column 'Position ID'
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: bcc30d53-7e0a-4a46-9347-d2419497d34e
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: Position ID
 
 		annotation SummarizationSetBy = Automatic
@@ -107,19 +106,19 @@ table 'Employees Separations Tracker'
 
 	column 'Date Submitted for Exit'
 		dataType: dateTime
-		formatString: Long Date
+		formatString: General Date
 		lineageTag: 424cf283-9883-423f-9b5a-f0e172d8ebc7
 		summarizeBy: none
 		sourceColumn: Date Submitted for Exit
 
 		variation Variation
 			isDefault
-			relationship: a3bc319b-95e8-480d-be0f-099c6f088bb5
-			defaultHierarchy: LocalDateTable_e39426ec-4fbb-468c-bc7b-6d816ccca1e5.'Date Hierarchy'
+			relationship: bbbfc734-6acc-404c-a049-c2bc1b552115
+			defaultHierarchy: LocalDateTable_1bcd2544-33f9-48f2-a25d-060c9331455c.'Date Hierarchy'
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column 'Last Day Date'
 		dataType: dateTime
@@ -128,9 +127,27 @@ table 'Employees Separations Tracker'
 		summarizeBy: none
 		sourceColumn: Last Day Date
 
+		changedProperty = DataType
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Separation ID'
+		dataType: string
+		lineageTag: 03078d57-cf62-4bef-a103-a7bead143339
+		summarizeBy: none
+		sourceColumn: Separation ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee ID'
+		dataType: string
+		lineageTag: ad126b83-4f4f-47bd-b5e6-325b51270117
+		summarizeBy: none
+		sourceColumn: Employee ID
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'Employees Separations Tracker' = m
 		mode: import
@@ -139,10 +156,9 @@ table 'Employees Separations Tracker'
 				    Source = SmartsheetGlobal.Contents("US", []),
 				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
 				    #"6934380720482180" = #"1134964738680708"{[Key="6934380720482180"]}[Data],
-				    #"6507921459335044" = #"6934380720482180"{[Key="6507921459335044"]}[Data],
-				    #"Changed Type" = Table.TransformColumnTypes(#"6507921459335044",{{"RowNumber", Int64.Type}, {"Separations ID", type any}, {"Email Status", type text}, {"Employee First Name", type text}, {"Employee Last Name", type text}, {"Staff Email", type text}, {"Position ID", Int64.Type}, {"Job Class", type text}, {"Reason for Exit", type text}, {"Date Submitted for Exit", type date}, {"Last Day Date", type date}})
+				    #"6507921459335044" = #"6934380720482180"{[Key="6507921459335044"]}[Data]
 				in
-				    #"Changed Type"
+				    #"6507921459335044"
 
 	annotation PBI_NavigationStepName = Navigation
 

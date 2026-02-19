@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees"
+                      "Entity": "Employees Tracker"
                     }
                   },
                   "Property": "Job Class"
                 }
               },
-              "queryRef": "Employees.Job Class",
-              "nativeQueryRef": "Job Class",
+              "queryRef": "Employees Tracker.Job Class",
+              "nativeQueryRef": "Count of Job Class",
               "active": true
             }
           ]
@@ -83,6 +83,19 @@
             }
           }
         }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "concatenateLabels": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -131,13 +144,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Canvas'"
-                }
-              }
-            },
-            "showActionsInTooltips": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

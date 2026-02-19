@@ -110,11 +110,6 @@ relationship 890d203b-43a2-4ce6-9bec-b60eb57497e8
 	fromColumn: '[Personnel Matters] Tracker'.'Next Step Due Date'
 	toColumn: LocalDateTable_6f221687-dd6b-4660-92a5-f3a3c607d713.Date
 
-relationship a3bc319b-95e8-480d-be0f-099c6f088bb5
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'Employees Separations Tracker'.'Date Submitted for Exit'
-	toColumn: LocalDateTable_e39426ec-4fbb-468c-bc7b-6d816ccca1e5.Date
-
 relationship AutoDetected_2adab05b-0fee-4aec-a7f0-84c33637af02
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
@@ -125,4 +120,22 @@ relationship 6d711ce5-cf32-433e-c808-456550785687
 	isActive: false
 	fromColumn: 'Employees Separations Tracker'.'Last Day Date'
 	toColumn: Dim_Date.Date
+
+relationship a04a0dfe-5521-f44f-ecac-4f607dfb0f88
+	fromColumn: 'Employees Separations Tracker'.'Employee ID'
+	toColumn: 'Employees Tracker'.'Employee Number'
+
+relationship bbbfc734-6acc-404c-a049-c2bc1b552115
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees Separations Tracker'.'Date Submitted for Exit'
+	toColumn: LocalDateTable_1bcd2544-33f9-48f2-a25d-060c9331455c.Date
+
+relationship be520f48-ea91-4cbd-9401-2bb53327ebc5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Dim_LastDay.Date
+	toColumn: LocalDateTable_42a0de90-fcf0-486c-9694-b7e26c67081b.Date
+
+relationship 2d211530-1596-e7a4-54b3-5485c4d255ca
+	fromColumn: 'Employees Separations Tracker'.'Last Day Date'
+	toColumn: Dim_LastDay.Date
 

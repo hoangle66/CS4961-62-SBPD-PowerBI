@@ -1,0 +1,266 @@
+table 'Employees Tracker'
+	lineageTag: 276614f8-8d50-45e0-9204-456fc2a45e62
+
+	column RowNumber
+		dataType: string
+		lineageTag: ea6ca2ac-f3a7-477d-a4b4-879fdef7654e
+		summarizeBy: none
+		sourceColumn: RowNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: fa0e44ae-2196-4add-adc3-e9e8a2b8fc6b
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Docusign Status'
+		dataType: string
+		lineageTag: a0a7ef02-c34a-4e41-b257-3ed9156228cf
+		summarizeBy: none
+		sourceColumn: Docusign Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Column'
+		dataType: string
+		lineageTag: 8d67a59b-ff38-4c2a-ac04-c65cbd9850f1
+		summarizeBy: none
+		sourceColumn: Primary Column
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Number'
+		dataType: string
+		lineageTag: f40575c7-4a21-4777-aadb-4d5e35784a1e
+		summarizeBy: none
+		sourceColumn: Employee Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee First Name'
+		dataType: string
+		lineageTag: dce69245-585b-49ae-b0b8-8ce5941083d2
+		summarizeBy: none
+		sourceColumn: Employee First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Last Name'
+		dataType: string
+		lineageTag: 89747500-f27f-4306-b4a0-ed7d63bd7bd2
+		summarizeBy: none
+		sourceColumn: Employee Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: 4f408d5b-e868-4714-ac0c-df8b18e42ab0
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Level'
+		dataType: string
+		lineageTag: 10b377e0-248b-4758-957c-e1f893b49565
+		summarizeBy: none
+		sourceColumn: Job Class Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class Step'
+		dataType: string
+		lineageTag: fd1502cf-8b25-4ffc-9219-acab6dfca300
+		summarizeBy: none
+		sourceColumn: Job Class Step
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Anniversary Month'
+		dataType: string
+		lineageTag: ad9fc5dc-6e1f-4dcf-ad9d-db66b9ad5f95
+		summarizeBy: none
+		sourceColumn: Anniversary Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probationary EPR'
+		dataType: string
+		lineageTag: 6d35bf65-581d-4d28-9c45-3dde5706b515
+		summarizeBy: none
+		sourceColumn: Probationary EPR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employment Status'
+		dataType: string
+		lineageTag: 41d0a5e6-b92a-4d21-ae38-57a402e52fb1
+		summarizeBy: none
+		sourceColumn: Employment Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Quarter'
+		dataType: string
+		lineageTag: b8f49f70-5cc5-4037-bf4c-aed5231366af
+		summarizeBy: none
+		sourceColumn: Probation Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Probation Due Date'
+		dataType: string
+		lineageTag: ff4fefba-4def-4b72-b3ae-7660728b01b2
+		summarizeBy: none
+		sourceColumn: Probation Due Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Late EPR'
+		dataType: string
+		lineageTag: bb5b6a35-a386-4df9-b95b-a7f7a0371d2f
+		summarizeBy: none
+		sourceColumn: Late EPR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Signed EPR Due Date'
+		dataType: string
+		lineageTag: d1797ce9-e8fd-4149-a134-7a1a84c81dd4
+		summarizeBy: none
+		sourceColumn: Signed EPR Due Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Previous EPR Signed'
+		dataType: string
+		lineageTag: ee1652cb-7736-4a01-90a9-60487abedb5a
+		summarizeBy: none
+		sourceColumn: Previous EPR Signed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Previous EPR Actual Due Date'
+		dataType: string
+		lineageTag: b1b68873-9830-4515-936b-d59a98ed27ef
+		summarizeBy: none
+		sourceColumn: Previous EPR Actual Due Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supervisor
+		dataType: string
+		lineageTag: b58169a8-cfed-4d09-8dbc-dcc14116680e
+		summarizeBy: none
+		sourceColumn: Supervisor
+
+		annotation SummarizationSetBy = Automatic
+
+	column HR
+		dataType: string
+		lineageTag: e02c295e-5a97-4080-809a-2e057a34c0ad
+		summarizeBy: none
+		sourceColumn: HR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 1'
+		dataType: string
+		lineageTag: 76cb18f2-082f-48da-a4d8-9d3f8746f492
+		summarizeBy: none
+		sourceColumn: Supervisor 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2'
+		dataType: string
+		lineageTag: 7e5e4263-bd44-4e09-b918-4bafa1d3f9e1
+		summarizeBy: none
+		sourceColumn: Supervisor 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3'
+		dataType: string
+		lineageTag: b1ae4199-586e-4daa-b200-d8af5b67b092
+		summarizeBy: none
+		sourceColumn: Supervisor 3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR'
+		dataType: string
+		lineageTag: 8e283e59-ad17-445b-a6fb-c6bc13bee015
+		summarizeBy: none
+		sourceColumn: Head of HR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office'
+		dataType: string
+		lineageTag: b53b4470-1641-4322-bfd9-439eb6767a32
+		summarizeBy: none
+		sourceColumn: Head of Office
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 2 approval'
+		dataType: string
+		lineageTag: cfe781c2-7b9d-47c5-994d-5f5f6c0fc872
+		summarizeBy: none
+		sourceColumn: Supervisor 2 approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supervisor 3 approval'
+		dataType: string
+		lineageTag: 1eba40fb-29be-4646-ab96-1c5cc2fe662f
+		summarizeBy: none
+		sourceColumn: Supervisor 3 approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of HR approval'
+		dataType: string
+		lineageTag: e7ff9bbe-3782-4a8a-bdd3-7513b5f4f1a2
+		summarizeBy: none
+		sourceColumn: Head of HR approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Head of Office approval'
+		dataType: string
+		lineageTag: 7da656bd-0555-4987-aa8d-5cfd3505251b
+		summarizeBy: none
+		sourceColumn: Head of Office approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reset Ready'
+		dataType: string
+		lineageTag: c65c2940-472a-465a-a992-4b8f3bb9ac0c
+		summarizeBy: none
+		sourceColumn: Reset Ready
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Employees Tracker' = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
+				    #"7482487266928516" = #"1134964738680708"{[Key="7482487266928516"]}[Data],
+				    #"2190844477001604" = #"7482487266928516"{[Key="2190844477001604"]}[Data]
+				in
+				    #"2190844477001604"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
