@@ -249,6 +249,12 @@ table 'Employees Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Full Name' = 'Employees Tracker'[Employee First Name] & " " & 'Employees Tracker'[Employee Last Name]
+		lineageTag: de9ba0b6-f922-4bf9-8287-8e9b44c7b87a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Employees Tracker' = m
 		mode: import
 		source =
