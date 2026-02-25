@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "612383606db308e94760",
+  "name": "e71d5e3d0ccd0c5e3510",
   "position": {
-    "x": 470.34026065516025,
-    "y": 399.644945403311,
-    "z": 7000,
-    "height": 300.09439943642127,
-    "width": 770.43466009158158,
-    "tabOrder": 7000
+    "x": 494.64065977222145,
+    "y": 357.1064275428721,
+    "z": 13000,
+    "height": 349.8677837413274,
+    "width": 761.2640397957847,
+    "tabOrder": 13000
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -27,8 +27,26 @@
                 }
               },
               "queryRef": "Employees Tracker.Job Class",
-              "nativeQueryRef": "Count of Job Class",
+              "nativeQueryRef": "Job Class",
               "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employees Tracker"
+                    }
+                  },
+                  "Property": "Job Class Level"
+                }
+              },
+              "queryRef": "Employees Tracker.Job Class Level",
+              "nativeQueryRef": "Job Class Level"
             }
           ]
         },
@@ -70,35 +88,20 @@
         "isDefaultSort": true
       }
     },
-    "objects": {
-      "valueAxis": [
+    "visualContainerObjects": {
+      "visualTooltip": [
         {
           "properties": {
-            "gridlineTransparency": {
+            "section": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "'8e04461ca8a5a79530b9'"
                 }
               }
             }
           }
         }
       ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "concatenateLabels": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
       "border": [
         {
           "properties": {
@@ -106,6 +109,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
                 }
               }
             },
@@ -117,46 +127,6 @@
                       "Value": "'#808080'"
                     }
                   }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "6D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "visualTooltip": [
-        {
-          "properties": {
-            "type": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Canvas'"
-                }
-              }
-            },
-            "section": {
-              "expr": {
-                "Literal": {
-                  "Value": "'8e04461ca8a5a79530b9'"
                 }
               }
             }

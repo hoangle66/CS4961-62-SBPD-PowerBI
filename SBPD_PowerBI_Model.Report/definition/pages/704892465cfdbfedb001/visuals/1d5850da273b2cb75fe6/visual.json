@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "1d5850da273b2cb75fe6",
   "position": {
-    "x": 229,
-    "y": 158,
-    "z": 13002,
-    "height": 230,
-    "width": 220,
-    "tabOrder": 13002
+    "x": 462.06676266527029,
+    "y": 113.4054195575337,
+    "z": 12000,
+    "height": 230.43016101583976,
+    "width": 219.57219531352271,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -129,20 +129,6 @@
           ]
         },
         "howCreated": "Exclude"
-      },
-      {
-        "name": "211641986251e7828f57",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_LastDay"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
