@@ -1,0 +1,331 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "5b579b5430008d062d4b",
+  "position": {
+    "x": 61.428571428571431,
+    "y": 157.85714285714286,
+    "z": 16000,
+    "height": 288.57142857142861,
+    "width": 1197.1428571428571,
+    "tabOrder": 15000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Vacancy ID"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Vacancy ID",
+              "nativeQueryRef": "Vacancy ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Position ID"
+                }
+              },
+              "queryRef": "CountNonNull(Vacancies and Recruitments.Position ID)",
+              "nativeQueryRef": "Position ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Job Class"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Job Class",
+              "nativeQueryRef": "Job Class"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Office Location"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Office Location",
+              "nativeQueryRef": "Office Location"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Recruitment Type"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Recruitment Type",
+              "nativeQueryRef": "Recruitment Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Vacancy Start Date"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Vacancy Start Date",
+              "nativeQueryRef": "Vacancy Start Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Date Filled"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Date Filled",
+              "nativeQueryRef": "Date Filled"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Vacancy Days Open"
+                }
+              },
+              "queryRef": "Sum(Vacancies and Recruitments.Vacancy Days Open)",
+              "nativeQueryRef": "Vacancy Days Open"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Interviews Conducted"
+                }
+              },
+              "queryRef": "Sum(Vacancies and Recruitments.Interviews Conducted)",
+              "nativeQueryRef": "Interviews Conducted"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Vacancies and Recruitments"
+                  }
+                },
+                "Property": "Vacancy ID"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B09060'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Vacancies Recruitment Tracker'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.5
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

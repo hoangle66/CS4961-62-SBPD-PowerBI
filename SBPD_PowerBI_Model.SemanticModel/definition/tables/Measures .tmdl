@@ -849,6 +849,63 @@ table 'Measures '
 		displayFolder: Personnel Matters
 		lineageTag: 7f13203c-7477-497f-b229-a667edf1df44
 
+	measure 'Active Vacancies' =
+			
+			CALCULATE(
+			    [Vacancies Total],
+			    'Vacancies and Recruitments'[Is Active] = TRUE()
+			)
+		displayFolder: Vacancies Recruitments
+		lineageTag: c055db04-5fb9-49d1-b458-73ed64bf4f2a
+
+	measure 'Vacancies Total' =
+			
+			DISTINCTCOUNT('Vacancies and Recruitments'[Vacancy ID])
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: 13526343-dd69-4438-ba5a-797762c5939a
+
+	measure 'Vacancies Opened' =
+			
+			DISTINCTCOUNT('Vacancies and Recruitments'[Vacancy ID])
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: 5289cbbf-30fe-4070-9992-e2440770fb47
+
+	measure 'New Hires' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('Vacancies and Recruitments'[Vacancy ID]),
+			    NOT(ISBLANK('Vacancies and Recruitments'[Date Filled]))
+			)
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: 8fda4ccf-62dc-4c3c-a4f4-db5a945881a0
+
+	measure 'Interviews Total' =
+			
+			SUM('Vacancies and Recruitments'[Interviews Conducted])
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: 33ae4e8a-b6dd-4af9-be90-74a350e973f4
+
+	measure 'Avg Days Open' =
+			
+			AVERAGE('Vacancies and Recruitments'[Vacancy Days Open])
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: b5096435-40b9-42bf-b5eb-080fe01b4d7e
+
+	measure 'Filled Vacancies' =
+			
+			CALCULATE(
+			    [Vacancies Total],
+			    'Vacancies and Recruitments'[Is Active] = FALSE()
+			)
+		formatString: 0
+		displayFolder: Vacancies Recruitments
+		lineageTag: 4fae85aa-377e-4399-becf-4d35fac3aab0
+
 	partition 'Measures ' = m
 		mode: import
 		source =

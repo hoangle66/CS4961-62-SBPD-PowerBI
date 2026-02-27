@@ -125,11 +125,6 @@ relationship a04a0dfe-5521-f44f-ecac-4f607dfb0f88
 	fromColumn: 'Employees Separations Tracker'.'Employee ID'
 	toColumn: 'Employees Tracker'.'Employee Number'
 
-relationship bbbfc734-6acc-404c-a049-c2bc1b552115
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'Employees Separations Tracker'.'Date Submitted for Exit'
-	toColumn: LocalDateTable_1bcd2544-33f9-48f2-a25d-060c9331455c.Date
-
 relationship be520f48-ea91-4cbd-9401-2bb53327ebc5
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Dim_LastDay.Date
@@ -138,4 +133,13 @@ relationship be520f48-ea91-4cbd-9401-2bb53327ebc5
 relationship 2d211530-1596-e7a4-54b3-5485c4d255ca
 	fromColumn: 'Employees Separations Tracker'.'Last Day Date'
 	toColumn: Dim_LastDay.Date
+
+relationship 87b01662-ed93-4346-8cbc-5eaae7a1418a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Vacancies and Recruitments'.'Date Filled'
+	toColumn: LocalDateTable_fd300f04-1d22-43ff-9237-6c19b510a102.Date
+
+relationship 822f9ac8-746d-16c1-fd89-0b8827a37312
+	fromColumn: 'Vacancies and Recruitments'.'Vacancy Start Date'
+	toColumn: Dim_Date.Date
 

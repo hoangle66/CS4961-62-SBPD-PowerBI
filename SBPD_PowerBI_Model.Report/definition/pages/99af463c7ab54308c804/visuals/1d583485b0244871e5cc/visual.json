@@ -1,0 +1,262 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "1d583485b0244871e5cc",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 240,
+    "width": 320,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Vacancy ID"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Vacancy ID",
+              "nativeQueryRef": "Vacancy ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Status",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Office Location"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Office Location",
+              "nativeQueryRef": "Office Location"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Interviews Conducted"
+                }
+              },
+              "queryRef": "Sum(Vacancies and Recruitments.Interviews Conducted)",
+              "nativeQueryRef": "Interviews Conducted"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Vacancies and Recruitments"
+                  }
+                },
+                "Property": "Vacancy ID"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "66.9917175236288D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Vacancies and Recruitments.Office Location"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99.76545202667441D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Vacancies and Recruitments.Status"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60.597805163631755D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Vacancies and Recruitments.Vacancy ID"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "77.99094204752421D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Vacancies and Recruitments.Interviews Conducted)"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

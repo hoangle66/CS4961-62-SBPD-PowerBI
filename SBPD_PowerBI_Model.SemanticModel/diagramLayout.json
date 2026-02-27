@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 386.12114030685649,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -173,6 +173,19 @@
           "nodeLineageTag": "5b466a60-7edc-43a1-8715-7e5919040387",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2663,
+            "y": 364
+          },
+          "nodeIndex": "Vacancies and Recruitments",
+          "nodeLineageTag": "b5fae8c0-bd38-42d0-89ec-9daf1e971c82",
+          "size": {
+            "height": 300,
             "width": 234
           },
           "zIndex": 0

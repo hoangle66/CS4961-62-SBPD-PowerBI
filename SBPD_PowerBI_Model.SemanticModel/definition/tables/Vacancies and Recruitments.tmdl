@@ -1,0 +1,154 @@
+table 'Vacancies and Recruitments'
+	lineageTag: b5fae8c0-bd38-42d0-89ec-9daf1e971c82
+
+	column RowNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: f0c3aeb2-d660-4684-af7f-22adf450087e
+		summarizeBy: sum
+		sourceColumn: RowNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DPT.'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4733198c-7b15-4c4f-9337-06d8a9fef840
+		summarizeBy: sum
+		sourceColumn: DPT.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vacancy ID'
+		dataType: string
+		lineageTag: d8d500b6-fb15-4617-ae51-07bf031a6f4c
+		summarizeBy: none
+		sourceColumn: Vacancy ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Position ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: c734cd86-b2cf-4c13-aa20-de445646d3cd
+		summarizeBy: count
+		sourceColumn: Position ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Class'
+		dataType: string
+		lineageTag: 3b773ed8-29f7-4c14-8f1b-a93c3d6c3ffa
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Office Location'
+		dataType: string
+		lineageTag: f5d36f5e-41a2-4ca4-9bd0-cf55e33b3c7b
+		summarizeBy: none
+		sourceColumn: Office Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vacancy Start Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 74fc6692-139b-42c5-a11b-5f0726df9986
+		summarizeBy: none
+		sourceColumn: Vacancy Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Recruitment Type'
+		dataType: string
+		lineageTag: 629b54fb-e85d-4db9-9a7b-b98e89bcaebf
+		summarizeBy: none
+		sourceColumn: Recruitment Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: a8c47de0-3dde-4404-9cb7-1126371eaa92
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vacancy Days Open'
+		dataType: int64
+		formatString: 0
+		lineageTag: 909c2780-cbf6-451c-8624-7811298ac43e
+		summarizeBy: sum
+		sourceColumn: Vacancy Days Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Filled'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 026d96c8-edc4-4f0c-98a4-411b1ea3d6ef
+		summarizeBy: none
+		sourceColumn: Date Filled
+
+		variation Variation
+			isDefault
+			relationship: 87b01662-ed93-4346-8cbc-5eaae7a1418a
+			defaultHierarchy: LocalDateTable_fd300f04-1d22-43ff-9237-6c19b510a102.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Label
+		dataType: string
+		lineageTag: 4d3b514f-b74b-4039-a6a8-29ba86dd9983
+		summarizeBy: none
+		sourceColumn: Label
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Interviews Conducted'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7b115436-d012-4f1e-b818-2899dd7fce66
+		summarizeBy: sum
+		sourceColumn: Interviews Conducted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Active'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e0333c6d-c62d-4135-b10b-7fa84ab228c7
+		summarizeBy: none
+		sourceColumn: Is Active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Vacancies and Recruitments' = m
+		mode: import
+		source =
+				let
+				    Source = SmartsheetGlobal.Contents("US", []),
+				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
+				    #"38243791071108" = #"1134964738680708"{[Key="38243791071108"]}[Data],
+				    #"4963448636002180" = #"38243791071108"{[Key="4963448636002180"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(#"4963448636002180",{{"RowNumber", Int64.Type}, {"DPT.", Int64.Type}, {"Vacancy ID", type text}, {"Position ID", Int64.Type}, {"Job Class", type text}, {"Office Location", type text}, {"Vacancy Start Date", type date}, {"Recruitment Type", type text}, {"Status", type text}, {"Vacancy Days Open", Int64.Type}, {"Label", type text}, {"Date Filled", type date}, {"Interviews Conducted", Int64.Type}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type", "Is Active", each Text.Upper(Text.Trim([Status])) <> "FILLED"),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom",{{"Is Active", type logical}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

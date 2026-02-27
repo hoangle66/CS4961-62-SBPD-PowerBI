@@ -104,22 +104,6 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Date Submitted for Exit'
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: 424cf283-9883-423f-9b5a-f0e172d8ebc7
-		summarizeBy: none
-		sourceColumn: Date Submitted for Exit
-
-		variation Variation
-			isDefault
-			relationship: bbbfc734-6acc-404c-a049-c2bc1b552115
-			defaultHierarchy: LocalDateTable_1bcd2544-33f9-48f2-a25d-060c9331455c.'Date Hierarchy'
-
-		changedProperty = DataType
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'Last Day Date'
 		dataType: dateTime
 		formatString: Long Date
@@ -146,6 +130,54 @@ table 'Employees Separations Tracker'
 		lineageTag: ad126b83-4f4f-47bd-b5e6-325b51270117
 		summarizeBy: none
 		sourceColumn: Employee ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Form Submitted'
+		dataType: string
+		lineageTag: 5d2d9d4a-6340-45fd-881c-2b34d567c024
+		summarizeBy: none
+		sourceColumn: Date Form Submitted
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Separated Pay Period'
+		dataType: string
+		lineageTag: 94aae620-f99f-4b59-90a2-52483941a88f
+		summarizeBy: none
+		sourceColumn: Separated Pay Period
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Separated Payroll Starting Date'
+		dataType: string
+		lineageTag: 6ba47006-935d-47b7-a1d3-290b58eaa464
+		summarizeBy: none
+		sourceColumn: Separated Payroll Starting Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Separated Payroll Ending Date'
+		dataType: string
+		lineageTag: 8528fa74-f1d0-4378-842b-b4d74de479e4
+		summarizeBy: none
+		sourceColumn: Separated Payroll Ending Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Separated Final Pay Date'
+		dataType: string
+		lineageTag: ec5ea6f5-6a8d-4947-bfe4-c35bf9e66d51
+		summarizeBy: none
+		sourceColumn: Separated Final Pay Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Insurance Last Date'
+		dataType: string
+		lineageTag: f9fbfb73-3735-4232-abf1-ecab57335db5
+		summarizeBy: none
+		sourceColumn: Insurance Last Date
 
 		annotation SummarizationSetBy = Automatic
 
