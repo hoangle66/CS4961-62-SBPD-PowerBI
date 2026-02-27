@@ -146,51 +146,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9bcce0cf9aeb82e468a1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "[Personnel Matters] Tracker"
-              }
-            },
-            "Property": "Matter IDs"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "500d9b9a5aee2b4d6736",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "[Personnel Matters] Tracker"
-              }
-            },
-            "Property": "Issue"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3a179c77b78d2deb70ff",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "[Personnel Matters] Tracker"
-              }
-            },
-            "Property": "Supervisor"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

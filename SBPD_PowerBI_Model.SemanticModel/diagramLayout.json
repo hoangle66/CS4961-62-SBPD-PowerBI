@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 386.12114030685649,
         "y": 0
       },
       "nodes": [
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 236
           },
-          "zIndex": 9
+          "zIndex": 10
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 283,
             "width": 255
           },
-          "zIndex": 8
+          "zIndex": 7
         },
         {
           "location": {
@@ -71,7 +71,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 9
         },
         {
           "location": {
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 638,
-            "y": 29
+            "x": 655.87597927915658,
+            "y": 0
           },
           "nodeIndex": "Employees History Records",
           "nodeLineageTag": "8f6eb9cc-0b6c-4905-9f65-4ecf3533bfd3",
@@ -136,11 +136,50 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1354.7943021817234,
+            "y": 639.43704396525891
+          },
+          "nodeIndex": "Employees Separations Tracker",
+          "nodeLineageTag": "c94a3ec7-b263-40f9-8c64-7edfc7c0db5b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 2007.1502188157192,
+            "y": 642.07078878687923
+          },
+          "nodeIndex": "Employees Tracker",
+          "nodeLineageTag": "276614f8-8d50-45e0-9204-456fc2a45e62",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1580.5101436510777,
+            "y": 340.50986296346764
+          },
+          "nodeIndex": "Dim_LastDay",
+          "nodeLineageTag": "5b466a60-7edc-43a1-8715-7e5919040387",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 50.346892102823389,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
