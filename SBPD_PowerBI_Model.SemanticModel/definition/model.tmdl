@@ -39,7 +39,7 @@ ref table 'Employees Tracker'
 ref table Dim_LastDay
 ref table LocalDateTable_42a0de90-fcf0-486c-9694-b7e26c67081b
 ref table 'Vacancies and Recruitments'
-ref table LocalDateTable_fd300f04-1d22-43ff-9237-6c19b510a102
+ref table LocalDateTable_31afe02b-a694-40ef-b4d1-6942f8aa4f21
 
 ref cultureInfo en-US
 

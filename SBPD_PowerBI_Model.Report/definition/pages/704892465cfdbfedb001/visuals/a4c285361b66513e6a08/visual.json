@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "ff2524cb778ec2137931",
+  "name": "a4c285361b66513e6a08",
   "position": {
-    "x": 903.57142857142844,
+    "x": 358.53403141361258,
     "y": 0,
-    "z": 5000,
-    "height": 157.85714285714286,
-    "width": 194.28571428571431,
-    "tabOrder": 5000
+    "z": 13000,
+    "height": 158.82722513089004,
+    "width": 195.01570680628274,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,15 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Measures "
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Interviews Total"
+                  "Property": "Total Exits"
                 }
               },
-              "queryRef": "Measures .Interviews Total",
-              "nativeQueryRef": "Total Interviews",
-              "displayName": "Total Interviews"
+              "queryRef": "Employees Separations Tracker.Total Exits",
+              "nativeQueryRef": "Total Exits"
             }
           ]
         }
@@ -40,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Measures "
+                    "Entity": "Employees Separations Tracker"
                   }
                 },
-                "Property": "Interviews Total"
+                "Property": "Total Exits"
               }
             },
             "direction": "Descending"
@@ -67,13 +66,6 @@
               "expr": {
                 "Literal": {
                   "Value": "36D"
-                }
-              }
-            },
-            "showBlankAs": {
-              "expr": {
-                "Literal": {
-                  "Value": "'0'"
                 }
               }
             }

@@ -37,11 +37,12 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Position ID"
+                  "Property": "PosID"
                 }
               },
-              "queryRef": "CountNonNull(Vacancies and Recruitments.Position ID)",
-              "nativeQueryRef": "Position ID"
+              "queryRef": "Vacancies and Recruitments.PosID",
+              "nativeQueryRef": "Position ID",
+              "displayName": "Position ID"
             },
             {
               "field": {
@@ -218,13 +219,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "63.07692307692308D"
+                  "Value": "65D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "CountNonNull(Vacancies and Recruitments.Position ID)"
+            "metadata": "Vacancies and Recruitments.PosID"
           }
         }
       ]

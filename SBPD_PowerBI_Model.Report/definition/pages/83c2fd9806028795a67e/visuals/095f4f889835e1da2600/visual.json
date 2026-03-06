@@ -23,11 +23,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "JobClassTitle"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Job Class",
-              "nativeQueryRef": "Job Class",
+              "queryRef": "Vacancies and Recruitments.JobClassTitle",
+              "nativeQueryRef": "JobClassTitle",
               "active": true
             }
           ]

@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "f67964642062285e01d2",
+  "name": "a13584c9b8b4c16ad8a4",
   "position": {
-    "x": 346.35294117647061,
+    "x": 795.96638655462186,
     "y": 458.218487394958,
-    "z": 17000,
+    "z": 18000,
     "height": 250.26330532212884,
-    "width": 437.42296918767505,
-    "tabOrder": 16000
+    "width": 414.47619047619048,
+    "tabOrder": 17000
   },
   "visual": {
-    "visualType": "barChart",
+    "visualType": "pieChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,11 +23,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Label"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Status",
-              "nativeQueryRef": "Count of Status",
+              "queryRef": "Vacancies and Recruitments.Label",
+              "nativeQueryRef": "Label",
               "active": true
             }
           ]
@@ -64,9 +64,10 @@
                 "Property": "Vacancies Total"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -80,23 +81,10 @@
                 }
               }
             },
-            "labelPosition": {
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'InsideEnd'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
+                  "Value": "'inside'"
                 }
               }
             }
@@ -369,18 +357,131 @@
               }
             ]
           }
-        }
-      ],
-      "valueAxis": [
+        },
         {
           "properties": {
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Number of Vacancies'"
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": -0.25
+                    }
+                  }
                 }
               }
             }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Vacancies and Recruitments"
+                          }
+                        },
+                        "Property": "Label"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'TBD'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Vacancies and Recruitments"
+                          }
+                        },
+                        "Property": "Label"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'FUNDED'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Vacancies and Recruitments"
+                          }
+                        },
+                        "Property": "Label"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'UNFUNDED'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ]
@@ -507,13 +608,6 @@
                 }
               }
             },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Overview of Total Vacancies by Recruitment Status'"
-                }
-              }
-            },
             "heading": {
               "expr": {
                 "Literal": {
@@ -527,6 +621,13 @@
                   "Value": "14D"
                 }
               }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Vacancies By Funding Label'"
+                }
+              }
             }
           }
         }
@@ -537,7 +638,7 @@
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'a52cdd660e9a55dd0be3'"
+                  "Value": "'99af463c7ab54308c804'"
                 }
               }
             },

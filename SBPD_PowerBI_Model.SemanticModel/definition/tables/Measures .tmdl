@@ -855,6 +855,7 @@ table 'Measures '
 			    [Vacancies Total],
 			    'Vacancies and Recruitments'[Is Active] = TRUE()
 			)
+		formatString: 0
 		displayFolder: Vacancies Recruitments
 		lineageTag: c055db04-5fb9-49d1-b458-73ed64bf4f2a
 

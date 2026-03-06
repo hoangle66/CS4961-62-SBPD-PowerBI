@@ -51,11 +51,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Office Location"
+                  "Property": "Label"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Office Location",
-              "nativeQueryRef": "Office Location"
+              "queryRef": "Vacancies and Recruitments.Label",
+              "nativeQueryRef": "Label"
             }
           ]
         }
@@ -157,20 +157,6 @@
         }
       ],
       "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "126.26534431538813D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Vacancies and Recruitments.Office Location"
-          }
-        },
         {
           "properties": {
             "value": {

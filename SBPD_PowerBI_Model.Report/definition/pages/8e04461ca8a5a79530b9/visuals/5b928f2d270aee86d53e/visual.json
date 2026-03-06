@@ -20,28 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees Tracker"
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Full Name"
+                  "Property": "FullName"
                 }
               },
-              "queryRef": "Employees Tracker.Full Name",
-              "nativeQueryRef": "Full Name"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Employees Tracker"
-                    }
-                  },
-                  "Property": "Job Class Level"
-                }
-              },
-              "queryRef": "Employees Tracker.Job Class Level",
-              "nativeQueryRef": "Job Class Level"
+              "queryRef": "Employees Separations Tracker.FullName",
+              "nativeQueryRef": "Full Name",
+              "displayName": "Full Name"
             },
             {
               "field": {
@@ -56,6 +43,20 @@
               },
               "queryRef": "Employees Tracker.Job Class",
               "nativeQueryRef": "Job Class"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Employees Separations Tracker"
+                    }
+                  },
+                  "Property": "Job Class Level"
+                }
+              },
+              "queryRef": "Employees Separations Tracker.Job Class Level",
+              "nativeQueryRef": "Job Class Level"
             }
           ]
         }
@@ -70,13 +71,66 @@
                     "Entity": "Employees Tracker"
                   }
                 },
-                "Property": "Job Class Level"
+                "Property": "Job Class"
               }
             },
             "direction": "Ascending"
           }
         ]
       }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#3E3A23'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#C5B59C'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Employees Tracker.Job Class"
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

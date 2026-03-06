@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8b4d097f739db8d66396",
   "position": {
-    "x": 920.714285714286,
-    "y": 458.57142857142861,
+    "x": 920.73949579831935,
+    "y": 458.218487394958,
     "z": 13000,
-    "height": 230.00000000000003,
-    "width": 341.42857142857144,
+    "height": 252.41456582633054,
+    "width": 341.33333333333331,
     "tabOrder": 12000
   },
   "visual": {
@@ -185,6 +185,48 @@
                     "Right": {
                       "Literal": {
                         "Value": "'EXTERNAL'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Vacancies and Recruitments"
+                          }
+                        },
+                        "Property": "Recruitment Type"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'TBA'"
                       }
                     }
                   }

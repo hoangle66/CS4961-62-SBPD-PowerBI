@@ -151,6 +151,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -715,6 +725,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -756,16 +776,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7141,6 +7151,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -7182,16 +7202,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -14748,6 +14758,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15296,6 +15316,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15337,16 +15367,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19864,6 +19884,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -19905,16 +19935,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "probation class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "probation kind": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -21309,6 +21329,16 @@ cultureInfo en-US
 			        {
 			          "status": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
 			          }
 			        },
 			        {
@@ -23612,16 +23642,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Update Required ?": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -24856,6 +24876,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "extraction": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -24887,16 +24917,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "tooltip abstract": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "tooltip outline": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -25586,6 +25606,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
 			          "situation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -25633,138 +25663,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "station": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "employees_separations_tracker.job_class": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Employees Separations Tracker",
-			          "ConceptualProperty": "Job Class"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "job class": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "class": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "job classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "job category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "job genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "job course": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job lecture": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -27237,6 +27135,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -27811,6 +27719,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
 			          "genre": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -27852,16 +27770,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -30660,183 +30568,35 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "vacancies_and_recruitment": {
+			    "employees_separations_tracker.full_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments"
+			          "ConceptualEntity": "Employees Separations Tracker",
+			          "ConceptualProperty": "FullName"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "vacancies and recruitment": {
+			          "full name": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "vacancy and recruitment": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "vacancies": {
+			          "name": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "vacancy": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.7566
-			          }
-			        },
-			        {
-			          "vacancies recruitment": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy recruitment": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.7566
-			          }
-			        },
-			        {
-			          "recruitment": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy and enrolment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "vacancy and enrollment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "vacancy and conscription": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "vacancy and enlistment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "vacancy enrolment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "vacancy enrollment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "vacancy conscription": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "vacancy enlistment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "vacancy and staffing": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "vacancy and employment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.row_number": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "RowNumber"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "row number": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "RowNumber": {
+			          "FullName": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "row no": {
+			          "full nickname": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -30846,7 +30606,37 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "line number": {
+			          "full title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "full label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "full tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "full surname": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -30854,548 +30644,78 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.dpt_": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "DPT."
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dpt.": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.vacancy_ID": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Vacancy ID"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy ID": {
-			            "State": "Generated"
-			          }
 			        },
 			        {
-			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy identification": {
+			          "complete name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "vacancy identity": {
+			          "entire name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "vacancy identifier": {
+			          "whole name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "vacancy credential": {
+			          "full given name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "situation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "opportunity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "job": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "post": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "opening": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
+			            "Weight": 0.466
 			          }
 			        }
 			      ],
-			      "NameType": "Identifier"
+			      "NameType": "Name"
 			    },
-			    "vacancies_and_recruitment.position_ID": {
+			    "employees_separations_tracker.job_class_level": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Position ID"
+			          "ConceptualEntity": "Employees Separations Tracker",
+			          "ConceptualProperty": "Job Class Level"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "position ID": {
+			          "job class level": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "position": {
+			          "level": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "position identification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "position identity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "position identifier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "position credential": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "situation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "spot": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "point": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "station": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.job_class": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Job Class"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "job class": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "class": {
+			          "class level": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "job classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "job category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "job genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "classification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "job course": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job lecture": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job lesson": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "job period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "Vacancies Job Class": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.office_location": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Office Location"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "office location": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "location": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "office locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "office placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "office scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "office venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "office address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "office place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Vacancy Start Date"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start date": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        },
-			        {
-			          "start date": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy start moment": {
+			          "job class quantity": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -31405,7 +30725,17 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start moment": {
+			          "job class threshold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "class quantity": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -31415,7 +30745,17 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "vacancy start period": {
+			          "class threshold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "job class amount": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -31425,1420 +30765,53 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start period": {
+			          "job class grade": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.727
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "vacancy commencement date": {
+			          "job class point": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.615
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "vacancy inception date": {
+			          "job class rank": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.615
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "vacancy kickoff date": {
+			          "job class tier": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.615
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "commencement date": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "inception date": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "kickoff date": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Vacancy Start Date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start date hierarchy": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "start date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Vacancy Start Date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vacancy start date year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "start year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "start date year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy start date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "vacancy start yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "yr": {
+			          "threshold": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "vacancy commencement date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy inception date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy kickoff date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy start moment year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "commencement date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date.quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Vacancy Start Date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vacancy start date quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "start quarter": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "start date quarter": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy start date qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.857
-			          }
-			        },
-			        {
-			          "vacancy start qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.846
-			          }
-			        },
-			        {
-			          "start date qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.846
-			          }
-			        },
-			        {
-			          "start qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
-			          "qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "vacancy commencement date quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy inception date quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy kickoff date quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy start moment quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "commencement date quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Vacancy Start Date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vacancy start date month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "start month": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "start date month": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy start date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        },
-			        {
-			          "vacancy start mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "vacancy commencement date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy inception date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy kickoff date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy start moment month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "commencement date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.vacancy_start_date.day": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Vacancy Start Date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy start day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vacancy start date day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "start day": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "start date day": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "vacancy commencement date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy inception date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy kickoff date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.629
-			          }
-			        },
-			        {
-			          "vacancy start moment day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.617
-			          }
-			        },
-			        {
-			          "commencement date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        },
-			        {
-			          "inception date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        },
-			        {
-			          "kickoff date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.615
-			          }
-			        },
-			        {
-			          "vacancy beginning date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.61
-			          }
-			        },
-			        {
-			          "vacancy first date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.61
-			          }
-			        },
-			        {
-			          "vacancy initiation date day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.61
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.recruitment_type": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Recruitment Type"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "recruitment type": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "type": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "recruitment category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "recruitment genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "recruitment manner": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "recruitment variety": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "manner": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "variety": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "recruitment brand": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "recruitment class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "recruitment kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.status": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Status"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "status": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prestige": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prominence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "condition": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.vacancy_days_open": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Vacancy Days Open"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vacancy days open": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vacancy day open": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "open": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "sweeping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.date_filled": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Date Filled"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "date filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        },
-			        {
-			          "moment filled": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "period filled": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.date_filled.date_hierarchy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Date Filled",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "date hierarchy filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.date_filled.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Date Filled",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "year filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "yr filled": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment filled year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period filled year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.date_filled.quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Date Filled",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "quarter filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.846
-			          }
-			        },
-			        {
-			          "qtr filled": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
-			          "qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "moment filled quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period filled quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.date_filled.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Date Filled",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "month filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "mth filled": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment filled month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period filled month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.date_filled.day": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "VariationSource": "Date Filled",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "day filled": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date filled day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment filled day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period filled day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "vacancies_and_recruitment.label": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Label"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "label": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "sticker": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "decal": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "name tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.571
-			          }
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment.interview_conducted": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Vacancies and Recruitments",
-			          "ConceptualProperty": "Interviews Conducted"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "interview conducted": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "consultation conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "discussion conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "conversation conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "roundtable conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "meeting conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "talk conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "conference conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "dialog conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "dialogue conducted": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
 			          }
 			        }
 			      ]
@@ -33383,6 +31356,1474 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "vacancies_and_recruitment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vacancies and recruitment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vacancy and recruitment": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "vacancies": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "vacancies recruitment": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy recruitment": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "recruitment": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy and enrolment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "vacancy and enrollment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "vacancy and conscription": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "vacancy and enlistment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "vacancy enrolment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "vacancy enrollment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "vacancy conscription": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "vacancy enlistment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "vacancy and staffing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "vacancy and employment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.row_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "RowNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "row number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RowNumber": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "row no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "line number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.row_created_timestamp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Row Created Timestamp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "row created timestamp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "line created timestamp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.vacancy_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Vacancy ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vacancy ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vacancy identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vacancy identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vacancy credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "job": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "opening": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "vacancies_and_recruitment.dept": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Dept"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dept": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.pos_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "PosID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pos ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PosID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pos": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pos identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pos identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pos identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pos credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Position ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.job_class_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "JobClassTitle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "job class title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "JobClassTitle": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "class title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "job class designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "class designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "job class name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "job class award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "job class call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "job class heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "job class label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Job Class": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.vacancy_start_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Vacancy Start Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vacancy start date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "start date": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vacancy start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vacancy start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "vacancy commencement date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "vacancy inception date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "vacancy kickoff date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "commencement date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "inception date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "kickoff date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Date Filled"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment filled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period filled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "VariationSource": "Date Filled",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "VariationSource": "Date Filled",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr filled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment filled year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period filled year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "VariationSource": "Date Filled",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr filled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment filled quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period filled quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "VariationSource": "Date Filled",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth filled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment filled month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period filled month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.date_filled.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "VariationSource": "Date Filled",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day filled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date filled day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment filled day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period filled day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vacancies_and_recruitment.vacancy_days_open": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Vacancy Days Open"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vacancy days open": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vacancy day open": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "open": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sweeping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.recruitment_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Recruitment Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recruitment type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "recruitment category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "recruitment genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "recruitment manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "recruitment variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "recruitment brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "recruitment class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment.interview_conducted": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Vacancies and Recruitments",
+			          "ConceptualProperty": "Interviews Conducted"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "interview conducted": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "consultation conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "discussion conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "conversation conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "roundtable conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "meeting conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "talk conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "conference conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dialog conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dialogue conducted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
 			    "vacancies_and_recruitment.is_active": {
 			      "Definition": {
 			        "Binding": {
@@ -33457,6 +32898,105 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
+			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees History Records"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_history_record.date_saved.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.date_hierarchy"
+			          }
+			        },
+			        "employees_history_record.date_saved.month": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_history_record.date_saved.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_history_record.date_saved.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_saved_have_month_saved"
+			        }
+			      ]
+			    },
+			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees History Records"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_history_record.date_saved.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.date_hierarchy"
+			          }
+			        },
+			        "employees_history_record.date_saved.quarter": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_history_record.date_saved.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_history_record.date_saved.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_saved_have_quarter_saved"
+			        }
+			      ]
+			    },
+			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees History Records"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_history_record.date_saved.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.date_hierarchy"
+			          }
+			        },
+			        "employees_history_record.date_saved.year": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_history_record.date_saved.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_history_record.date_saved.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_saved_have_year_saved"
+			        }
+			      ]
+			    },
 			    "employees_history_record_date_saved_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Employees History Records"
@@ -34480,7 +34020,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "vacancies_and_recruitment_has_employee": {
+			    "vacancies_and_recruitment_has_dim_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Vacancies and Recruitments"
 			      },
@@ -34491,9 +34031,9 @@ cultureInfo en-US
 			            "Entity": "vacancies_and_recruitment"
 			          }
 			        },
-			        "employee": {
+			        "dim_date": {
 			          "Target": {
-			            "Entity": "employee"
+			            "Entity": "dim_date"
 			          }
 			        }
 			      },
@@ -34504,12 +34044,25 @@ cultureInfo en-US
 			              "Role": "vacancies_and_recruitment"
 			            },
 			            "Object": {
-			              "Role": "employee"
+			              "Role": "dim_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_employees"
+			          "ID": "vacancies_and_recruitments_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_vacancies_and_recruitments"
 			        }
 			      ]
 			    },
@@ -34780,39 +34333,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "job_class_level_maps_have_dim_job_classes"
-			        }
-			      ]
-			    },
-			    "employee_has_vacancies_and_recruitment": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_vacancies_and_recruitments"
 			        }
 			      ]
 			    },
@@ -35135,6 +34655,204 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "vacancies_and_recruitments_have_is_actives"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_interview_conducted": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.interview_conducted": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.interview_conducted"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.interview_conducted"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_interview_conducted"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_recruitment_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.recruitment_type": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.recruitment_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.recruitment_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_recruitment_types"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_vacancy_days_open": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.vacancy_days_open": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.vacancy_days_open"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.vacancy_days_open"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_vacancy_days_opens"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_date_filled": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.date_filled": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.date_filled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.date_filled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_date_filled"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_vacancy_start_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.vacancy_start_date": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.vacancy_start_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.vacancy_start_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_vacancy_start_dates"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_label": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.label": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_labels"
 			        },
 			        {
 			          "DynamicAdjective": {
@@ -35142,12 +34860,256 @@ cultureInfo en-US
 			              "Role": "vacancies_and_recruitment"
 			            },
 			            "Adjective": {
-			              "Role": "vacancies_and_recruitment.is_active"
+			              "Role": "vacancies_and_recruitment.label"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "is_actives_describe_vacancies_and_recruitments"
+			          "ID": "labels_describe_vacancies_and_recruitments"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.status": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_statuses"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_job_class_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.job_class_title": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.job_class_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.job_class_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_job_class_titles"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_pos_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.pos_ID": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.pos_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.pos_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_pos_ID"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_dept": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.dept": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.dept"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.dept"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_depts"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_vacancy_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.vacancy_ID": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.vacancy_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.vacancy_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_vacancy_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Name": {
+			              "Role": "vacancies_and_recruitment.vacancy_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancy_ID_are_names_IDs_of_vacancies_and_recruitments"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_row_created_timestamp": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.row_created_timestamp": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.row_created_timestamp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.row_created_timestamp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_row_created_timestamps"
+			        }
+			      ]
+			    },
+			    "vacancies_and_recruitment_has_row_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.row_number": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.row_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Object": {
+			              "Role": "vacancies_and_recruitment.row_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vacancies_and_recruitments_have_row_numbers"
 			        }
 			      ]
 			    },
@@ -35382,20 +35344,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "vacancies_and_recruitment_has_interview_conducted": {
+			    "employees_separations_tracker_has_job_class_level": {
 			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
+			        "ConceptualEntity": "Employees Separations Tracker"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "vacancies_and_recruitment": {
+			        "employees_separations_tracker": {
 			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
+			            "Entity": "employees_separations_tracker"
 			          }
 			        },
-			        "vacancies_and_recruitment.interview_conducted": {
+			        "employees_separations_tracker.job_class_level": {
 			          "Target": {
-			            "Entity": "vacancies_and_recruitment.interview_conducted"
+			            "Entity": "employees_separations_tracker.job_class_level"
 			          }
 			        }
 			      },
@@ -35403,32 +35365,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
+			              "Role": "employees_separations_tracker"
 			            },
 			            "Object": {
-			              "Role": "vacancies_and_recruitment.interview_conducted"
+			              "Role": "employees_separations_tracker.job_class_level"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_interview_conducted"
+			          "ID": "employees_separations_trackers_have_job_class_levels"
 			        }
 			      ]
 			    },
-			    "vacancies_and_recruitment_has_label": {
+			    "employees_separations_tracker_has_full_name": {
 			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
+			        "ConceptualEntity": "Employees Separations Tracker"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "vacancies_and_recruitment": {
+			        "employees_separations_tracker": {
 			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
+			            "Entity": "employees_separations_tracker"
 			          }
 			        },
-			        "vacancies_and_recruitment.label": {
+			        "employees_separations_tracker.full_name": {
 			          "Target": {
-			            "Entity": "vacancies_and_recruitment.label"
+			            "Entity": "employees_separations_tracker.full_name"
 			          }
 			        }
 			      },
@@ -35436,404 +35398,28 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
+			              "Role": "employees_separations_tracker"
 			            },
 			            "Object": {
-			              "Role": "vacancies_and_recruitment.label"
+			              "Role": "employees_separations_tracker.full_name"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_labels"
-			        },
-			        {
-			          "DynamicAdjective": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Adjective": {
-			              "Role": "vacancies_and_recruitment.label"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "labels_describe_vacancies_and_recruitments"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_date_filled": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.date_filled": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.date_filled"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.date_filled"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_date_filled"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_vacancy_days_open": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_days_open": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_days_open"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_days_open"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_vacancy_days_opens"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_status": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.status": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.status"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.status"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_statuses"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_recruitment_type": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.recruitment_type": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.recruitment_type"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.recruitment_type"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_recruitment_types"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_vacancy_start_date": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_vacancy_start_dates"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_office_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.office_location": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.office_location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.office_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_office_locations"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_job_class": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.job_class": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.job_class"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.job_class"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_job_classes"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_position_ID": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.position_ID": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.position_ID"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.position_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_position_ID"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_vacancy_ID": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_ID": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_ID"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_ID"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_vacancy_ID"
+			          "ID": "employees_separations_trackers_have_full_names"
 			        },
 			        {
 			          "Name": {
 			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
+			              "Role": "employees_separations_tracker"
 			            },
 			            "Name": {
-			              "Role": "vacancies_and_recruitment.vacancy_ID"
+			              "Role": "employees_separations_tracker.full_name"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vacancy_ID_are_names_IDs_of_vacancies_and_recruitments"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_dpt_": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.dpt_": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.dpt_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.dpt_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_dpt_"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_has_row_number": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.row_number": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.row_number"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.row_number"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_have_row_numbers"
+			          "ID": "full_names_are_names_IDs_of_employees_separations_trackers"
 			        }
 			      ]
 			    },
@@ -37880,39 +37466,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "employees_separations_tracker_has_job_class": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees Separations Tracker"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_separations_tracker": {
-			          "Target": {
-			            "Entity": "employees_separations_tracker"
-			          }
-			        },
-			        "employees_separations_tracker.job_class": {
-			          "Target": {
-			            "Entity": "employees_separations_tracker.job_class"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_separations_tracker"
-			            },
-			            "Object": {
-			              "Role": "employees_separations_tracker.job_class"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_separations_trackers_have_job_classes"
-			        }
-			      ]
-			    },
 			    "employees_separations_tracker_has_position_ID": {
 			      "Binding": {
 			        "ConceptualEntity": "Employees Separations Tracker"
@@ -39890,72 +39443,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "employees_have_EPR_due_next_30_days"
-			        }
-			      ]
-			    },
-			    "employees_history_record_has_EPR_donut_category_EPR_donut_count": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees History Records"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_history_record": {
-			          "Target": {
-			            "Entity": "employees_history_record"
-			          }
-			        },
-			        "EPR_donut_category.EPR_donut_count": {
-			          "Target": {
-			            "Entity": "EPR_donut_category.EPR_donut_count"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_history_record"
-			            },
-			            "Object": {
-			              "Role": "EPR_donut_category.EPR_donut_count"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_history_records_have_EPR_donut_count"
-			        }
-			      ]
-			    },
-			    "employee_has_EPR_donut_category_EPR_donut_count": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "EPR_donut_category.EPR_donut_count": {
-			          "Target": {
-			            "Entity": "EPR_donut_category.EPR_donut_count"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "EPR_donut_category.EPR_donut_count"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_EPR_donut_count"
 			        }
 			      ]
 			    },
@@ -45117,51 +44604,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "vacancies_and_recruitment_in_office_location": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.office_location": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.office_location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "vacancies_and_recruitment.office_location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.office_location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancies_and_recruitments_are_in_office_locations"
-			        }
-			      ]
-			    },
 			    "vacancies_and_recruitment_is_filled_on_date_filled": {
 			      "Binding": {
 			        "ConceptualEntity": "Vacancies and Recruitments"
@@ -45708,6 +45150,56 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "vacancies_and_recruitment_is_active": {
+			      "Binding": {
+			        "ConceptualEntity": "Vacancies and Recruitments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vacancies_and_recruitment": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment"
+			          }
+			        },
+			        "vacancies_and_recruitment.is_active": {
+			          "Target": {
+			            "Entity": "vacancies_and_recruitment.is_active"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "vacancies_and_recruitment.is_active"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "vacancies_and_recruitment"
+			            },
+			            "Adjectives": [
+			              {
+			                "active": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_vacancies_and_recruitments_are_active_vacancies_and_recruitments"
+			        }
+			      ]
+			    },
 			    "dim_EPR_stage_is_incomplete": {
 			      "Binding": {
 			        "ConceptualEntity": "Dim_EPRStage"
@@ -45755,105 +45247,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_dim_EPR_stages_are_incomplete_dim_EPR_stages"
-			        }
-			      ]
-			    },
-			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees History Records"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_history_record.date_saved.date_hierarchy": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.date_hierarchy"
-			          }
-			        },
-			        "employees_history_record.date_saved.year": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_history_record.date_saved.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "employees_history_record.date_saved.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_saved_have_year_saved"
-			        }
-			      ]
-			    },
-			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees History Records"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_history_record.date_saved.date_hierarchy": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.date_hierarchy"
-			          }
-			        },
-			        "employees_history_record.date_saved.quarter": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_history_record.date_saved.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "employees_history_record.date_saved.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_saved_have_quarter_saved"
-			        }
-			      ]
-			    },
-			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees History Records"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_history_record.date_saved.date_hierarchy": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.date_hierarchy"
-			          }
-			        },
-			        "employees_history_record.date_saved.month": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_history_record.date_saved.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "employees_history_record.date_saved.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_saved_have_month_saved"
 			        }
 			      ]
 			    },
@@ -46877,171 +46270,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_vacancy_start_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment.vacancy_start_date": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancy_start_dates_have_vacancy_start_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_vacancy_start_date_date_hierarchy_has_vacancies_and_recruitment_vacancy_start_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date.year": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancy_start_date_hierarchies_have_vacancy_start_years"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_vacancy_start_date_date_hierarchy_has_vacancies_and_recruitment_vacancy_start_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date.quarter": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancy_start_date_hierarchies_have_vacancy_start_quarters"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_vacancy_start_date_date_hierarchy_has_vacancies_and_recruitment_vacancy_start_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date.month": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancy_start_date_hierarchies_have_vacancy_start_months"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_vacancy_start_date_date_hierarchy_has_vacancies_and_recruitment_vacancy_start_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment.vacancy_start_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date.day": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "vacancies_and_recruitment.vacancy_start_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "vacancy_start_date_hierarchies_have_vacancy_start_days"
 			        }
 			      ]
 			    },

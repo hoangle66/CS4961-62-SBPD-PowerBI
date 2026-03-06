@@ -1146,9 +1146,11 @@ table Employees
 				    #"Renamed Columns4" = Table.RenameColumns(#"Replaced Value2",{{"Late EPR - Copy", "Late EPR - Value Fix"}}),
 				    #"Replaced Value3" = Table.ReplaceValue(#"Renamed Columns4",null,false,Replacer.ReplaceValue,{"Late EPR"}),
 				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Not Late","On Time",Replacer.ReplaceText,{"Late EPR - Value Fix"}),
-				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Replaced Value4",1)
+				    #"Removed Bottom Rows" = Table.RemoveLastN(#"Replaced Value4",1),
+				    #"Added Custom38" = Table.AddColumn(#"Removed Bottom Rows", "Is Active", each Text.Upper([Status]) <> "FILLED"),
+				    #"Removed Columns4" = Table.RemoveColumns(#"Added Custom38",{"Is Active"})
 				in
-				    #"Removed Bottom Rows"
+				    #"Removed Columns4"
 
 	annotation PBI_NavigationStepName = Navigation
 

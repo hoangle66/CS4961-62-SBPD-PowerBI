@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e71d5e3d0ccd0c5e3510",
   "position": {
-    "x": 494.64065977222145,
-    "y": 357.1064275428721,
-    "z": 10000,
-    "height": 349.8677837413274,
-    "width": 761.2640397957847,
-    "tabOrder": 10000
+    "x": 483.18324607329845,
+    "y": 401.42408376963351,
+    "z": 7000,
+    "height": 308.94240837696333,
+    "width": 772.69109947643983,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "columnChart",
@@ -39,13 +39,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees Tracker"
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
                   "Property": "Job Class Level"
                 }
               },
-              "queryRef": "Employees Tracker.Job Class Level",
+              "queryRef": "Employees Separations Tracker.Job Class Level",
               "nativeQueryRef": "Job Class Level"
             }
           ]
@@ -88,6 +88,21 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "visualTooltip": [
         {
@@ -127,6 +142,30 @@
                       "Value": "'#808080'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#3e3a23'"
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

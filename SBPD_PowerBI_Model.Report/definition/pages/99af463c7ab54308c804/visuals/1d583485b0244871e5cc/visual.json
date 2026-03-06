@@ -37,11 +37,12 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "PosID"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Status",
-              "nativeQueryRef": "Status"
+              "queryRef": "Vacancies and Recruitments.PosID",
+              "nativeQueryRef": "Position ID",
+              "displayName": "Position ID"
             },
             {
               "field": {
@@ -51,11 +52,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Office Location"
+                  "Property": "Status"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Office Location",
-              "nativeQueryRef": "Office Location"
+              "queryRef": "Vacancies and Recruitments.Status",
+              "nativeQueryRef": "Status"
             },
             {
               "field": {
@@ -143,20 +144,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "66.9917175236288D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Vacancies and Recruitments.Office Location"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "99.76545202667441D"
                 }
               }
@@ -192,6 +179,20 @@
           },
           "selector": {
             "metadata": "Sum(Vacancies and Recruitments.Interviews Conducted)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "62D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Vacancies and Recruitments.PosID"
           }
         }
       ],

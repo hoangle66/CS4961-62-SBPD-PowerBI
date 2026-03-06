@@ -88,14 +88,6 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Job Class'
-		dataType: string
-		lineageTag: 7191adfd-3144-45af-96cb-84fa14e67590
-		summarizeBy: none
-		sourceColumn: Job Class
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'Reason for Exit'
 		dataType: string
 		lineageTag: 7bcd52e3-9796-4b2b-8cac-aa04ae29bec6
@@ -181,6 +173,22 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Job Class Level'
+		dataType: string
+		lineageTag: 9ecd1af7-a56d-48cb-bdf1-79b4ee0bca27
+		summarizeBy: none
+		sourceColumn: Job Class Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullName
+		dataType: string
+		lineageTag: e423aadc-05a8-421b-b027-0cdc7b8c0d35
+		summarizeBy: none
+		sourceColumn: FullName
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Employees Separations Tracker' = m
 		mode: import
 		source =
@@ -188,9 +196,11 @@ table 'Employees Separations Tracker'
 				    Source = SmartsheetGlobal.Contents("US", []),
 				    #"1134964738680708" = Source{[Key="1134964738680708"]}[Data],
 				    #"6934380720482180" = #"1134964738680708"{[Key="6934380720482180"]}[Data],
-				    #"6507921459335044" = #"6934380720482180"{[Key="6507921459335044"]}[Data]
+				    #"6507921459335044" = #"6934380720482180"{[Key="6507921459335044"]}[Data],
+				    #"Added Custom" = Table.AddColumn(#"6507921459335044", "FullName", each [Employee First Name] & " " & [Employee Last Name]),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Custom",{"RowNumber", "Date Form Submitted", "Separation ID", "Email Status", "Employee ID", "Employee First Name", "Employee Last Name", "FullName", "Staff Email", "Position ID", "Job Class Level", "Reason for Exit", "Last Day Date", "Separated Pay Period", "Separated Payroll Starting Date", "Separated Payroll Ending Date", "Separated Final Pay Date", "Insurance Last Date"})
 				in
-				    #"6507921459335044"
+				    #"Reordered Columns"
 
 	annotation PBI_NavigationStepName = Navigation
 

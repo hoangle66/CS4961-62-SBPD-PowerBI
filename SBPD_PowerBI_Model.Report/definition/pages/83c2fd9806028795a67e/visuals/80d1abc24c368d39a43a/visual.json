@@ -23,13 +23,12 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "JobClassTitle"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Job Class",
-              "nativeQueryRef": "Vacancies Job Class",
-              "active": true,
-              "displayName": "Vacancies Job Class"
+              "queryRef": "Vacancies and Recruitments.JobClassTitle",
+              "nativeQueryRef": "JobClassTitle",
+              "active": true
             }
           ]
         },
@@ -43,12 +42,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "JobClassTitle"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Job Class",
-              "nativeQueryRef": "Vacancies Job Class",
-              "displayName": "Vacancies Job Class"
+              "queryRef": "Vacancies and Recruitments.JobClassTitle",
+              "nativeQueryRef": "JobClassTitle"
             }
           ]
         },

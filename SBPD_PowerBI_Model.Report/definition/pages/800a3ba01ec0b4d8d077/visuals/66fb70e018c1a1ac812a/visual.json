@@ -68,6 +68,13 @@
                   "Value": "36D"
                 }
               }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0'"
+                }
+              }
             }
           },
           "selector": {

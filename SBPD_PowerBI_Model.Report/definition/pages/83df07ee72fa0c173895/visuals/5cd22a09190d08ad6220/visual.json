@@ -1,69 +1,61 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "ac0e6b780cdfab3425b1",
+  "name": "5cd22a09190d08ad6220",
   "position": {
-    "x": 960.32674433826412,
-    "y": 10.857965702317056,
-    "z": 8000,
-    "height": 94.10236942008116,
-    "width": 232.84304228302133,
-    "tabOrder": 8000
+    "x": 53.064425770308127,
+    "y": 194.33053221288515,
+    "z": 1000,
+    "height": 129.07563025210084,
+    "width": 136.24649859943978,
+    "tabOrder": 1000
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
-        "Values": {
+        "Data": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees"
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "Total Exits"
                 }
               },
-              "queryRef": "Employees.Job Class",
-              "nativeQueryRef": "Job Class",
-              "active": true
+              "queryRef": "Employees Separations Tracker.Total Exits",
+              "nativeQueryRef": "Total Exits"
             }
           ]
         }
-      }
-    },
-    "objects": {
-      "data": [
-        {
-          "properties": {
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Dropdown'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
-        }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "strictSingleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Employees Separations Tracker"
+                  }
+                },
+                "Property": "Total Exits"
               }
             },
-            "singleSelect": {
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -72,9 +64,20 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
       "border": [
         {
           "properties": {

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "5b579b5430008d062d4b",
   "position": {
-    "x": 61.428571428571431,
-    "y": 157.85714285714286,
+    "x": 61.669467787114847,
+    "y": 157.75910364145659,
     "z": 16000,
-    "height": 288.57142857142861,
-    "width": 1197.1428571428571,
+    "height": 288.9859943977591,
+    "width": 1148.7731092436975,
     "tabOrder": 15000
   },
   "visual": {
@@ -37,11 +37,12 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Position ID"
+                  "Property": "PosID"
                 }
               },
-              "queryRef": "CountNonNull(Vacancies and Recruitments.Position ID)",
-              "nativeQueryRef": "Position ID"
+              "queryRef": "Vacancies and Recruitments.PosID",
+              "nativeQueryRef": "Position ID",
+              "displayName": "Position ID"
             },
             {
               "field": {
@@ -51,11 +52,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "Dept"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Job Class",
-              "nativeQueryRef": "Job Class"
+              "queryRef": "Vacancies and Recruitments.Dept",
+              "nativeQueryRef": "Dept"
             },
             {
               "field": {
@@ -65,11 +66,11 @@
                       "Entity": "Vacancies and Recruitments"
                     }
                   },
-                  "Property": "Office Location"
+                  "Property": "JobClassTitle"
                 }
               },
-              "queryRef": "Vacancies and Recruitments.Office Location",
-              "nativeQueryRef": "Office Location"
+              "queryRef": "Vacancies and Recruitments.JobClassTitle",
+              "nativeQueryRef": "JobClassTitle"
             },
             {
               "field": {
@@ -98,6 +99,20 @@
               },
               "queryRef": "Vacancies and Recruitments.Recruitment Type",
               "nativeQueryRef": "Recruitment Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Label"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Label",
+              "nativeQueryRef": "Label"
             },
             {
               "field": {
@@ -154,6 +169,20 @@
               },
               "queryRef": "Sum(Vacancies and Recruitments.Interviews Conducted)",
               "nativeQueryRef": "Interviews Conducted"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vacancies and Recruitments"
+                    }
+                  },
+                  "Property": "Is Active"
+                }
+              },
+              "queryRef": "Vacancies and Recruitments.Is Active",
+              "nativeQueryRef": "Is Active"
             }
           ]
         }
@@ -327,5 +356,38 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9aba63fe04ca80517633",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Vacancies and Recruitments"
+              }
+            },
+            "Property": "Is Active"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }
