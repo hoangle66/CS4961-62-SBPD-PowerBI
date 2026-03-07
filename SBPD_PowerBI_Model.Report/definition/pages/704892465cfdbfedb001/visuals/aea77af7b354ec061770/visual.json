@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "aea77af7b354ec061770",
   "position": {
-    "x": 61.45117294053464,
-    "y": 153.6279323513366,
-    "z": 14000,
-    "height": 115.91925804691762,
-    "width": 282.11674849972718,
-    "tabOrder": 14000
+    "x": 157.26100739697077,
+    "y": 236.61289186333215,
+    "z": 13000,
+    "height": 116.86368439591405,
+    "width": 281.33849947164492,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Date"
+                      "Entity": "Dim_LastDay"
                     }
                   },
                   "Property": "Date"
                 }
               },
-              "queryRef": "Dim_Date.Date",
+              "queryRef": "Dim_LastDay.Date",
               "nativeQueryRef": "Date",
               "active": true
             }
@@ -40,7 +40,7 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Dim_Date"
+                    "Entity": "Dim_LastDay"
                   }
                 },
                 "Property": "Date"
@@ -75,44 +75,7 @@
       ],
       "general": [
         {
-          "properties": {
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "d",
-                    "Entity": "Dim_Date",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "Comparison": {
-                        "ComparisonKind": 3,
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "d"
-                              }
-                            },
-                            "Property": "Date"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "datetime'2027-06-16T00:00:00'"
-                          }
-                        }
-                      }
-                    }
-                  }
-                ]
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "header": [
@@ -317,5 +280,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "13762ce6253d96b9d5a6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_LastDay"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

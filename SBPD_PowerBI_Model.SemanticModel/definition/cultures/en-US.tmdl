@@ -20886,12 +20886,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "fy start yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -20899,16 +20893,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
 			          }
 			        }
 			      ],
@@ -30454,12 +30438,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "fy start yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -30467,16 +30445,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "start yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
 			          }
 			        }
 			      ],
@@ -32091,12 +32059,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start date": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "vacancy start moment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -32107,16 +32069,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "start moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
 			          "vacancy start period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -32124,16 +32076,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "start period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        },
 			        {
@@ -32167,33 +32109,53 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "commencement date": {
+			          "vacancy beginning date": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.597
 			          }
 			        },
 			        {
-			          "inception date": {
+			          "vacancy first date": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.597
 			          }
 			        },
 			        {
-			          "kickoff date": {
+			          "vacancy initiation date": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "vacancy launch date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "vacancy kick off date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
 			          }
 			        }
 			      ],
@@ -32895,6 +32857,700 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "employees_separations_tracker.year_stayed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Separations Tracker",
+			          "ConceptualProperty": "Years Stayed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year stayed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr stayed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "employees_tracker.start_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "ConceptualProperty": "Start Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "commencement date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "inception date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "kickoff date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "beginning date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "first date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "initiation date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "launch date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "kick off date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "employees_tracker.start_date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "employees_tracker.start_date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commencement date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "beginning date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "first date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "initiation date year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "employees_tracker.start_date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "start qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "commencement date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "beginning date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "first date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "initiation date quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "employees_tracker.start_date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commencement date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "beginning date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "first date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "initiation date month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "employees_tracker.start_date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Tracker",
+			          "VariationSource": "Start Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "commencement date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "inception date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "kickoff date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.615
+			          }
+			        },
+			        {
+			          "start moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "beginning date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "first date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "initiation date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "launch date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.597
+			          }
+			        },
+			        {
+			          "start period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "kick off date day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
@@ -34622,6 +35278,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_job_classes_have_employees"
+			        }
+			      ]
+			    },
+			    "employees_tracker_has_start_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker": {
+			          "Target": {
+			            "Entity": "employees_tracker"
+			          }
+			        },
+			        "employees_tracker.start_date": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_trackers_have_start_dates"
+			        }
+			      ]
+			    },
+			    "employees_separations_tracker_has_year_stayed": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Separations Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_separations_tracker": {
+			          "Target": {
+			            "Entity": "employees_separations_tracker"
+			          }
+			        },
+			        "employees_separations_tracker.year_stayed": {
+			          "Target": {
+			            "Entity": "employees_separations_tracker.year_stayed"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_separations_tracker"
+			            },
+			            "Object": {
+			              "Role": "employees_separations_tracker.year_stayed"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_separations_trackers_have_year_stayed"
 			        }
 			      ]
 			    },
@@ -44604,6 +45326,48 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "employees_tracker_is_started_on_start_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker": {
+			          "Target": {
+			            "Entity": "employees_tracker"
+			          }
+			        },
+			        "employees_tracker.start_date": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "employees_tracker.start_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "start": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "employees_tracker"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "employees_trackers_are_started_on_start_dates"
+			        }
+			      ]
+			    },
 			    "vacancies_and_recruitment_is_filled_on_date_filled": {
 			      "Binding": {
 			        "ConceptualEntity": "Vacancies and Recruitments"
@@ -44643,90 +45407,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "vacancies_and_recruitments_are_filled_on_date_filled"
-			        }
-			      ]
-			    },
-			    "vacancies_and_recruitment_is_started_on_vacancy_start_date": {
-			      "Binding": {
-			        "ConceptualEntity": "Vacancies and Recruitments"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "vacancies_and_recruitment": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment"
-			          }
-			        },
-			        "vacancies_and_recruitment.vacancy_start_date": {
-			          "Target": {
-			            "Entity": "vacancies_and_recruitment.vacancy_start_date"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "vacancies_and_recruitment.vacancy_start_date"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "start": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "vacancies_and_recruitment"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "vacancies_and_recruitments_are_started_on_vacancy_start_dates"
-			        }
-			      ]
-			    },
-			    "dim_last_day_is_started_in_FY_start_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_LastDay"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_last_day": {
-			          "Target": {
-			            "Entity": "dim_last_day"
-			          }
-			        },
-			        "dim_last_day.FY_start_year": {
-			          "Target": {
-			            "Entity": "dim_last_day.FY_start_year"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "dim_last_day.FY_start_year"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "start": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_last_day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "dim_last_days_are_started_on_FY_start_years"
 			        }
 			      ]
 			    },
@@ -44811,48 +45491,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "personnel_matters_trackers_are_opened_on_opened_dates"
-			        }
-			      ]
-			    },
-			    "dim_date_is_started_in_FY_start_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Date"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_date": {
-			          "Target": {
-			            "Entity": "dim_date"
-			          }
-			        },
-			        "dim_date.FY_start_year": {
-			          "Target": {
-			            "Entity": "dim_date.FY_start_year"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "dim_date.FY_start_year"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "start": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "dim_dates_are_started_on_FY_start_years"
 			        }
 			      ]
 			    },
@@ -46435,6 +47073,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchy_filled_have_day_filled"
+			        }
+			      ]
+			    },
+			    "employees_tracker_start_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker.start_date": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date"
+			          }
+			        },
+			        "employees_tracker.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker.start_date"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_dates_have_start_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "employees_tracker_start_date_date_hierarchy_has_employees_tracker_start_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.date_hierarchy"
+			          }
+			        },
+			        "employees_tracker.start_date.year": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_years"
+			        }
+			      ]
+			    },
+			    "employees_tracker_start_date_date_hierarchy_has_employees_tracker_start_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.date_hierarchy"
+			          }
+			        },
+			        "employees_tracker.start_date.quarter": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_quarters"
+			        }
+			      ]
+			    },
+			    "employees_tracker_start_date_date_hierarchy_has_employees_tracker_start_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.date_hierarchy"
+			          }
+			        },
+			        "employees_tracker.start_date.month": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_months"
+			        }
+			      ]
+			    },
+			    "employees_tracker_start_date_date_hierarchy_has_employees_tracker_start_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_tracker.start_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.date_hierarchy"
+			          }
+			        },
+			        "employees_tracker.start_date.day": {
+			          "Target": {
+			            "Entity": "employees_tracker.start_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_tracker.start_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_tracker.start_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_date_hierarchies_have_start_days"
 			        }
 			      ]
 			    }

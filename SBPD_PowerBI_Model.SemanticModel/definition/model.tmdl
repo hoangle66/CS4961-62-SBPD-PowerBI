@@ -40,6 +40,7 @@ ref table Dim_LastDay
 ref table LocalDateTable_42a0de90-fcf0-486c-9694-b7e26c67081b
 ref table 'Vacancies and Recruitments'
 ref table LocalDateTable_31afe02b-a694-40ef-b4d1-6942f8aa4f21
+ref table LocalDateTable_3cf209ae-0e8f-47f9-880c-4eb0c397c45b
 
 ref cultureInfo en-US
 

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "a4c285361b66513e6a08",
+  "name": "8dcc74f3ca3093160a16",
   "position": {
-    "x": 422.72912997534343,
+    "x": 624.71574498062694,
     "y": 0,
-    "z": 12000,
+    "z": 15001,
     "height": 131.29129975343432,
-    "width": 201.98661500528354,
-    "tabOrder": 12000
+    "width": 243.82669954209229,
+    "tabOrder": 15001
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Total Exits"
+                  "Property": "Average Years Stayed"
                 }
               },
-              "queryRef": "Employees Separations Tracker.Total Exits",
-              "nativeQueryRef": "Total Exits"
+              "queryRef": "Employees Separations Tracker.Average Years Stayed",
+              "nativeQueryRef": "Average Years Stayed"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Employees Separations Tracker"
                   }
                 },
-                "Property": "Total Exits"
+                "Property": "Average Years Stayed"
               }
             },
             "direction": "Descending"
@@ -52,70 +52,6 @@
       }
     },
     "objects": {
-      "value": [
-        {
-          "properties": {
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "36D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "13D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#303010'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
       "shapeCustomRectangle": [
         {
           "properties": {
@@ -123,35 +59,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'rectangleRoundedByPixel'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "fillCustom": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
@@ -176,10 +83,67 @@
             "id": "default"
           }
         }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "36D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#303010'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
-      "background": [
+      "border": [
         {
           "properties": {
             "show": {
@@ -188,11 +152,18 @@
                   "Value": "false"
                 }
               }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
             }
           }
         }
       ],
-      "dropShadow": [
+      "background": [
         {
           "properties": {
             "show": {
@@ -207,5 +178,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f576bc5f59d554ea4188",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Employees Separations Tracker"
+              }
+            },
+            "Property": "Average Years Stayed"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -40,6 +40,19 @@ table 'Employees Separations Tracker'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Average Years Stayed' =
+			
+			AVERAGEX(
+			    VALUES('Employees Separations Tracker'[Employee ID]),
+			    VAR StartDt = CALCULATE( MIN('Employees Tracker'[Start Date]) )
+			    VAR EndDt   = CALCULATE( MAX('Employees Separations Tracker'[Last Day Date]) )
+			    RETURN
+			        DIVIDE( DATEDIFF(StartDt, EndDt, DAY), 365.25 )
+			)
+		lineageTag: 4d72ae10-c4b6-4914-b77e-8410deb9d9a8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column RowNumber
 		dataType: string
 		lineageTag: bf80b169-5d2a-43df-8934-b52933f52bdb
@@ -186,6 +199,18 @@ table 'Employees Separations Tracker'
 		lineageTag: e423aadc-05a8-421b-b027-0cdc7b8c0d35
 		summarizeBy: none
 		sourceColumn: FullName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Years Stayed' =
+			
+			VAR StartDt = RELATED('Employees Tracker'[Start Date])
+			VAR EndDt   = COALESCE('Employees Separations Tracker'[Last Day Date], TODAY())
+			RETURN
+			DATEDIFF(StartDt, EndDt, YEAR)
+		formatString: 0
+		lineageTag: 3106a735-45d8-4239-b5a5-ed5446a849a4
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 

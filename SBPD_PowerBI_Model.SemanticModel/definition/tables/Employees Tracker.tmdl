@@ -255,6 +255,24 @@ table 'Employees Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 198bd89f-6e3a-42db-9b5e-e650c0780b43
+		summarizeBy: none
+		sourceColumn: Start Date
+
+		variation Variation
+			isDefault
+			relationship: f941790d-a577-428e-b2db-e6c1dae589a4
+			defaultHierarchy: LocalDateTable_3cf209ae-0e8f-47f9-880c-4eb0c397c45b.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	partition 'Employees Tracker' = m
 		mode: import
 		source =
