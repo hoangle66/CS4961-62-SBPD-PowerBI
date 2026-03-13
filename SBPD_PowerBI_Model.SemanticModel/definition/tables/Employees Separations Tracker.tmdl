@@ -189,6 +189,14 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Job Class'
+		dataType: string
+		lineageTag: 07f6eff0-57ae-483a-ab29-c94bcde8b753
+		summarizeBy: none
+		sourceColumn: Job Class
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Employees Separations Tracker' = m
 		mode: import
 		source =

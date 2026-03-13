@@ -152,12 +152,6 @@
               }
             }
           },
-          "23169020a75524865e4c": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "271ed021055c015572e2": {
             "filters": {
               "byExpr": [
@@ -199,12 +193,6 @@
             }
           },
           "678d9e5bc5321a621a97": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "6f6afe5f22062d08b783": {
             "singleVisual": {
               "visualType": "actionButton",
               "objects": {}
@@ -597,18 +585,6 @@
               "objects": {}
             }
           },
-          "a621c9b065a636e7ca57": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "add29b32ab096c660c62": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "c0e3cf204b199e7bdb97": {
             "singleVisual": {
               "visualType": "actionButton",
@@ -618,12 +594,6 @@
           "c931c735720782d1fcac": {
             "singleVisual": {
               "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "cdbd6a401858a923a409": {
-            "singleVisual": {
-              "visualType": "actionButton",
               "objects": {}
             }
           },

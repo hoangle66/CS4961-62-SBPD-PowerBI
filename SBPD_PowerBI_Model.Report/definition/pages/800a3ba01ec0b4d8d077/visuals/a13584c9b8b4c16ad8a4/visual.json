@@ -4,10 +4,10 @@
   "position": {
     "x": 795.96638655462186,
     "y": 458.218487394958,
-    "z": 18000,
+    "z": 13000,
     "height": 250.26330532212884,
     "width": 414.47619047619048,
-    "tabOrder": 17000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "pieChart",
@@ -52,21 +52,6 @@
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Measures "
-                  }
-                },
-                "Property": "Vacancies Total"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
         "isDefaultSort": true
       }
     },
@@ -501,9 +486,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": -0.3
+                    "Literal": {
+                      "Value": "'#808080'"
                     }
                   }
                 }

@@ -35,14 +35,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees Tracker"
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Job Class"
+                  "Property": "Job Class Level"
                 }
               },
-              "queryRef": "Employees Tracker.Job Class",
-              "nativeQueryRef": "Job Class"
+              "queryRef": "Employees Separations Tracker.Job Class Level",
+              "nativeQueryRef": "Job Class Level"
             },
             {
               "field": {
@@ -52,31 +52,14 @@
                       "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Job Class Level"
+                  "Property": "Reason for Exit"
                 }
               },
-              "queryRef": "Employees Separations Tracker.Job Class Level",
-              "nativeQueryRef": "Job Class Level"
+              "queryRef": "Employees Separations Tracker.Reason for Exit",
+              "nativeQueryRef": "Reason for Exit"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Employees Tracker"
-                  }
-                },
-                "Property": "Job Class"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -121,13 +104,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "121D"
+                  "Value": "52D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Employees Tracker.Job Class"
+            "metadata": "Employees Separations Tracker.Job Class Level"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Employees Separations Tracker.FullName"
           }
         }
       ]
