@@ -32858,28 +32858,160 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "employees_separations_tracker.year_stayed": {
+			    "employees_separations_tracker.job_class": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Employees Separations Tracker",
-			          "ConceptualProperty": "Years Stayed"
+			          "ConceptualProperty": "Job Class"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "year stayed": {
+			          "job class": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "yr stayed": {
+			          "class": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "job classification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "job category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "job genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "job course": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "job grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "job lecture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "job lesson": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "employees_separations_tracker.date_stayed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees Separations Tracker",
+			          "ConceptualProperty": "Date Stayed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date stayed": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment stayed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period stayed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -33554,39 +33686,6 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
-			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees History Records"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employees_history_record.date_saved.date_hierarchy": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.date_hierarchy"
-			          }
-			        },
-			        "employees_history_record.date_saved.month": {
-			          "Target": {
-			            "Entity": "employees_history_record.date_saved.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employees_history_record.date_saved.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "employees_history_record.date_saved.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_saved_have_month_saved"
-			        }
-			      ]
-			    },
 			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Employees History Records"
@@ -35314,7 +35413,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "employees_separations_tracker_has_year_stayed": {
+			    "employees_separations_tracker_has_date_stayed": {
 			      "Binding": {
 			        "ConceptualEntity": "Employees Separations Tracker"
 			      },
@@ -35325,9 +35424,9 @@ cultureInfo en-US
 			            "Entity": "employees_separations_tracker"
 			          }
 			        },
-			        "employees_separations_tracker.year_stayed": {
+			        "employees_separations_tracker.date_stayed": {
 			          "Target": {
-			            "Entity": "employees_separations_tracker.year_stayed"
+			            "Entity": "employees_separations_tracker.date_stayed"
 			          }
 			        }
 			      },
@@ -35338,12 +35437,45 @@ cultureInfo en-US
 			              "Role": "employees_separations_tracker"
 			            },
 			            "Object": {
-			              "Role": "employees_separations_tracker.year_stayed"
+			              "Role": "employees_separations_tracker.date_stayed"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "employees_separations_trackers_have_year_stayed"
+			          "ID": "employees_separations_trackers_have_date_stayed"
+			        }
+			      ]
+			    },
+			    "employees_separations_tracker_has_job_class": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees Separations Tracker"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_separations_tracker": {
+			          "Target": {
+			            "Entity": "employees_separations_tracker"
+			          }
+			        },
+			        "employees_separations_tracker.job_class": {
+			          "Target": {
+			            "Entity": "employees_separations_tracker.job_class"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_separations_tracker"
+			            },
+			            "Object": {
+			              "Role": "employees_separations_tracker.job_class"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_separations_trackers_have_job_classes"
 			        }
 			      ]
 			    },
@@ -45885,6 +46017,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_dim_EPR_stages_are_incomplete_dim_EPR_stages"
+			        }
+			      ]
+			    },
+			    "employees_history_record_date_saved_date_hierarchy_has_employees_history_record_date_saved_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees History Records"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employees_history_record.date_saved.date_hierarchy": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.date_hierarchy"
+			          }
+			        },
+			        "employees_history_record.date_saved.month": {
+			          "Target": {
+			            "Entity": "employees_history_record.date_saved.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employees_history_record.date_saved.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "employees_history_record.date_saved.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_saved_have_month_saved"
 			        }
 			      ]
 			    },

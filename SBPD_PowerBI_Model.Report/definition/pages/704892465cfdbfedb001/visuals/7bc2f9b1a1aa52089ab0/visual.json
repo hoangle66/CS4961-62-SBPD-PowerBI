@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "2f1b133003dcc79a70ad",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "7bc2f9b1a1aa52089ab0",
   "position": {
-    "x": 157.26100739697077,
-    "y": 142.8333920394505,
-    "z": 15000,
-    "height": 86.565692145121517,
-    "width": 281.33849947164492,
-    "tabOrder": 15000
+    "x": 108.2071151814019,
+    "y": 261.13983797111661,
+    "z": 15001,
+    "height": 89.45121521662557,
+    "width": 300.09439943642127,
+    "tabOrder": 15001
   },
   "visual": {
     "visualType": "slicer",
@@ -32,9 +32,17 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
       }
     },
     "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ],
       "data": [
         {
           "properties": {
@@ -47,35 +55,9 @@
             }
           }
         }
-      ],
-      "general": [
-        {
-          "properties": {
-            "outlineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "border": [
         {
           "properties": {
@@ -83,13 +65,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "6D"
                 }
               }
             },
@@ -101,6 +76,13 @@
                       "Value": "'#808080'"
                     }
                   }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
                 }
               }
             }

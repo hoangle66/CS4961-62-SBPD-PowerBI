@@ -258,14 +258,14 @@ table 'Employees Tracker'
 	column 'Start Date'
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 198bd89f-6e3a-42db-9b5e-e650c0780b43
+		lineageTag: 83cf7cd9-906e-4678-b67f-2bf75bf84f18
 		summarizeBy: none
 		sourceColumn: Start Date
 
 		variation Variation
 			isDefault
-			relationship: f941790d-a577-428e-b2db-e6c1dae589a4
-			defaultHierarchy: LocalDateTable_3cf209ae-0e8f-47f9-880c-4eb0c397c45b.'Date Hierarchy'
+			relationship: f0e65545-88ab-4cd9-893b-5aa5b5ce4e1e
+			defaultHierarchy: LocalDateTable_01488311-43dc-4abc-9e37-18fd59408db4.'Date Hierarchy'
 
 		changedProperty = DataType
 
