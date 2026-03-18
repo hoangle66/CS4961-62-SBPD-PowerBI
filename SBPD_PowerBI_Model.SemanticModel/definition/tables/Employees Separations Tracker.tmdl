@@ -202,15 +202,11 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Years Stayed' =
-			
-			VAR StartDt = RELATED('Employees Tracker'[Start Date])
-			VAR EndDt   = COALESCE('Employees Separations Tracker'[Last Day Date], TODAY())
-			RETURN
-			DATEDIFF(StartDt, EndDt, YEAR)
-		formatString: 0
-		lineageTag: 3106a735-45d8-4239-b5a5-ed5446a849a4
-		summarizeBy: sum
+	column 'Job Class'
+		dataType: string
+		lineageTag: 07f6eff0-57ae-483a-ab29-c94bcde8b753
+		summarizeBy: none
+		sourceColumn: Job Class
 
 		annotation SummarizationSetBy = Automatic
 

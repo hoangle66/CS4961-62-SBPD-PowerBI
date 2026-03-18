@@ -143,8 +143,8 @@ relationship cb23ea84-53e1-4ff5-94d1-23ca0ee12b28
 	fromColumn: 'Vacancies and Recruitments'.'Date Filled'
 	toColumn: LocalDateTable_31afe02b-a694-40ef-b4d1-6942f8aa4f21.Date
 
-relationship f941790d-a577-428e-b2db-e6c1dae589a4
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'Employees Tracker'.'Start Date'
-	toColumn: LocalDateTable_3cf209ae-0e8f-47f9-880c-4eb0c397c45b.Date
+relationship AutoDetected_7b0a5e75-8f50-426d-90c5-e44df0e2d6c3
+	isActive: false
+	fromColumn: 'Employees Separations Tracker'.'Job Class'
+	toColumn: Dim_JobClass.'Job Class'
 

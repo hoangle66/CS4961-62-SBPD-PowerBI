@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "e71d5e3d0ccd0c5e3510",
   "position": {
-    "x": 494.8672067629447,
-    "y": 138.50510743219442,
-    "z": 6000,
-    "height": 308.75096865093343,
-    "width": 767.54913702007752,
+    "x": 513.66609294320142,
+    "y": 401.51462994836487,
+    "z": 8000,
+    "height": 308.57142857142856,
+    "width": 742.30636833046469,
     "tabOrder": 6000
   },
   "visual": {
@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees Tracker"
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
                   "Property": "Job Class"
                 }
               },
-              "queryRef": "Employees Tracker.Job Class",
+              "queryRef": "Employees Separations Tracker.Job Class",
               "nativeQueryRef": "Job Class",
               "active": true
             }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "912e19869dd18b13e20b",
   "position": {
-    "x": 0,
-    "y": 164.18848167539267,
+    "x": 3.846297122375347,
+    "y": 165.74235202967623,
     "z": 18000,
-    "height": 42.890052356020945,
-    "width": 42.219895287958117,
+    "height": 43.049327354260086,
+    "width": 42.331838565022423,
     "tabOrder": 18000
   },
   "visual": {
@@ -27,7 +27,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'decision-making.png'"
+                      "Value": "'report.png'"
                     }
                   }
                 },
@@ -36,7 +36,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "decision-making9800576195317525.png"
+                      "ItemName": "report18089557293597047.png"
                     }
                   }
                 },
@@ -61,7 +61,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'decision-making (1).png'"
+                      "Value": "'report (1).png'"
                     }
                   }
                 },
@@ -70,7 +70,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "decision-making_(1)1770554036553189.png"
+                      "ItemName": "report_(1)9830755293003108.png"
                     }
                   }
                 },

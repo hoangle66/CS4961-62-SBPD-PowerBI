@@ -35,20 +35,6 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Employees Tracker"
-                    }
-                  },
-                  "Property": "Job Class"
-                }
-              },
-              "queryRef": "Employees Tracker.Job Class",
-              "nativeQueryRef": "Job Class"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
                       "Entity": "Employees Separations Tracker"
                     }
                   },
@@ -60,43 +46,20 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Column": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Employees Separations Tracker"
-                        }
-                      },
-                      "Property": "Years Stayed"
+                    "SourceRef": {
+                      "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Function": 0
+                  "Property": "Reason for Exit"
                 }
               },
-              "queryRef": "Sum(Employees Separations Tracker.Years Stayed)",
-              "nativeQueryRef": "Years Stayed",
-              "displayName": "Years Stayed"
+              "queryRef": "Employees Separations Tracker.Reason for Exit",
+              "nativeQueryRef": "Reason for Exit"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Employees Separations Tracker"
-                  }
-                },
-                "Property": "Job Class Level"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -148,13 +111,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "104D"
+                  "Value": "52D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Employees Tracker.Job Class"
+            "metadata": "Employees Separations Tracker.Job Class Level"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "76D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Employees Separations Tracker.FullName"
           }
         },
         {

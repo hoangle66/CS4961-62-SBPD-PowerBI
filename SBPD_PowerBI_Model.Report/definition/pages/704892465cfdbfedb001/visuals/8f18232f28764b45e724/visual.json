@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8f18232f28764b45e724",
   "position": {
-    "x": 62.038746037337091,
-    "y": 461.68369144064809,
-    "z": 4000,
-    "height": 249.59774568510039,
-    "width": 721.38076787601267,
+    "x": 61.962134251290877,
+    "y": 401.51462994836487,
+    "z": 6000,
+    "height": 308.57142857142856,
+    "width": 441.79001721170397,
     "tabOrder": 4000
   },
   "visual": {
@@ -69,6 +69,177 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.3
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Employees Separations Tracker"
+                          }
+                        },
+                        "Property": "Reason for Exit"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Move out of area'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Employees Separations Tracker"
+                          }
+                        },
+                        "Property": "Reason for Exit"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'New job'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A5942A'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Employees Separations Tracker"
+                          }
+                        },
+                        "Property": "Reason for Exit"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Misconduct'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 4,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Employees Separations Tracker"
+                          }
+                        },
+                        "Property": "Reason for Exit"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Inadequate performance'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "border": [
