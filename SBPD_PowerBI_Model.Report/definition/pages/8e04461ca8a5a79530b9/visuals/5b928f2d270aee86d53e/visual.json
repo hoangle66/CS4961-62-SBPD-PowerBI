@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "5b928f2d270aee86d53e",
   "position": {
     "x": 0,
@@ -38,28 +38,56 @@
                       "Entity": "Employees Separations Tracker"
                     }
                   },
-                  "Property": "Job Class Level"
-                }
-              },
-              "queryRef": "Employees Separations Tracker.Job Class Level",
-              "nativeQueryRef": "Job Class Level"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Employees Separations Tracker"
-                    }
-                  },
                   "Property": "Reason for Exit"
                 }
               },
               "queryRef": "Employees Separations Tracker.Reason for Exit",
               "nativeQueryRef": "Reason for Exit"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Employees Separations Tracker"
+                        }
+                      },
+                      "Property": "Date Stayed"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Employees Separations Tracker.Date Stayed)",
+              "nativeQueryRef": "Year Stayed",
+              "displayName": "Year Stayed"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Employees Separations Tracker"
+                      }
+                    },
+                    "Property": "Date Stayed"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -104,13 +132,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "52D"
+                  "Value": "105D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Employees Separations Tracker.Job Class Level"
+            "metadata": "Employees Separations Tracker.FullName"
           }
         },
         {
@@ -118,13 +146,40 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "76D"
+                  "Value": "142D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Employees Separations Tracker.FullName"
+            "metadata": "Employees Separations Tracker.Reason for Exit"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Employees Separations Tracker.Date Stayed)"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

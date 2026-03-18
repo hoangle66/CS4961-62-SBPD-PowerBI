@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "a6d42f61ac3040d00c0b",
   "position": {
-    "x": 61.704035874439462,
-    "y": 153.542600896861,
+    "x": 109.64987671715393,
+    "y": 360.69038393800633,
     "z": 0,
-    "height": 115.51569506726457,
-    "width": 281.97309417040356,
+    "height": 119.7492074674181,
+    "width": 298.65163790066924,
     "tabOrder": 9000
   },
   "visual": {
@@ -41,13 +41,6 @@
       "data": [
         {
           "properties": {
-            "startDate": {
-              "expr": {
-                "Literal": {
-                  "Value": "datetime'2021-07-01T00:00:00'"
-                }
-              }
-            },
             "endDate": {
               "expr": {
                 "Literal": {
@@ -88,45 +81,21 @@
                 "Where": [
                   {
                     "Condition": {
-                      "And": {
+                      "Comparison": {
+                        "ComparisonKind": 3,
                         "Left": {
-                          "Comparison": {
-                            "ComparisonKind": 2,
-                            "Left": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "d"
-                                  }
-                                },
-                                "Property": "Date"
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "datetime'2021-07-01T00:00:00'"
-                              }
-                            }
+                            "Property": "Date"
                           }
                         },
                         "Right": {
-                          "Comparison": {
-                            "ComparisonKind": 3,
-                            "Left": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "d"
-                                  }
-                                },
-                                "Property": "Date"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "datetime'2027-07-01T00:00:00'"
-                              }
-                            }
+                          "Literal": {
+                            "Value": "datetime'2027-07-01T00:00:00'"
                           }
                         }
                       }
