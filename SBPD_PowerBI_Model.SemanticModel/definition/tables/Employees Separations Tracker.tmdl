@@ -197,6 +197,19 @@ table 'Employees Separations Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Date Stayed' =
+			
+			DATEDIFF(
+			    RELATED('Employees Tracker'[Start Date]),
+			    'Employees Separations Tracker'[Last Day Date],
+			    YEAR
+			)
+		formatString: 0
+		lineageTag: 00fa8cd4-81d0-4eb4-a2f8-3b800dacb4b1
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Employees Separations Tracker' = m
 		mode: import
 		source =

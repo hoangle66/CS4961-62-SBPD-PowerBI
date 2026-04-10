@@ -122,6 +122,7 @@ relationship 6d711ce5-cf32-433e-c808-456550785687
 	toColumn: Dim_Date.Date
 
 relationship a04a0dfe-5521-f44f-ecac-4f607dfb0f88
+	crossFilteringBehavior: bothDirections
 	fromColumn: 'Employees Separations Tracker'.'Employee ID'
 	toColumn: 'Employees Tracker'.'Employee Number'
 
@@ -147,4 +148,9 @@ relationship AutoDetected_7b0a5e75-8f50-426d-90c5-e44df0e2d6c3
 	isActive: false
 	fromColumn: 'Employees Separations Tracker'.'Job Class'
 	toColumn: Dim_JobClass.'Job Class'
+
+relationship f0e65545-88ab-4cd9-893b-5aa5b5ce4e1e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Employees Tracker'.'Start Date'
+	toColumn: LocalDateTable_01488311-43dc-4abc-9e37-18fd59408db4.Date
 
