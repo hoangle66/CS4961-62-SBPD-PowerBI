@@ -222,6 +222,46 @@ table '[Personnel Matters] Tracker'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Box Sync Status'
+		dataType: string
+		lineageTag: 3c7e36ed-189b-4bee-9988-39f0bdaabb76
+		summarizeBy: none
+		sourceColumn: Box Sync Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Box Folder Link'
+		dataType: string
+		lineageTag: 0d7684b7-f62f-43b6-8648-01d615d21736
+		summarizeBy: none
+		sourceColumn: Box Folder Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Box Uploaded At'
+		dataType: string
+		lineageTag: 3bdfc109-5f41-4250-8a95-8cf1b5382b93
+		summarizeBy: none
+		sourceColumn: Box Uploaded At
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Box Sync Notes'
+		dataType: string
+		lineageTag: 5d33dba3-c3e4-4b59-a509-a5279f140dbe
+		summarizeBy: none
+		sourceColumn: Box Sync Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Box Synced Attachment IDs'
+		dataType: string
+		lineageTag: 268615c6-3fae-4ace-b6cd-3c8e2cf8e440
+		summarizeBy: none
+		sourceColumn: Box Synced Attachment IDs
+
+		annotation SummarizationSetBy = Automatic
+
 	partition '[Personnel Matters] Tracker' = m
 		mode: import
 		source =
